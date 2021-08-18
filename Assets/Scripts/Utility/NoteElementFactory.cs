@@ -121,19 +121,20 @@ namespace DefaultNamespace
             GameObject resultVector = InstantiateUIPrefab<NoteResultUI>();
 
             var uiContainer = new UIComponentsContainer(multiplication, matrix, equals, resultVector);
-            INoteActionResult noteActionResult;
+            NoteActionFunctions.NoteAction<float2x2> noteAction;
             switch (desiredType)
             {
                 case MatrixMultiplicationUI.Type.None:
-                    noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, NoteActionFunctions.MatrixMultiply, uiContainer);
+                    noteAction = NoteActionFunctions.MatrixMultiply;
                     break;
                 case MatrixMultiplicationUI.Type.Rotation:
-                    noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, NoteActionFunctions.RotationMatrixMultiply, uiContainer);
+                    noteAction = NoteActionFunctions.RotationMatrixMultiply;
                     break;
                 default:
-                    noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, NoteActionFunctions.MatrixMultiply, uiContainer);
+                    noteAction = NoteActionFunctions.MatrixMultiply;
                     break;
             }
+            INoteActionResult noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, noteAction, uiContainer);
             var bundle = new ControllerUIBundle<INoteActionResult>(noteActionResult, uiContainer);
             track.Add(bundle);
             return bundle;
