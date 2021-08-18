@@ -34,7 +34,7 @@ namespace DefaultNamespace
             {
                 if (objects.Count > 1)
                 {
-                    Debug.LogError($"{context} More than one prefab of type '{typeof(T)}' found. Consider using {nameof(validator)} argument to get the prefab you desire.");
+                    Debug.LogError($"{context} More than one prefab of type '{typeof(T)}' found. Consider using {nameof(validator)} argument to get only the prefab you desire.");
                 }
                 return (parent == null) ? Object.Instantiate(objects[0]) : Object.Instantiate(objects[0], parent);
             }
