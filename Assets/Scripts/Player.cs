@@ -47,7 +47,7 @@ namespace DefaultNamespace
             {
                 int start = (int) (angleDeg / 30f);
                 float weight = (angleDeg - 30f * start) / 30f;
-                frequency = Mathf.Lerp(Notes.Frequencies[start + 12 * octave], Notes.Frequencies[start + 12 * octave], weight);
+                frequency = Mathf.Lerp(Notes.Frequencies[start + 12 * octave], Notes.Frequencies[start + 1 + 12 * octave], weight);
             }
             catch
             {

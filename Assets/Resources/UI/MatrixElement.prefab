@@ -1506,6 +1506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69ad4dc55959477d8995bad82926d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <MatrixType>k__BackingField: 0
   column0InputFields:
   - {fileID: 777748122083773625}
   - {fileID: 777748122080948932}

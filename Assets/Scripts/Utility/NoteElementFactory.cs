@@ -13,25 +13,97 @@ namespace DefaultNamespace
 {
     public static class NoteElementFactory
     {
+        private static string Context(string functionName)
+        {
+            return $"{nameof(NoteElementFactory)}::{functionName}() --";
+        }
         private const string UIDirectory = "UI";
-
-        private static GameObject ElementsRowUI = Resources.Load<GameObject>(Path.Combine(UIDirectory, "ElementsContainer"));
+        public static readonly Dictionary<Type, List<GameObject>> UIPrefabsByClassType;
         
-        private static GameObject MultiplicationUI = Resources.Load<GameObject>(Path.Combine(UIDirectory, "MultiplicationSign"));
-        private static GameObject EqualsUI = Resources.Load<GameObject>(Path.Combine(UIDirectory, "EqualsSign"));
+        private static GameObject InstantiateUIPrefab<T>(Transform parent,
+                                                         Func<T, bool> validator = null,
+                                                         bool showMultiValidError = true)
+        {
+            string context = Context(nameof(InstantiateUIPrefab));
+            if (!UIPrefabsByClassType.TryGetValue(typeof(T), out List<GameObject> objects))
+            {
+                throw new ArgumentException($"{context} No UI prefabs of type '{typeof(T)}', cannot instantiate one");
+            }
 
-        private static GameObject AddButon = Resources.Load<GameObject>(Path.Combine(UIDirectory, "AddButton"));
+            if (validator is null)
+            {
+                if (objects.Count > 1)
+                {
+                    Debug.LogError($"{context} More than one prefab of type '{typeof(T)}' found. Consider using {nameof(validator)} argument to get the prefab you desire.");
+                }
+                return (parent == null) ? Object.Instantiate(objects[0]) : Object.Instantiate(objects[0], parent);
+            }
+
+            GameObject toReturn = null;
+            foreach (GameObject prefab in objects)
+            {
+                T uiComponent = prefab.GetComponentInChildren<T>();
+                bool valid = validator.Invoke(uiComponent);
+                if (!valid)
+                {
+                    continue;
+                }
+                
+                if (toReturn == null)
+                {
+                    toReturn = (parent == null) ? Object.Instantiate(prefab) : Object.Instantiate(prefab, parent);
+                    continue;
+                }
+
+                if (showMultiValidError)
+                {
+                    Debug.LogError($"{context} Multiple prefabs of type '{typeof(T)}' are valid. This is likely an error");
+                }
+            }
+
+            if (toReturn == null)
+            {
+                Debug.LogError($"{context} No prefabs of type '{typeof(T)}' met validation criteria");
+            }
+            return toReturn;
+        }
+
+        private static GameObject InstantiateUIPrefab<T>(Func<T, bool> validator = null,
+                                                         bool showMultiValidError = true)
+        {
+            return InstantiateUIPrefab(null, validator, showMultiValidError);
+        }
         
-        private static GameObject MatrixUI = Resources.Load<GameObject>(Path.Combine(UIDirectory, "MatrixElement"));
-        private static GameObject StartVectorUI = Resources.Load<GameObject>(Path.Combine(UIDirectory, "RowVectorStartElement"));
-        private static GameObject ResultVectorUI = Resources.Load<GameObject>(Path.Combine(UIDirectory, "RowVectorResultElement"));
-        private static GameObject VectorAdditionUI = Resources.Load<GameObject>(Path.Combine(UIDirectory, "VectorAdditionElement"));
+        static NoteElementFactory()
+        {
+            UIPrefabsByClassType = new Dictionary<Type, List<GameObject>>();
+            
+            GameObject[] uiObjects = Resources.LoadAll<GameObject>(UIDirectory);
+            foreach (GameObject prefab in uiObjects)
+            {
+                IUIComponent uiComponent = prefab.GetComponentInChildren<IUIComponent>();
+                if (uiComponent is null)
+                {
+                    Debug.LogError($"{Context(nameof(NoteElementFactory))} Prefab '{prefab.name}' in Resources/{UIDirectory} does not contain an implementation of {nameof(IUIComponent)}");
+                    continue;
+                }
 
+                Type classType = uiComponent.GetType();
+                if (UIPrefabsByClassType.TryGetValue(classType, out List<GameObject> objects))
+                {
+                    objects.Add(prefab);
+                    continue;
+                }
+                
+                UIPrefabsByClassType.Add(classType, new List<GameObject>{prefab});
+            }
+        }
+        
         public static ControllerUIBundle<ITrack> AddTrack(Transform parent)
         {
-            GameObject row = Object.Instantiate(ElementsRowUI, parent);
-            GameObject rowVector = Object.Instantiate(StartVectorUI);
-            GameObject addButton = Object.Instantiate(AddButon);
+            GameObject row = InstantiateUIPrefab<NoteElementsContainer>(parent);
+            GameObject rowVector = InstantiateUIPrefab<NoteStartUI>();
+            GameObject addButton = InstantiateUIPrefab<AddButton>();
 
             var parentContainer = new UIComponentsContainer(row);
             var startNoteContainer = new UIComponentsContainer(rowVector);
@@ -41,20 +113,30 @@ namespace DefaultNamespace
             return new ControllerUIBundle<ITrack>(track, parentContainer);
         }
         
-        public static ControllerUIBundle<INoteActionResult> AddMatrixMultiplication(ITrack track)
+        public static ControllerUIBundle<INoteActionResult> AddMatrixMultiplication(ITrack track, MatrixMultiplicationUI.Type desiredType)
         {
-            GameObject multiplication = Object.Instantiate(MultiplicationUI);
-            GameObject matrix = Object.Instantiate(MatrixUI);
-            GameObject equals = Object.Instantiate(EqualsUI);
-            GameObject resultVector = Object.Instantiate(ResultVectorUI);
+            GameObject multiplication = InstantiateUIPrefab<Sign>(ui => ui.SignType == Sign.Type.Multiplication);
+            GameObject matrix = InstantiateUIPrefab<MatrixMultiplicationUI>(ui => ui.MatrixType == desiredType);
+            GameObject equals = InstantiateUIPrefab<Sign>(ui => ui.SignType == Sign.Type.Equals);
+            GameObject resultVector = InstantiateUIPrefab<NoteResultUI>();
 
             var uiContainer = new UIComponentsContainer(multiplication, matrix, equals, resultVector);
-            INoteActionResult noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, NoteActionFunctions.MatrixMultiply, uiContainer);
-
+            INoteActionResult noteActionResult;
+            switch (desiredType)
+            {
+                case MatrixMultiplicationUI.Type.None:
+                    noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, NoteActionFunctions.MatrixMultiply, uiContainer);
+                    break;
+                case MatrixMultiplicationUI.Type.Rotation:
+                    noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, NoteActionFunctions.RotationMatrixMultiply, uiContainer);
+                    break;
+                default:
+                    noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, NoteActionFunctions.MatrixMultiply, uiContainer);
+                    break;
+            }
             var bundle = new ControllerUIBundle<INoteActionResult>(noteActionResult, uiContainer);
             track.Add(bundle);
             return bundle;
         }
-        
     }
 }

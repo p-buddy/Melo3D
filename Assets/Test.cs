@@ -10,7 +10,7 @@ public class Test : MonoBehaviour
     void Start()
     {
         ControllerUIBundle<ITrack> track = NoteElementFactory.AddTrack(transform);
-        NoteElementFactory.AddMatrixMultiplication(track.Controller);
+        NoteElementFactory.AddMatrixMultiplication(track.Controller, MatrixMultiplicationUI.Type.Rotation);
     }
 
     // Update is called once per frame

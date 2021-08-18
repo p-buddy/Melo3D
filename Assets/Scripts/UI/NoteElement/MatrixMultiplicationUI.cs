@@ -7,6 +7,15 @@ using UnityEngine;
 
 public class MatrixMultiplicationUI : MonoBehaviour, INoteActionUI<float2x2>
 {
+    public enum Type
+    {
+        None,
+        Rotation,
+        Scale,
+    }
+    [field: SerializeField]
+    public Type MatrixType { get; set; }
+    
     private const int RowCount = 2;
     [SerializeField]
     private TMP_InputField[] column0InputFields = new TMP_InputField[RowCount];
