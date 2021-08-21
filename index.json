@@ -1,0 +1,562 @@
+{
+  "api/DataUIInterface.html": {
+    "href": "api/DataUIInterface.html",
+    "title": "Namespace DataUIInterface | Example Unity documentation",
+    "keywords": "Namespace DataUIInterface Interfaces IDeletableUI INoteActionUI<TData> INoteResultUI INoteStartUI Interface for UI Controllers IRetrievableUI<TData> ISettableFromCodeUI<TData> IUserEditableUI<TData> Delegates OnUIDelete OnUIEdit<TData>"
+  },
+  "api/DataUIInterface.IDeletableUI.html": {
+    "href": "api/DataUIInterface.IDeletableUI.html",
+    "title": "Interface IDeletableUI | Example Unity documentation",
+    "keywords": "Interface IDeletableUI Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface IDeletableUI Methods Delete() Declaration void Delete() Events OnUIDelete Declaration event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete"
+  },
+  "api/DataUIInterface.INoteActionUI-1.html": {
+    "href": "api/DataUIInterface.INoteActionUI-1.html",
+    "title": "Interface INoteActionUI<TData> | Example Unity documentation",
+    "keywords": "Interface INoteActionUI<TData> Inherited Members IDeletableUI.OnUIDelete IDeletableUI.Delete() IUserEditableUI<TData>.OnUIEdit ISettableFromCodeUI<TData>.Set(Nullable<TData>) IRetrievableUI<TData>.GetData() IRetrievableUI<TData>.GetDuration() Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface INoteActionUI<TData> : IUIComponent, IDeletableUI, IUserEditableUI<TData>, ISettableFromCodeUI<TData>, IRetrievableUI<TData> where TData : struct Type Parameters Name Description TData"
+  },
+  "api/DataUIInterface.INoteResultUI.html": {
+    "href": "api/DataUIInterface.INoteResultUI.html",
+    "title": "Interface INoteResultUI | Example Unity documentation",
+    "keywords": "Interface INoteResultUI Inherited Members ISettableFromCodeUI<float2>.Set(Nullable<float2>) IRetrievableUI<float2>.GetData() IRetrievableUI<float2>.GetDuration() Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface INoteResultUI : IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2>"
+  },
+  "api/DataUIInterface.INoteStartUI.html": {
+    "href": "api/DataUIInterface.INoteStartUI.html",
+    "title": "Interface INoteStartUI | Example Unity documentation",
+    "keywords": "Interface INoteStartUI Interface for UI Controllers Inherited Members ISettableFromCodeUI<float2>.Set(Nullable<float2>) IRetrievableUI<float2>.GetData() IRetrievableUI<float2>.GetDuration() IUserEditableUI<float2>.OnUIEdit Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface INoteStartUI : IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2>, IUserEditableUI<float2>"
+  },
+  "api/DataUIInterface.IRetrievableUI-1.html": {
+    "href": "api/DataUIInterface.IRetrievableUI-1.html",
+    "title": "Interface IRetrievableUI<TData> | Example Unity documentation",
+    "keywords": "Interface IRetrievableUI<TData> Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface IRetrievableUI<TData> where TData : struct Type Parameters Name Description TData Methods GetData() Declaration TData? GetData() Returns Type Description Nullable <TData> GetDuration() Declaration float? GetDuration() Returns Type Description Nullable < Single >"
+  },
+  "api/DataUIInterface.ISettableFromCodeUI-1.html": {
+    "href": "api/DataUIInterface.ISettableFromCodeUI-1.html",
+    "title": "Interface ISettableFromCodeUI<TData> | Example Unity documentation",
+    "keywords": "Interface ISettableFromCodeUI<TData> Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface ISettableFromCodeUI<TData> where TData : struct Type Parameters Name Description TData Methods Set(Nullable<TData>) Declaration void Set(TData? value) Parameters Type Name Description Nullable <TData> value"
+  },
+  "api/DataUIInterface.IUserEditableUI-1.html": {
+    "href": "api/DataUIInterface.IUserEditableUI-1.html",
+    "title": "Interface IUserEditableUI<TData> | Example Unity documentation",
+    "keywords": "Interface IUserEditableUI<TData> Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface IUserEditableUI<TData> where TData : struct Type Parameters Name Description TData Events OnUIEdit Declaration event OnUIEdit<TData> OnUIEdit Event Type Type Description OnUIEdit <TData>"
+  },
+  "api/DataUIInterface.OnUIDelete.html": {
+    "href": "api/DataUIInterface.OnUIDelete.html",
+    "title": "Delegate OnUIDelete | Example Unity documentation",
+    "keywords": "Delegate OnUIDelete Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public delegate void OnUIDelete();"
+  },
+  "api/DataUIInterface.OnUIEdit-1.html": {
+    "href": "api/DataUIInterface.OnUIEdit-1.html",
+    "title": "Delegate OnUIEdit<TData> | Example Unity documentation",
+    "keywords": "Delegate OnUIEdit<TData> Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public delegate void OnUIEdit<TData>(TData? previous, TData? current) where TData : struct; Parameters Type Name Description Nullable <TData> previous Nullable <TData> current Type Parameters Name Description TData"
+  },
+  "api/DefaultNamespace.ControllerUIBundle-1.html": {
+    "href": "api/DefaultNamespace.ControllerUIBundle-1.html",
+    "title": "Struct ControllerUIBundle<TController> | Example Unity documentation",
+    "keywords": "Struct ControllerUIBundle<TController> Inherited Members ValueType.Equals(Object) ValueType.GetHashCode() ValueType.ToString() Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetType() Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public readonly struct ControllerUIBundle<TController> Type Parameters Name Description TController Constructors ControllerUIBundle(TController, UIComponentsContainer) Declaration public ControllerUIBundle(TController controller, UIComponentsContainer uiContainer) Parameters Type Name Description TController controller UIComponentsContainer uiContainer Properties Controller Declaration public readonly TController Controller { get; } Property Value Type Description TController UIContainer Declaration public readonly UIComponentsContainer UIContainer { get; } Property Value Type Description UIComponentsContainer"
+  },
+  "api/DefaultNamespace.EditModeRefresher.html": {
+    "href": "api/DefaultNamespace.EditModeRefresher.html",
+    "title": "Class EditModeRefresher | Example Unity documentation",
+    "keywords": "Class EditModeRefresher Inheritance Object Refresher EditModeRefresher Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public class EditModeRefresher : Refresher Constructors EditModeRefresher(Single) Declaration public EditModeRefresher(float refreshFrequencyHz = 10F) Parameters Type Name Description Single refreshFrequencyHz Methods IsTimeToRefresh() Declaration public override bool IsTimeToRefresh() Returns Type Description Boolean Overrides Refresher.IsTimeToRefresh()"
+  },
+  "api/DefaultNamespace.html": {
+    "href": "api/DefaultNamespace.html",
+    "title": "Namespace DefaultNamespace | Example Unity documentation",
+    "keywords": "Namespace DefaultNamespace Classes EditModeRefresher NoteElementFactory Notes Player Refresher SingletonBehaviour<T> UndoRedoStack Structs ControllerUIBundle<TController> UndoRedoStack.Item"
+  },
+  "api/DefaultNamespace.NoteElementFactory.html": {
+    "href": "api/DefaultNamespace.NoteElementFactory.html",
+    "title": "Class NoteElementFactory | Example Unity documentation",
+    "keywords": "Class NoteElementFactory Inheritance Object NoteElementFactory Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public static class NoteElementFactory Fields UIPrefabsByClassType Declaration public static readonly Dictionary<Type, List<GameObject>> UIPrefabsByClassType Field Value Type Description Dictionary < Type , List < GameObject >> Methods AddMatrixMultiplication(ITrack, MatrixMultiplicationUI.Type) Declaration public static ControllerUIBundle<INoteActionResult> AddMatrixMultiplication(ITrack track, MatrixMultiplicationUI.Type desiredType) Parameters Type Name Description ITrack track MatrixMultiplicationUI.Type desiredType Returns Type Description ControllerUIBundle < INoteActionResult > AddTrack(Transform) Declaration public static ControllerUIBundle<ITrack> AddTrack(Transform parent) Parameters Type Name Description Transform parent Returns Type Description ControllerUIBundle < ITrack >"
+  },
+  "api/DefaultNamespace.Notes.html": {
+    "href": "api/DefaultNamespace.Notes.html",
+    "title": "Class Notes | Example Unity documentation",
+    "keywords": "Class Notes Inheritance Object Notes Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public static class Notes Fields Frequencies Declaration public static readonly float[] Frequencies Field Value Type Description Single []"
+  },
+  "api/DefaultNamespace.Player.html": {
+    "href": "api/DefaultNamespace.Player.html",
+    "title": "Class Player | Example Unity documentation",
+    "keywords": "Class Player Inheritance Object Player Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public class Player : MonoBehaviour Methods Play(Int32, Single) Declaration public static void Play(int octave, float angleDeg) Parameters Type Name Description Int32 octave Single angleDeg SetFrequency(Double) Declaration public void SetFrequency(double freq) Parameters Type Name Description Double freq"
+  },
+  "api/DefaultNamespace.Refresher.html": {
+    "href": "api/DefaultNamespace.Refresher.html",
+    "title": "Class Refresher | Example Unity documentation",
+    "keywords": "Class Refresher Inheritance Object Refresher EditModeRefresher Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public class Refresher Constructors Refresher(Single) Declaration public Refresher(float refreshFrequencyHz = 10F) Parameters Type Name Description Single refreshFrequencyHz Methods IsTimeToRefresh() Declaration public virtual bool IsTimeToRefresh() Returns Type Description Boolean"
+  },
+  "api/DefaultNamespace.SingletonBehaviour-1.html": {
+    "href": "api/DefaultNamespace.SingletonBehaviour-1.html",
+    "title": "Class SingletonBehaviour<T> | Example Unity documentation",
+    "keywords": "Class SingletonBehaviour<T> Inheritance Object SingletonBehaviour<T> Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public class SingletonBehaviour<T> : MonoBehaviour where T : SingletonBehaviour<T> Type Parameters Name Description T Properties Instance Declaration public static T Instance { get; } Property Value Type Description T"
+  },
+  "api/DefaultNamespace.UndoRedoStack.html": {
+    "href": "api/DefaultNamespace.UndoRedoStack.html",
+    "title": "Class UndoRedoStack | Example Unity documentation",
+    "keywords": "Class UndoRedoStack Inheritance Object UndoRedoStack Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public static class UndoRedoStack Methods Enqueue(Action, Action) Declaration public static void Enqueue(Action undo, Action redo) Parameters Type Name Description Action undo Action redo Redo() Declaration public static void Redo() Undo() Declaration public static void Undo()"
+  },
+  "api/DefaultNamespace.UndoRedoStack.Item.html": {
+    "href": "api/DefaultNamespace.UndoRedoStack.Item.html",
+    "title": "Struct UndoRedoStack.Item | Example Unity documentation",
+    "keywords": "Struct UndoRedoStack.Item Inherited Members ValueType.Equals(Object) ValueType.GetHashCode() ValueType.ToString() Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetType() Namespace : DefaultNamespace Assembly : cs.temp.dll.dll Syntax public readonly struct Item Constructors Item(Action, Action) Declaration public Item(Action undo, Action redo) Parameters Type Name Description Action undo Action redo Properties Redo Declaration public readonly Action Redo { get; } Property Value Type Description Action Undo Declaration public readonly Action Undo { get; } Property Value Type Description Action"
+  },
+  "api/Global.ChatController.html": {
+    "href": "api/Global.ChatController.html",
+    "title": "Class ChatController | Example Unity documentation",
+    "keywords": "Class ChatController Inheritance Object ChatController Namespace : Global Assembly : cs.temp.dll.dll Syntax public class ChatController : MonoBehaviour Fields ChatScrollbar Declaration public Scrollbar ChatScrollbar Field Value Type Description Scrollbar TMP_ChatInput Declaration public TMP_InputField TMP_ChatInput Field Value Type Description TMP_InputField TMP_ChatOutput Declaration public TMP_Text TMP_ChatOutput Field Value Type Description TMP_Text"
+  },
+  "api/Global.ColorPalette.html": {
+    "href": "api/Global.ColorPalette.html",
+    "title": "Class ColorPalette | Example Unity documentation",
+    "keywords": "Class ColorPalette Inheritance Object ColorPalette Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : Global Assembly : cs.temp.dll.dll Syntax public static class ColorPalette Fields AquaDark Declaration public static Color AquaDark Field Value Type Description Color AquaLight Declaration public static Color AquaLight Field Value Type Description Color BlueDark Declaration public static Color BlueDark Field Value Type Description Color BlueLight Declaration public static Color BlueLight Field Value Type Description Color GreenDark Declaration public static Color GreenDark Field Value Type Description Color GreenLight Declaration public static Color GreenLight Field Value Type Description Color GreyDarker Declaration public static Color GreyDarker Field Value Type Description Color GreyDarkest Declaration public static Color GreyDarkest Field Value Type Description Color GreyLighter Declaration public static Color GreyLighter Field Value Type Description Color GreyLightest Declaration public static Color GreyLightest Field Value Type Description Color OrangeDark Declaration public static Color OrangeDark Field Value Type Description Color OrangeLight Declaration public static Color OrangeLight Field Value Type Description Color PinkDark Declaration public static Color PinkDark Field Value Type Description Color PinkLight Declaration public static Color PinkLight Field Value Type Description Color PurpleDark Declaration public static Color PurpleDark Field Value Type Description Color PurpleLight Declaration public static Color PurpleLight Field Value Type Description Color RedDark Declaration public static Color RedDark Field Value Type Description Color RedLight Declaration public static Color RedLight Field Value Type Description Color YellowDark Declaration public static Color YellowDark Field Value Type Description Color YellowLight Declaration public static Color YellowLight Field Value Type Description Color Methods TryGet(String) Declaration public static Color TryGet(string hexString) Parameters Type Name Description String hexString Returns Type Description Color"
+  },
+  "api/Global.Drawer.html": {
+    "href": "api/Global.Drawer.html",
+    "title": "Class Drawer | Example Unity documentation",
+    "keywords": "Class Drawer Inheritance Object Drawer Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Drawer : ImmediateModeShapeDrawer Methods DrawShapes(Camera) Declaration public override void DrawShapes(Camera cam) Parameters Type Name Description Camera cam DrawVector(Nullable<float2>) Declaration public static void DrawVector(float2? vector) Parameters Type Name Description Nullable < float2 > vector"
+  },
+  "api/Global.DropdownSample.html": {
+    "href": "api/Global.DropdownSample.html",
+    "title": "Class DropdownSample | Example Unity documentation",
+    "keywords": "Class DropdownSample Inheritance Object DropdownSample Namespace : Global Assembly : cs.temp.dll.dll Syntax public class DropdownSample : MonoBehaviour Methods OnButtonClick() Declaration public void OnButtonClick()"
+  },
+  "api/Global.EnvMapAnimator.html": {
+    "href": "api/Global.EnvMapAnimator.html",
+    "title": "Class EnvMapAnimator | Example Unity documentation",
+    "keywords": "Class EnvMapAnimator Inheritance Object EnvMapAnimator Namespace : Global Assembly : cs.temp.dll.dll Syntax public class EnvMapAnimator : MonoBehaviour Fields RotationSpeeds Declaration public UnityEngine.Vector3 RotationSpeeds Field Value Type Description UnityEngine.Vector3"
+  },
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace Global | Example Unity documentation",
+    "keywords": "Namespace Global Classes ChatController ColorPalette Drawer DropdownSample EnvMapAnimator IToggleableUI MatrixMultiplicationUI Test Enums MatrixMultiplicationUI.Type"
+  },
+  "api/Global.IToggleableUI.html": {
+    "href": "api/Global.IToggleableUI.html",
+    "title": "Class IToggleableUI | Example Unity documentation",
+    "keywords": "Class IToggleableUI Inheritance Object IToggleableUI Namespace : Global Assembly : cs.temp.dll.dll Syntax public class IToggleableUI : MonoBehaviour"
+  },
+  "api/Global.MatrixMultiplicationUI.html": {
+    "href": "api/Global.MatrixMultiplicationUI.html",
+    "title": "Class MatrixMultiplicationUI | Example Unity documentation",
+    "keywords": "Class MatrixMultiplicationUI Inheritance Object MatrixMultiplicationUI Implements INoteActionUI < float2x2 > Namespace : Global Assembly : cs.temp.dll.dll Syntax public class MatrixMultiplicationUI : MonoBehaviour, INoteActionUI<float2x2> Properties MatrixType Declaration public MatrixMultiplicationUI.Type MatrixType { get; set; } Property Value Type Description MatrixMultiplicationUI.Type Methods Delete() Declaration public void Delete() GetData() Declaration public float2x2? GetData() Returns Type Description Nullable < float2x2 > GetDuration() Declaration public float? GetDuration() Returns Type Description Nullable < Single > Set(Nullable<float2x2>) Declaration public void Set(float2x2? value) Parameters Type Name Description Nullable < float2x2 > value Events OnUIDelete Declaration public event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete OnUIEdit Declaration public event OnUIEdit<float2x2> OnUIEdit Event Type Type Description OnUIEdit < float2x2 > Implements INoteActionUI<>"
+  },
+  "api/Global.MatrixMultiplicationUI.Type.html": {
+    "href": "api/Global.MatrixMultiplicationUI.Type.html",
+    "title": "Enum MatrixMultiplicationUI.Type | Example Unity documentation",
+    "keywords": "Enum MatrixMultiplicationUI.Type Namespace : Global Assembly : cs.temp.dll.dll Syntax public enum Type Fields Name Description None Rotation Scale"
+  },
+  "api/Global.Test.html": {
+    "href": "api/Global.Test.html",
+    "title": "Class Test | Example Unity documentation",
+    "keywords": "Class Test Inheritance Object Test Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Test : MonoBehaviour"
+  },
+  "api/MusicObjects.ActionAdder.html": {
+    "href": "api/MusicObjects.ActionAdder.html",
+    "title": "Class ActionAdder | Example Unity documentation",
+    "keywords": "Class ActionAdder Inheritance Object ActionAdder Implements IActionAdder Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public class ActionAdder : IActionAdder Implements IActionAdder"
+  },
+  "api/MusicObjects.html": {
+    "href": "api/MusicObjects.html",
+    "title": "Namespace MusicObjects | Example Unity documentation",
+    "keywords": "Namespace MusicObjects Classes ActionAdder NoteActionFunctions NoteActionResult<TActionData> NoteStart Track Interfaces IActionAdder INoteAction<TActionData> INoteActionResult INoteStart ITrack Delegates NoteActionFunctions.NoteAction<TActionData>"
+  },
+  "api/MusicObjects.IActionAdder.html": {
+    "href": "api/MusicObjects.IActionAdder.html",
+    "title": "Interface IActionAdder | Example Unity documentation",
+    "keywords": "Interface IActionAdder Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public interface IActionAdder"
+  },
+  "api/MusicObjects.INoteAction-1.html": {
+    "href": "api/MusicObjects.INoteAction-1.html",
+    "title": "Interface INoteAction<TActionData> | Example Unity documentation",
+    "keywords": "Interface INoteAction<TActionData> Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public interface INoteAction<TActionData> Type Parameters Name Description TActionData Methods Calculate(float2, TActionData) Declaration float2 Calculate(float2 input, TActionData actionData) Parameters Type Name Description float2 input TActionData actionData Returns Type Description float2"
+  },
+  "api/MusicObjects.INoteActionResult.html": {
+    "href": "api/MusicObjects.INoteActionResult.html",
+    "title": "Interface INoteActionResult | Example Unity documentation",
+    "keywords": "Interface INoteActionResult Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public interface INoteActionResult Properties CurrentResult Declaration float2? CurrentResult { get; } Property Value Type Description Nullable < float2 > Methods RefreshResult() Declaration void RefreshResult() SetIndexWithinTrack(Int32) Declaration void SetIndexWithinTrack(int index) Parameters Type Name Description Int32 index"
+  },
+  "api/MusicObjects.INoteStart.html": {
+    "href": "api/MusicObjects.INoteStart.html",
+    "title": "Interface INoteStart | Example Unity documentation",
+    "keywords": "Interface INoteStart Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public interface INoteStart Properties Current Declaration float2? Current { get; } Property Value Type Description Nullable < float2 >"
+  },
+  "api/MusicObjects.ITrack.html": {
+    "href": "api/MusicObjects.ITrack.html",
+    "title": "Interface ITrack | Example Unity documentation",
+    "keywords": "Interface ITrack Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public interface ITrack Properties ActionsCount Declaration int ActionsCount { get; } Property Value Type Description Int32 Methods ActionDataChange<TData>(Nullable<TData>, Int32) Declaration void ActionDataChange<TData>(TData? value, int myIndex) where TData : struct Parameters Type Name Description Nullable <TData> value Int32 myIndex Type Parameters Name Description TData Add(ControllerUIBundle<INoteActionResult>) Declaration void Add(ControllerUIBundle<INoteActionResult> actionResultBundle) Parameters Type Name Description ControllerUIBundle < INoteActionResult > actionResultBundle AddAtIndex(ControllerUIBundle<INoteActionResult>, Int32) Declaration void AddAtIndex(ControllerUIBundle<INoteActionResult> actionResultBundle, int index) Parameters Type Name Description ControllerUIBundle < INoteActionResult > actionResultBundle Int32 index GetInput(Int32) Declaration float2? GetInput(int myIndex) Parameters Type Name Description Int32 myIndex Returns Type Description Nullable < float2 > GetResult() Declaration float2? GetResult() Returns Type Description Nullable < float2 > RemoveAtIndex(Int32) Declaration void RemoveAtIndex(int myIndex) Parameters Type Name Description Int32 myIndex StartingCoordinateChange(Nullable<float2>) Declaration void StartingCoordinateChange(float2? value) Parameters Type Name Description Nullable < float2 > value"
+  },
+  "api/MusicObjects.NoteActionFunctions.html": {
+    "href": "api/MusicObjects.NoteActionFunctions.html",
+    "title": "Class NoteActionFunctions | Example Unity documentation",
+    "keywords": "Class NoteActionFunctions Inheritance Object NoteActionFunctions Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public static class NoteActionFunctions Methods MatrixMultiply(float2, float2x2, Single) Declaration public static float2 MatrixMultiply(float2 a, float2x2 b, float time = 1F) Parameters Type Name Description float2 a float2x2 b Single time Returns Type Description float2 RotationMatrixMultiply(float2, float2x2, Single) Declaration public static float2 RotationMatrixMultiply(float2 a, float2x2 b, float time = 1F) Parameters Type Name Description float2 a float2x2 b Single time Returns Type Description float2"
+  },
+  "api/MusicObjects.NoteActionFunctions.NoteAction-1.html": {
+    "href": "api/MusicObjects.NoteActionFunctions.NoteAction-1.html",
+    "title": "Delegate NoteActionFunctions.NoteAction<TActionData> | Example Unity documentation",
+    "keywords": "Delegate NoteActionFunctions.NoteAction<TActionData> Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public delegate float2 NoteAction<TActionData>(float2 a, TActionData b, float time = 1F) where TActionData : struct; Parameters Type Name Description float2 a TActionData b Single time Returns Type Description float2 Type Parameters Name Description TActionData"
+  },
+  "api/MusicObjects.NoteActionResult-1.html": {
+    "href": "api/MusicObjects.NoteActionResult-1.html",
+    "title": "Class NoteActionResult<TActionData> | Example Unity documentation",
+    "keywords": "Class NoteActionResult<TActionData> Inheritance Object NoteActionResult<TActionData> Implements INoteActionResult Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public class NoteActionResult<TActionData> : INoteActionResult where TActionData : struct Type Parameters Name Description TActionData Constructors NoteActionResult(ITrack, Int32, NoteActionFunctions.NoteAction<TActionData>, in UIComponentsContainer) Declaration public NoteActionResult(ITrack track, int index, NoteActionFunctions.NoteAction<TActionData> action, in UIComponentsContainer uiContainer) Parameters Type Name Description ITrack track Int32 index NoteActionFunctions.NoteAction <TActionData> action UIComponentsContainer uiContainer Properties CurrentActionData Declaration public TActionData? CurrentActionData { get; } Property Value Type Description Nullable <TActionData> CurrentActionDuration Declaration public float? CurrentActionDuration { get; } Property Value Type Description Nullable < Single > CurrentInput Declaration public float2? CurrentInput { get; } Property Value Type Description Nullable < float2 > CurrentResult Declaration public float2? CurrentResult { get; } Property Value Type Description Nullable < float2 > CurrentResultDuration Declaration public float? CurrentResultDuration { get; } Property Value Type Description Nullable < Single > Methods RefreshResult() Declaration public void RefreshResult() SetIndexWithinTrack(Int32) Declaration public void SetIndexWithinTrack(int index) Parameters Type Name Description Int32 index Implements INoteActionResult"
+  },
+  "api/MusicObjects.NoteStart.html": {
+    "href": "api/MusicObjects.NoteStart.html",
+    "title": "Class NoteStart | Example Unity documentation",
+    "keywords": "Class NoteStart Inheritance Object NoteStart Implements INoteStart Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public class NoteStart : INoteStart Constructors NoteStart(in UIComponentsContainer, ITrack) Declaration public NoteStart(in UIComponentsContainer uiContainer, ITrack track) Parameters Type Name Description UIComponentsContainer uiContainer ITrack track Properties Current Declaration public float2? Current { get; } Property Value Type Description Nullable < float2 > Implements INoteStart"
+  },
+  "api/MusicObjects.Track.html": {
+    "href": "api/MusicObjects.Track.html",
+    "title": "Class Track | Example Unity documentation",
+    "keywords": "Class Track Inheritance Object Track Implements ITrack Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : MusicObjects Assembly : cs.temp.dll.dll Syntax public class Track : ITrack Constructors Track(in UIComponentsContainer, in UIComponentsContainer, in UIComponentsContainer) Declaration public Track(in UIComponentsContainer uiContainer, in UIComponentsContainer startingNoteContainer, in UIComponentsContainer adderContainer) Parameters Type Name Description UIComponentsContainer uiContainer UIComponentsContainer startingNoteContainer UIComponentsContainer adderContainer Properties ActionsCount Declaration public int ActionsCount { get; } Property Value Type Description Int32 Methods ActionDataChange<TData>(Nullable<TData>, Int32) Declaration public void ActionDataChange<TData>(TData? value, int myIndex) where TData : struct Parameters Type Name Description Nullable <TData> value Int32 myIndex Type Parameters Name Description TData Add(ControllerUIBundle<INoteActionResult>) Declaration public void Add(ControllerUIBundle<INoteActionResult> actionResultBundle) Parameters Type Name Description ControllerUIBundle < INoteActionResult > actionResultBundle AddAtIndex(ControllerUIBundle<INoteActionResult>, Int32) Declaration public void AddAtIndex(ControllerUIBundle<INoteActionResult> actionResultBundle, int index) Parameters Type Name Description ControllerUIBundle < INoteActionResult > actionResultBundle Int32 index GetInput(Int32) Declaration public float2? GetInput(int myIndex) Parameters Type Name Description Int32 myIndex Returns Type Description Nullable < float2 > GetResult() Declaration public float2? GetResult() Returns Type Description Nullable < float2 > RemoveAtIndex(Int32) Declaration public void RemoveAtIndex(int index) Parameters Type Name Description Int32 index StartingCoordinateChange(Nullable<float2>) Declaration public void StartingCoordinateChange(float2? value) Parameters Type Name Description Nullable < float2 > value Implements ITrack"
+  },
+  "api/TMPro.Examples.Benchmark01.html": {
+    "href": "api/TMPro.Examples.Benchmark01.html",
+    "title": "Class Benchmark01 | Example Unity documentation",
+    "keywords": "Class Benchmark01 Inheritance Object Benchmark01 Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class Benchmark01 : MonoBehaviour Fields BenchmarkType Declaration public int BenchmarkType Field Value Type Description Int32 TextMeshFont Declaration public Font TextMeshFont Field Value Type Description Font TMProFont Declaration public TMP_FontAsset TMProFont Field Value Type Description TMP_FontAsset"
+  },
+  "api/TMPro.Examples.Benchmark01_UGUI.html": {
+    "href": "api/TMPro.Examples.Benchmark01_UGUI.html",
+    "title": "Class Benchmark01_UGUI | Example Unity documentation",
+    "keywords": "Class Benchmark01_UGUI Inheritance Object Benchmark01_UGUI Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class Benchmark01_UGUI : MonoBehaviour Fields BenchmarkType Declaration public int BenchmarkType Field Value Type Description Int32 canvas Declaration public Canvas canvas Field Value Type Description Canvas TextMeshFont Declaration public Font TextMeshFont Field Value Type Description Font TMProFont Declaration public TMP_FontAsset TMProFont Field Value Type Description TMP_FontAsset"
+  },
+  "api/TMPro.Examples.Benchmark02.html": {
+    "href": "api/TMPro.Examples.Benchmark02.html",
+    "title": "Class Benchmark02 | Example Unity documentation",
+    "keywords": "Class Benchmark02 Inheritance Object Benchmark02 Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class Benchmark02 : MonoBehaviour Fields NumberOfNPC Declaration public int NumberOfNPC Field Value Type Description Int32 SpawnType Declaration public int SpawnType Field Value Type Description Int32"
+  },
+  "api/TMPro.Examples.Benchmark03.BenchmarkType.html": {
+    "href": "api/TMPro.Examples.Benchmark03.BenchmarkType.html",
+    "title": "Enum Benchmark03.BenchmarkType | Example Unity documentation",
+    "keywords": "Enum Benchmark03.BenchmarkType Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public enum BenchmarkType Fields Name Description TEXTMESH_BITMAP TMP_BITMAP_MOBILE TMP_SDF TMP_SDF__MOBILE_SSD TMP_SDF_MOBILE"
+  },
+  "api/TMPro.Examples.Benchmark03.html": {
+    "href": "api/TMPro.Examples.Benchmark03.html",
+    "title": "Class Benchmark03 | Example Unity documentation",
+    "keywords": "Class Benchmark03 Inheritance Object Benchmark03 Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class Benchmark03 : MonoBehaviour Fields Benchmark Declaration public Benchmark03.BenchmarkType Benchmark Field Value Type Description Benchmark03.BenchmarkType NumberOfSamples Declaration public int NumberOfSamples Field Value Type Description Int32 SourceFontFile Declaration public Font SourceFontFile Field Value Type Description Font"
+  },
+  "api/TMPro.Examples.Benchmark04.html": {
+    "href": "api/TMPro.Examples.Benchmark04.html",
+    "title": "Class Benchmark04 | Example Unity documentation",
+    "keywords": "Class Benchmark04 Inheritance Object Benchmark04 Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class Benchmark04 : MonoBehaviour Fields MaxPointSize Declaration public int MaxPointSize Field Value Type Description Int32 MinPointSize Declaration public int MinPointSize Field Value Type Description Int32 SpawnType Declaration public int SpawnType Field Value Type Description Int32 Steps Declaration public int Steps Field Value Type Description Int32"
+  },
+  "api/TMPro.Examples.CameraController.CameraModes.html": {
+    "href": "api/TMPro.Examples.CameraController.CameraModes.html",
+    "title": "Enum CameraController.CameraModes | Example Unity documentation",
+    "keywords": "Enum CameraController.CameraModes Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public enum CameraModes Fields Name Description Follow Free Isometric"
+  },
+  "api/TMPro.Examples.CameraController.html": {
+    "href": "api/TMPro.Examples.CameraController.html",
+    "title": "Class CameraController | Example Unity documentation",
+    "keywords": "Class CameraController Inheritance Object CameraController Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class CameraController : MonoBehaviour Fields CameraMode Declaration public CameraController.CameraModes CameraMode Field Value Type Description CameraController.CameraModes CameraTarget Declaration public Transform CameraTarget Field Value Type Description Transform ElevationAngle Declaration public float ElevationAngle Field Value Type Description Single FollowDistance Declaration public float FollowDistance Field Value Type Description Single MaxElevationAngle Declaration public float MaxElevationAngle Field Value Type Description Single MaxFollowDistance Declaration public float MaxFollowDistance Field Value Type Description Single MinElevationAngle Declaration public float MinElevationAngle Field Value Type Description Single MinFollowDistance Declaration public float MinFollowDistance Field Value Type Description Single MovementSmoothing Declaration public bool MovementSmoothing Field Value Type Description Boolean MovementSmoothingValue Declaration public float MovementSmoothingValue Field Value Type Description Single MoveSensitivity Declaration public float MoveSensitivity Field Value Type Description Single OrbitalAngle Declaration public float OrbitalAngle Field Value Type Description Single RotationSmoothing Declaration public bool RotationSmoothing Field Value Type Description Boolean RotationSmoothingValue Declaration public float RotationSmoothingValue Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.html": {
+    "href": "api/TMPro.Examples.html",
+    "title": "Namespace TMPro.Examples | Example Unity documentation",
+    "keywords": "Namespace TMPro.Examples Classes Benchmark01 Benchmark01_UGUI Benchmark02 Benchmark03 Benchmark04 CameraController ObjectSpin ShaderPropAnimator SimpleScript SkewTextExample TeleType TextConsoleSimulator TextMeshProFloatingText TextMeshSpawner TMP_ExampleScript_01 TMP_FrameRateCounter TMP_TextEventCheck TMP_TextInfoDebugTool TMP_TextSelector_A TMP_TextSelector_B TMP_UiFrameRateCounter TMPro_InstructionOverlay VertexColorCycler VertexJitter VertexShakeA VertexShakeB VertexZoom WarpTextExample Enums Benchmark03.BenchmarkType CameraController.CameraModes ObjectSpin.MotionType TMP_ExampleScript_01.objectType TMP_FrameRateCounter.FpsCounterAnchorPositions TMP_UiFrameRateCounter.FpsCounterAnchorPositions TMPro_InstructionOverlay.FpsCounterAnchorPositions"
+  },
+  "api/TMPro.Examples.ObjectSpin.html": {
+    "href": "api/TMPro.Examples.ObjectSpin.html",
+    "title": "Class ObjectSpin | Example Unity documentation",
+    "keywords": "Class ObjectSpin Inheritance Object ObjectSpin Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class ObjectSpin : MonoBehaviour Fields Motion Declaration public ObjectSpin.MotionType Motion Field Value Type Description ObjectSpin.MotionType RotationRange Declaration public int RotationRange Field Value Type Description Int32 SpinSpeed Declaration public float SpinSpeed Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.ObjectSpin.MotionType.html": {
+    "href": "api/TMPro.Examples.ObjectSpin.MotionType.html",
+    "title": "Enum ObjectSpin.MotionType | Example Unity documentation",
+    "keywords": "Enum ObjectSpin.MotionType Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public enum MotionType Fields Name Description BackAndForth Rotation Translation"
+  },
+  "api/TMPro.Examples.ShaderPropAnimator.html": {
+    "href": "api/TMPro.Examples.ShaderPropAnimator.html",
+    "title": "Class ShaderPropAnimator | Example Unity documentation",
+    "keywords": "Class ShaderPropAnimator Inheritance Object ShaderPropAnimator Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class ShaderPropAnimator : MonoBehaviour Fields GlowCurve Declaration public AnimationCurve GlowCurve Field Value Type Description AnimationCurve m_frame Declaration public float m_frame Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.SimpleScript.html": {
+    "href": "api/TMPro.Examples.SimpleScript.html",
+    "title": "Class SimpleScript | Example Unity documentation",
+    "keywords": "Class SimpleScript Inheritance Object SimpleScript Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class SimpleScript : MonoBehaviour"
+  },
+  "api/TMPro.Examples.SkewTextExample.html": {
+    "href": "api/TMPro.Examples.SkewTextExample.html",
+    "title": "Class SkewTextExample | Example Unity documentation",
+    "keywords": "Class SkewTextExample Inheritance Object SkewTextExample Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class SkewTextExample : MonoBehaviour Fields CurveScale Declaration public float CurveScale Field Value Type Description Single ShearAmount Declaration public float ShearAmount Field Value Type Description Single VertexCurve Declaration public AnimationCurve VertexCurve Field Value Type Description AnimationCurve"
+  },
+  "api/TMPro.Examples.TeleType.html": {
+    "href": "api/TMPro.Examples.TeleType.html",
+    "title": "Class TeleType | Example Unity documentation",
+    "keywords": "Class TeleType Inheritance Object TeleType Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TeleType : MonoBehaviour"
+  },
+  "api/TMPro.Examples.TextConsoleSimulator.html": {
+    "href": "api/TMPro.Examples.TextConsoleSimulator.html",
+    "title": "Class TextConsoleSimulator | Example Unity documentation",
+    "keywords": "Class TextConsoleSimulator Inheritance Object TextConsoleSimulator Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TextConsoleSimulator : MonoBehaviour"
+  },
+  "api/TMPro.Examples.TextMeshProFloatingText.html": {
+    "href": "api/TMPro.Examples.TextMeshProFloatingText.html",
+    "title": "Class TextMeshProFloatingText | Example Unity documentation",
+    "keywords": "Class TextMeshProFloatingText Inheritance Object TextMeshProFloatingText Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TextMeshProFloatingText : MonoBehaviour Fields SpawnType Declaration public int SpawnType Field Value Type Description Int32 TheFont Declaration public Font TheFont Field Value Type Description Font Methods DisplayTextMeshFloatingText() Declaration public IEnumerator DisplayTextMeshFloatingText() Returns Type Description IEnumerator DisplayTextMeshProFloatingText() Declaration public IEnumerator DisplayTextMeshProFloatingText() Returns Type Description IEnumerator"
+  },
+  "api/TMPro.Examples.TextMeshSpawner.html": {
+    "href": "api/TMPro.Examples.TextMeshSpawner.html",
+    "title": "Class TextMeshSpawner | Example Unity documentation",
+    "keywords": "Class TextMeshSpawner Inheritance Object TextMeshSpawner Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TextMeshSpawner : MonoBehaviour Fields NumberOfNPC Declaration public int NumberOfNPC Field Value Type Description Int32 SpawnType Declaration public int SpawnType Field Value Type Description Int32 TheFont Declaration public Font TheFont Field Value Type Description Font"
+  },
+  "api/TMPro.Examples.TMP_ExampleScript_01.html": {
+    "href": "api/TMPro.Examples.TMP_ExampleScript_01.html",
+    "title": "Class TMP_ExampleScript_01 | Example Unity documentation",
+    "keywords": "Class TMP_ExampleScript_01 Inheritance Object TMP_ExampleScript_01 Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TMP_ExampleScript_01 : MonoBehaviour Fields isStatic Declaration public bool isStatic Field Value Type Description Boolean ObjectType Declaration public TMP_ExampleScript_01.objectType ObjectType Field Value Type Description TMP_ExampleScript_01.objectType"
+  },
+  "api/TMPro.Examples.TMP_ExampleScript_01.objectType.html": {
+    "href": "api/TMPro.Examples.TMP_ExampleScript_01.objectType.html",
+    "title": "Enum TMP_ExampleScript_01.objectType | Example Unity documentation",
+    "keywords": "Enum TMP_ExampleScript_01.objectType Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public enum objectType Fields Name Description TextMeshPro TextMeshProUGUI"
+  },
+  "api/TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.html": {
+    "href": "api/TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.html",
+    "title": "Enum TMP_FrameRateCounter.FpsCounterAnchorPositions | Example Unity documentation",
+    "keywords": "Enum TMP_FrameRateCounter.FpsCounterAnchorPositions Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public enum FpsCounterAnchorPositions Fields Name Description BottomLeft BottomRight TopLeft TopRight"
+  },
+  "api/TMPro.Examples.TMP_FrameRateCounter.html": {
+    "href": "api/TMPro.Examples.TMP_FrameRateCounter.html",
+    "title": "Class TMP_FrameRateCounter | Example Unity documentation",
+    "keywords": "Class TMP_FrameRateCounter Inheritance Object TMP_FrameRateCounter Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TMP_FrameRateCounter : MonoBehaviour Fields AnchorPosition Declaration public TMP_FrameRateCounter.FpsCounterAnchorPositions AnchorPosition Field Value Type Description TMP_FrameRateCounter.FpsCounterAnchorPositions UpdateInterval Declaration public float UpdateInterval Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.TMP_TextEventCheck.html": {
+    "href": "api/TMPro.Examples.TMP_TextEventCheck.html",
+    "title": "Class TMP_TextEventCheck | Example Unity documentation",
+    "keywords": "Class TMP_TextEventCheck Inheritance Object TMP_TextEventCheck Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TMP_TextEventCheck : MonoBehaviour Fields TextEventHandler Declaration public TMP_TextEventHandler TextEventHandler Field Value Type Description TMP_TextEventHandler"
+  },
+  "api/TMPro.Examples.TMP_TextInfoDebugTool.html": {
+    "href": "api/TMPro.Examples.TMP_TextInfoDebugTool.html",
+    "title": "Class TMP_TextInfoDebugTool | Example Unity documentation",
+    "keywords": "Class TMP_TextInfoDebugTool Inheritance Object TMP_TextInfoDebugTool Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TMP_TextInfoDebugTool : MonoBehaviour"
+  },
+  "api/TMPro.Examples.TMP_TextSelector_A.html": {
+    "href": "api/TMPro.Examples.TMP_TextSelector_A.html",
+    "title": "Class TMP_TextSelector_A | Example Unity documentation",
+    "keywords": "Class TMP_TextSelector_A Inheritance Object TMP_TextSelector_A Implements IPointerEnterHandler IPointerExitHandler Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TMP_TextSelector_A : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler Methods OnPointerEnter(PointerEventData) Declaration public void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Declaration public void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerEnterHandler IPointerExitHandler"
+  },
+  "api/TMPro.Examples.TMP_TextSelector_B.html": {
+    "href": "api/TMPro.Examples.TMP_TextSelector_B.html",
+    "title": "Class TMP_TextSelector_B | Example Unity documentation",
+    "keywords": "Class TMP_TextSelector_B Inheritance Object TMP_TextSelector_B Implements IPointerEnterHandler IPointerExitHandler IPointerClickHandler IPointerUpHandler Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TMP_TextSelector_B : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerUpHandler Fields TextPopup_Prefab_01 Declaration public RectTransform TextPopup_Prefab_01 Field Value Type Description RectTransform Methods OnPointerClick(PointerEventData) Declaration public void OnPointerClick(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerEnter(PointerEventData) Declaration public void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Declaration public void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerUp(PointerEventData) Declaration public void OnPointerUp(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerEnterHandler IPointerExitHandler IPointerClickHandler IPointerUpHandler"
+  },
+  "api/TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions.html": {
+    "href": "api/TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions.html",
+    "title": "Enum TMP_UiFrameRateCounter.FpsCounterAnchorPositions | Example Unity documentation",
+    "keywords": "Enum TMP_UiFrameRateCounter.FpsCounterAnchorPositions Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public enum FpsCounterAnchorPositions Fields Name Description BottomLeft BottomRight TopLeft TopRight"
+  },
+  "api/TMPro.Examples.TMP_UiFrameRateCounter.html": {
+    "href": "api/TMPro.Examples.TMP_UiFrameRateCounter.html",
+    "title": "Class TMP_UiFrameRateCounter | Example Unity documentation",
+    "keywords": "Class TMP_UiFrameRateCounter Inheritance Object TMP_UiFrameRateCounter Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TMP_UiFrameRateCounter : MonoBehaviour Fields AnchorPosition Declaration public TMP_UiFrameRateCounter.FpsCounterAnchorPositions AnchorPosition Field Value Type Description TMP_UiFrameRateCounter.FpsCounterAnchorPositions UpdateInterval Declaration public float UpdateInterval Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.html": {
+    "href": "api/TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.html",
+    "title": "Enum TMPro_InstructionOverlay.FpsCounterAnchorPositions | Example Unity documentation",
+    "keywords": "Enum TMPro_InstructionOverlay.FpsCounterAnchorPositions Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public enum FpsCounterAnchorPositions Fields Name Description BottomLeft BottomRight TopLeft TopRight"
+  },
+  "api/TMPro.Examples.TMPro_InstructionOverlay.html": {
+    "href": "api/TMPro.Examples.TMPro_InstructionOverlay.html",
+    "title": "Class TMPro_InstructionOverlay | Example Unity documentation",
+    "keywords": "Class TMPro_InstructionOverlay Inheritance Object TMPro_InstructionOverlay Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class TMPro_InstructionOverlay : MonoBehaviour Fields AnchorPosition Declaration public TMPro_InstructionOverlay.FpsCounterAnchorPositions AnchorPosition Field Value Type Description TMPro_InstructionOverlay.FpsCounterAnchorPositions"
+  },
+  "api/TMPro.Examples.VertexColorCycler.html": {
+    "href": "api/TMPro.Examples.VertexColorCycler.html",
+    "title": "Class VertexColorCycler | Example Unity documentation",
+    "keywords": "Class VertexColorCycler Inheritance Object VertexColorCycler Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class VertexColorCycler : MonoBehaviour"
+  },
+  "api/TMPro.Examples.VertexJitter.html": {
+    "href": "api/TMPro.Examples.VertexJitter.html",
+    "title": "Class VertexJitter | Example Unity documentation",
+    "keywords": "Class VertexJitter Inheritance Object VertexJitter Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class VertexJitter : MonoBehaviour Fields AngleMultiplier Declaration public float AngleMultiplier Field Value Type Description Single CurveScale Declaration public float CurveScale Field Value Type Description Single SpeedMultiplier Declaration public float SpeedMultiplier Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.VertexShakeA.html": {
+    "href": "api/TMPro.Examples.VertexShakeA.html",
+    "title": "Class VertexShakeA | Example Unity documentation",
+    "keywords": "Class VertexShakeA Inheritance Object VertexShakeA Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class VertexShakeA : MonoBehaviour Fields AngleMultiplier Declaration public float AngleMultiplier Field Value Type Description Single RotationMultiplier Declaration public float RotationMultiplier Field Value Type Description Single ScaleMultiplier Declaration public float ScaleMultiplier Field Value Type Description Single SpeedMultiplier Declaration public float SpeedMultiplier Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.VertexShakeB.html": {
+    "href": "api/TMPro.Examples.VertexShakeB.html",
+    "title": "Class VertexShakeB | Example Unity documentation",
+    "keywords": "Class VertexShakeB Inheritance Object VertexShakeB Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class VertexShakeB : MonoBehaviour Fields AngleMultiplier Declaration public float AngleMultiplier Field Value Type Description Single CurveScale Declaration public float CurveScale Field Value Type Description Single SpeedMultiplier Declaration public float SpeedMultiplier Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.VertexZoom.html": {
+    "href": "api/TMPro.Examples.VertexZoom.html",
+    "title": "Class VertexZoom | Example Unity documentation",
+    "keywords": "Class VertexZoom Inheritance Object VertexZoom Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class VertexZoom : MonoBehaviour Fields AngleMultiplier Declaration public float AngleMultiplier Field Value Type Description Single CurveScale Declaration public float CurveScale Field Value Type Description Single SpeedMultiplier Declaration public float SpeedMultiplier Field Value Type Description Single"
+  },
+  "api/TMPro.Examples.WarpTextExample.html": {
+    "href": "api/TMPro.Examples.WarpTextExample.html",
+    "title": "Class WarpTextExample | Example Unity documentation",
+    "keywords": "Class WarpTextExample Inheritance Object WarpTextExample Namespace : TMPro.Examples Assembly : cs.temp.dll.dll Syntax public class WarpTextExample : MonoBehaviour Fields AngleMultiplier Declaration public float AngleMultiplier Field Value Type Description Single CurveScale Declaration public float CurveScale Field Value Type Description Single SpeedMultiplier Declaration public float SpeedMultiplier Field Value Type Description Single VertexCurve Declaration public AnimationCurve VertexCurve Field Value Type Description AnimationCurve"
+  },
+  "api/TMPro.html": {
+    "href": "api/TMPro.html",
+    "title": "Namespace TMPro | Example Unity documentation",
+    "keywords": "Namespace TMPro Classes TMP_DigitValidator EXample of a Custom Character Input Validator to only allow digits from 0 to 9. TMP_PhoneNumberValidator Example of a Custom Character Input Validator to only allow phone number in the (800) 555-1212 format. TMP_TextEventHandler TMP_TextEventHandler.CharacterSelectionEvent TMP_TextEventHandler.LineSelectionEvent TMP_TextEventHandler.LinkSelectionEvent TMP_TextEventHandler.SpriteSelectionEvent TMP_TextEventHandler.WordSelectionEvent"
+  },
+  "api/TMPro.TMP_DigitValidator.html": {
+    "href": "api/TMPro.TMP_DigitValidator.html",
+    "title": "Class TMP_DigitValidator | Example Unity documentation",
+    "keywords": "Class TMP_DigitValidator EXample of a Custom Character Input Validator to only allow digits from 0 to 9. Inheritance Object TMP_DigitValidator Namespace : TMPro Assembly : cs.temp.dll.dll Syntax [Serializable] public class TMP_DigitValidator : TMP_InputValidator Methods Validate(ref String, ref Int32, Char) Declaration public override char Validate(ref string text, ref int pos, char ch) Parameters Type Name Description String text Int32 pos Char ch Returns Type Description Char"
+  },
+  "api/TMPro.TMP_PhoneNumberValidator.html": {
+    "href": "api/TMPro.TMP_PhoneNumberValidator.html",
+    "title": "Class TMP_PhoneNumberValidator | Example Unity documentation",
+    "keywords": "Class TMP_PhoneNumberValidator Example of a Custom Character Input Validator to only allow phone number in the (800) 555-1212 format. Inheritance Object TMP_PhoneNumberValidator Namespace : TMPro Assembly : cs.temp.dll.dll Syntax [Serializable] public class TMP_PhoneNumberValidator : TMP_InputValidator Methods Validate(ref String, ref Int32, Char) Declaration public override char Validate(ref string text, ref int pos, char ch) Parameters Type Name Description String text Int32 pos Char ch Returns Type Description Char"
+  },
+  "api/TMPro.TMP_TextEventHandler.CharacterSelectionEvent.html": {
+    "href": "api/TMPro.TMP_TextEventHandler.CharacterSelectionEvent.html",
+    "title": "Class TMP_TextEventHandler.CharacterSelectionEvent | Example Unity documentation",
+    "keywords": "Class TMP_TextEventHandler.CharacterSelectionEvent Inheritance Object TMP_TextEventHandler.CharacterSelectionEvent Namespace : TMPro Assembly : cs.temp.dll.dll Syntax [Serializable] public class CharacterSelectionEvent : UnityEvent<char, int>"
+  },
+  "api/TMPro.TMP_TextEventHandler.html": {
+    "href": "api/TMPro.TMP_TextEventHandler.html",
+    "title": "Class TMP_TextEventHandler | Example Unity documentation",
+    "keywords": "Class TMP_TextEventHandler Inheritance Object TMP_TextEventHandler Implements IPointerEnterHandler IPointerExitHandler Namespace : TMPro Assembly : cs.temp.dll.dll Syntax public class TMP_TextEventHandler : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler Properties onCharacterSelection Event delegate triggered when pointer is over a character. Declaration public TMP_TextEventHandler.CharacterSelectionEvent onCharacterSelection { get; set; } Property Value Type Description TMP_TextEventHandler.CharacterSelectionEvent onLineSelection Event delegate triggered when pointer is over a line. Declaration public TMP_TextEventHandler.LineSelectionEvent onLineSelection { get; set; } Property Value Type Description TMP_TextEventHandler.LineSelectionEvent onLinkSelection Event delegate triggered when pointer is over a link. Declaration public TMP_TextEventHandler.LinkSelectionEvent onLinkSelection { get; set; } Property Value Type Description TMP_TextEventHandler.LinkSelectionEvent onSpriteSelection Event delegate triggered when pointer is over a sprite. Declaration public TMP_TextEventHandler.SpriteSelectionEvent onSpriteSelection { get; set; } Property Value Type Description TMP_TextEventHandler.SpriteSelectionEvent onWordSelection Event delegate triggered when pointer is over a word. Declaration public TMP_TextEventHandler.WordSelectionEvent onWordSelection { get; set; } Property Value Type Description TMP_TextEventHandler.WordSelectionEvent Methods OnPointerEnter(PointerEventData) Declaration public void OnPointerEnter(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData OnPointerExit(PointerEventData) Declaration public void OnPointerExit(PointerEventData eventData) Parameters Type Name Description PointerEventData eventData Implements IPointerEnterHandler IPointerExitHandler"
+  },
+  "api/TMPro.TMP_TextEventHandler.LineSelectionEvent.html": {
+    "href": "api/TMPro.TMP_TextEventHandler.LineSelectionEvent.html",
+    "title": "Class TMP_TextEventHandler.LineSelectionEvent | Example Unity documentation",
+    "keywords": "Class TMP_TextEventHandler.LineSelectionEvent Inheritance Object TMP_TextEventHandler.LineSelectionEvent Namespace : TMPro Assembly : cs.temp.dll.dll Syntax [Serializable] public class LineSelectionEvent : UnityEvent<string, int, int>"
+  },
+  "api/TMPro.TMP_TextEventHandler.LinkSelectionEvent.html": {
+    "href": "api/TMPro.TMP_TextEventHandler.LinkSelectionEvent.html",
+    "title": "Class TMP_TextEventHandler.LinkSelectionEvent | Example Unity documentation",
+    "keywords": "Class TMP_TextEventHandler.LinkSelectionEvent Inheritance Object TMP_TextEventHandler.LinkSelectionEvent Namespace : TMPro Assembly : cs.temp.dll.dll Syntax [Serializable] public class LinkSelectionEvent : UnityEvent<string, string, int>"
+  },
+  "api/TMPro.TMP_TextEventHandler.SpriteSelectionEvent.html": {
+    "href": "api/TMPro.TMP_TextEventHandler.SpriteSelectionEvent.html",
+    "title": "Class TMP_TextEventHandler.SpriteSelectionEvent | Example Unity documentation",
+    "keywords": "Class TMP_TextEventHandler.SpriteSelectionEvent Inheritance Object TMP_TextEventHandler.SpriteSelectionEvent Namespace : TMPro Assembly : cs.temp.dll.dll Syntax [Serializable] public class SpriteSelectionEvent : UnityEvent<char, int>"
+  },
+  "api/TMPro.TMP_TextEventHandler.WordSelectionEvent.html": {
+    "href": "api/TMPro.TMP_TextEventHandler.WordSelectionEvent.html",
+    "title": "Class TMP_TextEventHandler.WordSelectionEvent | Example Unity documentation",
+    "keywords": "Class TMP_TextEventHandler.WordSelectionEvent Inheritance Object TMP_TextEventHandler.WordSelectionEvent Namespace : TMPro Assembly : cs.temp.dll.dll Syntax [Serializable] public class WordSelectionEvent : UnityEvent<string, int, int>"
+  },
+  "api/UI.AddButton.html": {
+    "href": "api/UI.AddButton.html",
+    "title": "Class AddButton | Example Unity documentation",
+    "keywords": "Class AddButton Inheritance Object AddButton Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class AddButton : MonoBehaviour, IUIComponent Implements IUIComponent"
+  },
+  "api/UI.ControlDimension.html": {
+    "href": "api/UI.ControlDimension.html",
+    "title": "Enum ControlDimension | Example Unity documentation",
+    "keywords": "Enum ControlDimension Namespace : UI Assembly : cs.temp.dll.dll Syntax public enum ControlDimension Fields Name Description Both Height None Width"
+  },
+  "api/UI.DurationIcon.html": {
+    "href": "api/UI.DurationIcon.html",
+    "title": "Class DurationIcon | Example Unity documentation",
+    "keywords": "Class DurationIcon Inheritance Object DurationIcon Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class DurationIcon : MonoBehaviour, IUIComponent Implements IUIComponent"
+  },
+  "api/UI.DurationLabel.html": {
+    "href": "api/UI.DurationLabel.html",
+    "title": "Class DurationLabel | Example Unity documentation",
+    "keywords": "Class DurationLabel Inheritance Object DurationLabel Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class DurationLabel : MonoBehaviour, IUIComponent Implements IUIComponent"
+  },
+  "api/UI.DurationRow.html": {
+    "href": "api/UI.DurationRow.html",
+    "title": "Class DurationRow | Example Unity documentation",
+    "keywords": "Class DurationRow Inheritance Object DurationRow Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class DurationRow : MonoBehaviour, IUIComponent Implements IUIComponent"
+  },
+  "api/UI.HorizontalSpacer.html": {
+    "href": "api/UI.HorizontalSpacer.html",
+    "title": "Class HorizontalSpacer | Example Unity documentation",
+    "keywords": "Class HorizontalSpacer Inheritance Object HorizontalSpacer Namespace : UI Assembly : cs.temp.dll.dll Syntax public class HorizontalSpacer : MonoBehaviour"
+  },
+  "api/UI.html": {
+    "href": "api/UI.html",
+    "title": "Namespace UI | Example Unity documentation",
+    "keywords": "Namespace UI Classes AddButton DurationIcon DurationLabel DurationRow HorizontalSpacer NoteCoordinateUI NoteElement NoteElementLabel NoteElementsContainer NoteResultUI NoteStartUI ResultingVectorCoordinateUI Sign SizeBasedOnChildElements UIUtility VectorAdditionUI VerticalSpacer Structs UIComponentsContainer Interfaces IUIComponent Enums ControlDimension Sign.Type"
+  },
+  "api/UI.IUIComponent.html": {
+    "href": "api/UI.IUIComponent.html",
+    "title": "Interface IUIComponent | Example Unity documentation",
+    "keywords": "Interface IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public interface IUIComponent"
+  },
+  "api/UI.NoteCoordinateUI.html": {
+    "href": "api/UI.NoteCoordinateUI.html",
+    "title": "Class NoteCoordinateUI | Example Unity documentation",
+    "keywords": "Class NoteCoordinateUI Inheritance Object NoteCoordinateUI NoteResultUI NoteStartUI VectorAdditionUI Namespace : UI Assembly : cs.temp.dll.dll Syntax public abstract class NoteCoordinateUI : MonoBehaviour Methods Delete() Declaration public void Delete() GetData() Declaration public float2? GetData() Returns Type Description Nullable < float2 > GetDuration() Declaration public float? GetDuration() Returns Type Description Nullable < Single > Set(Nullable<float2>) Declaration public virtual void Set(float2? value) Parameters Type Name Description Nullable < float2 > value Events OnUIDelete Declaration public event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete OnUIEdit Declaration public event OnUIEdit<float2> OnUIEdit Event Type Type Description OnUIEdit < float2 >"
+  },
+  "api/UI.NoteElement.html": {
+    "href": "api/UI.NoteElement.html",
+    "title": "Class NoteElement | Example Unity documentation",
+    "keywords": "Class NoteElement Inheritance Object NoteElement Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteElement : MonoBehaviour, IUIComponent Properties CurrentSize Declaration public Vector2 CurrentSize { get; } Property Value Type Description Vector2 OriginalSize Declaration public Vector2 OriginalSize { get; } Property Value Type Description Vector2 Methods SetHeight(Single) Declaration public void SetHeight(float height) Parameters Type Name Description Single height Implements IUIComponent"
+  },
+  "api/UI.NoteElementLabel.html": {
+    "href": "api/UI.NoteElementLabel.html",
+    "title": "Class NoteElementLabel | Example Unity documentation",
+    "keywords": "Class NoteElementLabel Inheritance Object NoteElementLabel Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteElementLabel : MonoBehaviour, IUIComponent Implements IUIComponent"
+  },
+  "api/UI.NoteElementsContainer.html": {
+    "href": "api/UI.NoteElementsContainer.html",
+    "title": "Class NoteElementsContainer | Example Unity documentation",
+    "keywords": "Class NoteElementsContainer Inheritance Object NoteElementsContainer Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteElementsContainer : MonoBehaviour, IUIComponent Methods Append(UIComponentsContainer) Declaration public void Append(UIComponentsContainer components) Parameters Type Name Description UIComponentsContainer components Insert(UIComponentsContainer, Int32) Declaration public void Insert(UIComponentsContainer components, int index) Parameters Type Name Description UIComponentsContainer components Int32 index Implements IUIComponent"
+  },
+  "api/UI.NoteResultUI.html": {
+    "href": "api/UI.NoteResultUI.html",
+    "title": "Class NoteResultUI | Example Unity documentation",
+    "keywords": "Class NoteResultUI Inheritance Object NoteCoordinateUI NoteResultUI Implements INoteResultUI Inherited Members NoteCoordinateUI.Set(Nullable<float2>) NoteCoordinateUI.GetData() NoteCoordinateUI.GetDuration() NoteCoordinateUI.OnUIEdit NoteCoordinateUI.OnUIDelete NoteCoordinateUI.Delete() Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteResultUI : NoteCoordinateUI, INoteResultUI Implements INoteResultUI"
+  },
+  "api/UI.NoteStartUI.html": {
+    "href": "api/UI.NoteStartUI.html",
+    "title": "Class NoteStartUI | Example Unity documentation",
+    "keywords": "Class NoteStartUI Inheritance Object NoteCoordinateUI NoteStartUI Implements INoteStartUI Inherited Members NoteCoordinateUI.Set(Nullable<float2>) NoteCoordinateUI.GetData() NoteCoordinateUI.GetDuration() NoteCoordinateUI.OnUIEdit NoteCoordinateUI.OnUIDelete NoteCoordinateUI.Delete() Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteStartUI : NoteCoordinateUI, INoteStartUI Implements INoteStartUI"
+  },
+  "api/UI.ResultingVectorCoordinateUI.html": {
+    "href": "api/UI.ResultingVectorCoordinateUI.html",
+    "title": "Class ResultingVectorCoordinateUI | Example Unity documentation",
+    "keywords": "Class ResultingVectorCoordinateUI Inheritance Object ResultingVectorCoordinateUI Implements INoteResultUI Namespace : UI Assembly : cs.temp.dll.dll Syntax public class ResultingVectorCoordinateUI : Component, INoteResultUI Methods Delete() Declaration public void Delete() GetData() Declaration public float2? GetData() Returns Type Description Nullable < float2 > GetDuration() Declaration public float? GetDuration() Returns Type Description Nullable < Single > Set(Nullable<float2>) Declaration public void Set(float2? value) Parameters Type Name Description Nullable < float2 > value Events OnUIDelete Declaration public event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete Implements INoteResultUI"
+  },
+  "api/UI.Sign.html": {
+    "href": "api/UI.Sign.html",
+    "title": "Class Sign | Example Unity documentation",
+    "keywords": "Class Sign Inheritance Object Sign Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class Sign : MonoBehaviour, IUIComponent Properties SignType Declaration public Sign.Type SignType { get; set; } Property Value Type Description Sign.Type Implements IUIComponent"
+  },
+  "api/UI.Sign.Type.html": {
+    "href": "api/UI.Sign.Type.html",
+    "title": "Enum Sign.Type | Example Unity documentation",
+    "keywords": "Enum Sign.Type Namespace : UI Assembly : cs.temp.dll.dll Syntax public enum Type Fields Name Description Addition Equals Multiplication"
+  },
+  "api/UI.SizeBasedOnChildElements.html": {
+    "href": "api/UI.SizeBasedOnChildElements.html",
+    "title": "Class SizeBasedOnChildElements | Example Unity documentation",
+    "keywords": "Class SizeBasedOnChildElements Inheritance Object SizeBasedOnChildElements Namespace : UI Assembly : cs.temp.dll.dll Syntax public class SizeBasedOnChildElements : MonoBehaviour"
+  },
+  "api/UI.UIComponentsContainer.html": {
+    "href": "api/UI.UIComponentsContainer.html",
+    "title": "Struct UIComponentsContainer | Example Unity documentation",
+    "keywords": "Struct UIComponentsContainer Inherited Members ValueType.Equals(Object) ValueType.GetHashCode() ValueType.ToString() Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetType() Namespace : UI Assembly : cs.temp.dll.dll Syntax public readonly struct UIComponentsContainer Constructors UIComponentsContainer(GameObject[]) Declaration public UIComponentsContainer(params GameObject[] gameObjects) Parameters Type Name Description GameObject [] gameObjects Properties GameObjects Declaration public readonly GameObject[] GameObjects { get; } Property Value Type Description GameObject [] Methods Delete() Declaration public readonly void Delete() GetUIComponent<T>() Declaration public readonly T GetUIComponent<T>() where T : class, IUIComponent Returns Type Description T Type Parameters Name Description T GetUIComponents<T>() Declaration public readonly T[] GetUIComponents<T>() where T : class, IUIComponent Returns Type Description T[] Type Parameters Name Description T"
+  },
+  "api/UI.UIUtility.html": {
+    "href": "api/UI.UIUtility.html",
+    "title": "Class UIUtility | Example Unity documentation",
+    "keywords": "Class UIUtility Inheritance Object UIUtility Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : UI Assembly : cs.temp.dll.dll Syntax public static class UIUtility Methods GetActiveChildRectTransforms(Transform) Declaration public static RectTransform[] GetActiveChildRectTransforms(Transform transform) Parameters Type Name Description Transform transform Returns Type Description RectTransform [] GetSizeOfActiveChildren(Transform) Declaration public static Vector2 GetSizeOfActiveChildren(Transform transform) Parameters Type Name Description Transform transform Returns Type Description Vector2 GetTallestChildHeight(Transform) Declaration public static float GetTallestChildHeight(Transform transform) Parameters Type Name Description Transform transform Returns Type Description Single GetTallestChildRectTransform(Transform) Declaration public static RectTransform GetTallestChildRectTransform(Transform transform) Parameters Type Name Description Transform transform Returns Type Description RectTransform InvalidateInput(TMP_InputField) Declaration public static void InvalidateInput(TMP_InputField inputField) Parameters Type Name Description TMP_InputField inputField ProcessAndValidateFloatInput(TMP_InputField, out Single) Declaration public static bool ProcessAndValidateFloatInput(TMP_InputField inputField, out float value) Parameters Type Name Description TMP_InputField inputField Single value Returns Type Description Boolean TryGetFloat(TMP_InputField, out Single) Declaration public static bool TryGetFloat(TMP_InputField inputField, out float value) Parameters Type Name Description TMP_InputField inputField Single value Returns Type Description Boolean"
+  },
+  "api/UI.VectorAdditionUI.html": {
+    "href": "api/UI.VectorAdditionUI.html",
+    "title": "Class VectorAdditionUI | Example Unity documentation",
+    "keywords": "Class VectorAdditionUI Inheritance Object NoteCoordinateUI VectorAdditionUI Implements INoteActionUI < float2 > Inherited Members NoteCoordinateUI.Set(Nullable<float2>) NoteCoordinateUI.GetData() NoteCoordinateUI.GetDuration() NoteCoordinateUI.OnUIEdit NoteCoordinateUI.OnUIDelete NoteCoordinateUI.Delete() Namespace : UI Assembly : cs.temp.dll.dll Syntax public class VectorAdditionUI : NoteCoordinateUI, INoteActionUI<float2> Implements INoteActionUI<>"
+  },
+  "api/UI.VerticalSpacer.html": {
+    "href": "api/UI.VerticalSpacer.html",
+    "title": "Class VerticalSpacer | Example Unity documentation",
+    "keywords": "Class VerticalSpacer Inheritance Object VerticalSpacer Namespace : UI Assembly : cs.temp.dll.dll Syntax public class VerticalSpacer : MonoBehaviour"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Melo3D | Example Unity documentation",
+    "keywords": "Melo3D Educational Melody Creation Tool Explore dimensions of sound and melody (and learn more about the mathematical tools that allow us to do so, like vectors and matrices)"
+  },
+  "manual/coniunctis.html": {
+    "href": "manual/coniunctis.html",
+    "title": "Coniunctis nec qui et lanient monticolae vitae | Example Unity documentation",
+    "keywords": "Coniunctis nec qui et lanient monticolae vitae Opem ille Lorem markdownum cavis exululat inutile. Illi quem caeli, vola patruo difficili Iuppiter Patraeque, est ardebant ingeniis Troica intus Amore tibi mirantem superfusis, multum. Ut Achilles Et sitim Tibi modo ait temptant crinita daret Pariter in removi offensasque Lenaeo damno terra Phoebes ut damnosa classis ignes templo; tua ulla capillos ultima. Videre percusso plectro templa fuit diva minimum debere, quid nomen Philomela animis. Verbis istis flagrat vulnera inpediique ignes. Gravi filo obvius arte Amphionis Panes emisitque iubet. Latona te timens Latentia ante, eundem meritorum sunto ! Elige in timuit templa ferrea, qui arma ligati stagnum turbant. Fraternaque aeternus, dedisse, naufragus corripiens ranas Amathunta et quod laetior culpa nec semper scorpius fuit vicem corpora ardere. Fallit in artus primordia, fratres per aliis , ipsi manu Asiae quod marmorea . mountain(googleVga, pngIphone); var radcabBitrate = dnsCronRecursion; gui(2); ipImageAix += vle(drm_cisc, horizontal + computer_key); jre(vaporware_adc_multi); Lumina ut tamen praesentia vidistis nymphae auroque Bromumque in portant furorem. Visa init resurgere praevitiat canibus et, dedignata turea, ilia. Pisenore mensura insula aere nec per o gladium causa: Alcidae. Veris sentes pallet, alta melius nostra amborum probant, deam. Iuventae dedimus nitidaque hunc traxisse sermonibus pectine flecti an pateres, hac ore gelidis foret semper. Sithon pelle. Bracchia Hippason videntur fateri hosti: palpitat animo est reliquit anne nam confusaque. Interea rex altis munera quem quae quoque rorant, rauco albescere scopulo moriensque parvo, pectus illa, quadrupedes. Notavit haec. Vertit pars quem Euryte casu usta iterum! Ablatum pectus corripiunt neu humus tamquam; ducens stellarum amore. Pulsisque latet, ad tamen victor fulva Tirynthius posco; qui inque in poena quidem enses !"
+  },
+  "manual/etiam.html": {
+    "href": "manual/etiam.html",
+    "title": "Etiam nantemque exul | Example Unity documentation",
+    "keywords": "Etiam nantemque exul Cum tulit Lorem markdownum quos stimulosque altos . Putat nubes molle Troiae vero dea; nostraque plurima . Vos de mihi, credidit: salibus et iacuit, volvitur sunt unda fronti deriguisse refert . Sumpsisse viso Nubila nomine. Purpura se o et causa parva ripas, adsonat saevaque; quid modo ambo et venere voveo. Sine et esse, illa tempore, sive tibi roseo, ministerio altos. Trepident medicamine, primasque cum et peregit dapibusque quoslibet hominis quoque insula. Tepentibus ut Cecropios ab turba, est auro ferventi aliter duratos feres differtis Ausoniis potes, non noctis Laertaque iuvenes. Caelumque vestigia Et promissa fila sentiet leges; Phrygiae et levatus ferire? Salutifer coniugis fierent ante fecissent post vultumque ultima, per radios currere; tandem. Fuerat qua, ne foedera reformatus nunc diu dea audet nonne. Ut utinam mitia tenuerunt movent spectans Mavortis nulla ite, somnos exsiccata dixit Aeetias. Binas Trinacriam album ex ipse. Quoque una utraque tardius placetque gerere; mariti sed dare ludunt memorante Delphice corpora. Caret quantum intellegat venis gaudent eurus. Et suos crista; has et ferarum quid audit omine; mea cum praemia quae duris, suspicor. Adflati qui Spiro conata supprimit diemque; ora oblitus ensem alti non quo lacrimis ferunt, ageret Cebrenida rutilis delendaque? Terras lata modus: nec fas, misi utque adpositis Iunonis. Fide vidit, ferox Schoeneia mundi, voce, tellus pariterque pedum, sic Celadon securior corpora partesque posito. Potest faxo unda pendulaque ille rostro, haesit pars: formidine captat, viseret simulaverat! Sequi est peragit flumineae pallent simulatas formae avulsa, imagine undis; formam. Et nec sed adeunt, huic aequa et ignes nec, medere terram. Move ipsum abnuat retemptat retinebat duabus diu Iovi est pluma. Tecum non deducit Pelops Inachus: arcet aliquemque, regia telo. Tollens altore nec semel qui voce Palatinae Apertis et dei duo inquit ; luna secundo, fervida terret. In haec dextra septima Tydides tibi: congelat hospes nativum radice tegumenque membris Hesperio ne Libys, est vocabula siqua. Dumque stet mulces , ut fontem dea atricolor, est pronos, clarissimus poterat cum intrare sidere templi. cut_metadata(whitelistSequenceUnit.thick.of_bezel_cdma( address_suffix_troubleshooting), sram_trojan(4, hdmi_network - 1)); flash.apache -= web_gps_plug; if (offline.dac_bridge(scrollEbookRom, parameter.internal_target_superscalar(2)) < qwerty + 2 - ipvCgiContextual) { certificateIdeAsp = overclocking + app; supplyCard = siteRaster; } Sagitta curvum quoque petisti opibusque proximitas in, illa vestrum, mihi domum nescia flexit sacra in. Magni vive sim crescente causam saxo voluit, mens, quod. Tela ter ulterius similis illos nato refugit ait verbaque nec fatigatum penates iaculatricemque cecidit pinnas, cum. Misso contigit caelo dedissent lumina; nympha ad vobis occidat, malo sacra utrumque cunctos Diomedeos addita. Virgineus autumnos, ait mitissima curru: fuit sed fessi se habebat hactenus Ultor; meus."
+  }
+}
