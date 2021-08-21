@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using DataUIInterface;
+using UIControllers;
 using MusicObjects;
-using UI;
 using Unity.Mathematics;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -102,7 +101,7 @@ namespace DefaultNamespace
         public static ControllerUIBundle<ITrack> AddTrack(Transform parent)
         {
             GameObject row = InstantiateUIPrefab<NoteElementsContainer>(parent);
-            GameObject rowVector = InstantiateUIPrefab<NoteStartUI>();
+            GameObject rowVector = InstantiateUIPrefab<Note2DStartUI>();
             GameObject addButton = InstantiateUIPrefab<AddButton>();
 
             var parentContainer = new UIComponentsContainer(row);
@@ -118,7 +117,7 @@ namespace DefaultNamespace
             GameObject multiplication = InstantiateUIPrefab<Sign>(ui => ui.SignType == Sign.Type.Multiplication);
             GameObject matrix = InstantiateUIPrefab<MatrixMultiplicationUI>(ui => ui.MatrixType == desiredType);
             GameObject equals = InstantiateUIPrefab<Sign>(ui => ui.SignType == Sign.Type.Equals);
-            GameObject resultVector = InstantiateUIPrefab<NoteResultUI>();
+            GameObject resultVector = InstantiateUIPrefab<Note2DResultUI>();
 
             var uiContainer = new UIComponentsContainer(multiplication, matrix, equals, resultVector);
             NoteActionFunctions.NoteAction<float2x2> noteAction;
