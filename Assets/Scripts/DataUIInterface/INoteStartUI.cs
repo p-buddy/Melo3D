@@ -4,9 +4,12 @@ using Unity.Mathematics;
 namespace DataUIInterface
 {
     /// <summary>
-    /// 
+    /// Interface for UI Controllers
     /// </summary>
-    public interface INoteStartUI : IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2>, IUserEditableUI<float2>
+    public interface INoteStartUI : IUIComponent,
+                                    ISettableFromCodeUI<float2>,
+                                    IRetrievableUI<float2>,
+                                    IUserEditableUI<float2>
     {
         
     }
