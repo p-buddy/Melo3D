@@ -1,54 +1,4 @@
 {
-  "api/DataUIInterface.html": {
-    "href": "api/DataUIInterface.html",
-    "title": "Namespace DataUIInterface | Example Unity documentation",
-    "keywords": "Namespace DataUIInterface Interfaces IDeletableUI INoteActionUI<TData> INoteResultUI INoteStartUI Interface for UI Controllers IRetrievableUI<TData> ISettableFromCodeUI<TData> IUserEditableUI<TData> Delegates OnUIDelete OnUIEdit<TData>"
-  },
-  "api/DataUIInterface.IDeletableUI.html": {
-    "href": "api/DataUIInterface.IDeletableUI.html",
-    "title": "Interface IDeletableUI | Example Unity documentation",
-    "keywords": "Interface IDeletableUI Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface IDeletableUI Methods Delete() Declaration void Delete() Events OnUIDelete Declaration event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete"
-  },
-  "api/DataUIInterface.INoteActionUI-1.html": {
-    "href": "api/DataUIInterface.INoteActionUI-1.html",
-    "title": "Interface INoteActionUI<TData> | Example Unity documentation",
-    "keywords": "Interface INoteActionUI<TData> Inherited Members IDeletableUI.OnUIDelete IDeletableUI.Delete() IUserEditableUI<TData>.OnUIEdit ISettableFromCodeUI<TData>.Set(Nullable<TData>) IRetrievableUI<TData>.GetData() IRetrievableUI<TData>.GetDuration() Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface INoteActionUI<TData> : IUIComponent, IDeletableUI, IUserEditableUI<TData>, ISettableFromCodeUI<TData>, IRetrievableUI<TData> where TData : struct Type Parameters Name Description TData"
-  },
-  "api/DataUIInterface.INoteResultUI.html": {
-    "href": "api/DataUIInterface.INoteResultUI.html",
-    "title": "Interface INoteResultUI | Example Unity documentation",
-    "keywords": "Interface INoteResultUI Inherited Members ISettableFromCodeUI<float2>.Set(Nullable<float2>) IRetrievableUI<float2>.GetData() IRetrievableUI<float2>.GetDuration() Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface INoteResultUI : IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2>"
-  },
-  "api/DataUIInterface.INoteStartUI.html": {
-    "href": "api/DataUIInterface.INoteStartUI.html",
-    "title": "Interface INoteStartUI | Example Unity documentation",
-    "keywords": "Interface INoteStartUI Interface for UI Controllers Inherited Members ISettableFromCodeUI<float2>.Set(Nullable<float2>) IRetrievableUI<float2>.GetData() IRetrievableUI<float2>.GetDuration() IUserEditableUI<float2>.OnUIEdit Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface INoteStartUI : IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2>, IUserEditableUI<float2>"
-  },
-  "api/DataUIInterface.IRetrievableUI-1.html": {
-    "href": "api/DataUIInterface.IRetrievableUI-1.html",
-    "title": "Interface IRetrievableUI<TData> | Example Unity documentation",
-    "keywords": "Interface IRetrievableUI<TData> Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface IRetrievableUI<TData> where TData : struct Type Parameters Name Description TData Methods GetData() Declaration TData? GetData() Returns Type Description Nullable <TData> GetDuration() Declaration float? GetDuration() Returns Type Description Nullable < Single >"
-  },
-  "api/DataUIInterface.ISettableFromCodeUI-1.html": {
-    "href": "api/DataUIInterface.ISettableFromCodeUI-1.html",
-    "title": "Interface ISettableFromCodeUI<TData> | Example Unity documentation",
-    "keywords": "Interface ISettableFromCodeUI<TData> Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface ISettableFromCodeUI<TData> where TData : struct Type Parameters Name Description TData Methods Set(Nullable<TData>) Declaration void Set(TData? value) Parameters Type Name Description Nullable <TData> value"
-  },
-  "api/DataUIInterface.IUserEditableUI-1.html": {
-    "href": "api/DataUIInterface.IUserEditableUI-1.html",
-    "title": "Interface IUserEditableUI<TData> | Example Unity documentation",
-    "keywords": "Interface IUserEditableUI<TData> Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public interface IUserEditableUI<TData> where TData : struct Type Parameters Name Description TData Events OnUIEdit Declaration event OnUIEdit<TData> OnUIEdit Event Type Type Description OnUIEdit <TData>"
-  },
-  "api/DataUIInterface.OnUIDelete.html": {
-    "href": "api/DataUIInterface.OnUIDelete.html",
-    "title": "Delegate OnUIDelete | Example Unity documentation",
-    "keywords": "Delegate OnUIDelete Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public delegate void OnUIDelete();"
-  },
-  "api/DataUIInterface.OnUIEdit-1.html": {
-    "href": "api/DataUIInterface.OnUIEdit-1.html",
-    "title": "Delegate OnUIEdit<TData> | Example Unity documentation",
-    "keywords": "Delegate OnUIEdit<TData> Namespace : DataUIInterface Assembly : cs.temp.dll.dll Syntax public delegate void OnUIEdit<TData>(TData? previous, TData? current) where TData : struct; Parameters Type Name Description Nullable <TData> previous Nullable <TData> current Type Parameters Name Description TData"
-  },
   "api/DefaultNamespace.ControllerUIBundle-1.html": {
     "href": "api/DefaultNamespace.ControllerUIBundle-1.html",
     "title": "Struct ControllerUIBundle<TController> | Example Unity documentation",
@@ -127,12 +77,7 @@
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace Global | Example Unity documentation",
-    "keywords": "Namespace Global Classes ChatController ColorPalette Drawer DropdownSample EnvMapAnimator IToggleableUI MatrixMultiplicationUI Test Enums MatrixMultiplicationUI.Type"
-  },
-  "api/Global.IToggleableUI.html": {
-    "href": "api/Global.IToggleableUI.html",
-    "title": "Class IToggleableUI | Example Unity documentation",
-    "keywords": "Class IToggleableUI Inheritance Object IToggleableUI Namespace : Global Assembly : cs.temp.dll.dll Syntax public class IToggleableUI : MonoBehaviour"
+    "keywords": "Namespace Global Classes ChatController ColorPalette Drawer DropdownSample EnvMapAnimator MatrixMultiplicationUI Test Enums MatrixMultiplicationUI.Type"
   },
   "api/Global.MatrixMultiplicationUI.html": {
     "href": "api/Global.MatrixMultiplicationUI.html",
@@ -434,115 +379,155 @@
     "title": "Class TMP_TextEventHandler.WordSelectionEvent | Example Unity documentation",
     "keywords": "Class TMP_TextEventHandler.WordSelectionEvent Inheritance Object TMP_TextEventHandler.WordSelectionEvent Namespace : TMPro Assembly : cs.temp.dll.dll Syntax [Serializable] public class WordSelectionEvent : UnityEvent<string, int, int>"
   },
-  "api/UI.AddButton.html": {
-    "href": "api/UI.AddButton.html",
+  "api/UIControllers.AddButton.html": {
+    "href": "api/UIControllers.AddButton.html",
     "title": "Class AddButton | Example Unity documentation",
-    "keywords": "Class AddButton Inheritance Object AddButton Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class AddButton : MonoBehaviour, IUIComponent Implements IUIComponent"
+    "keywords": "Class AddButton Inheritance Object AddButton Implements IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class AddButton : MonoBehaviour, IUIComponent Implements IUIComponent"
   },
-  "api/UI.ControlDimension.html": {
-    "href": "api/UI.ControlDimension.html",
+  "api/UIControllers.ControlDimension.html": {
+    "href": "api/UIControllers.ControlDimension.html",
     "title": "Enum ControlDimension | Example Unity documentation",
-    "keywords": "Enum ControlDimension Namespace : UI Assembly : cs.temp.dll.dll Syntax public enum ControlDimension Fields Name Description Both Height None Width"
+    "keywords": "Enum ControlDimension Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public enum ControlDimension Fields Name Description Both Height None Width"
   },
-  "api/UI.DurationIcon.html": {
-    "href": "api/UI.DurationIcon.html",
+  "api/UIControllers.DurationIcon.html": {
+    "href": "api/UIControllers.DurationIcon.html",
     "title": "Class DurationIcon | Example Unity documentation",
-    "keywords": "Class DurationIcon Inheritance Object DurationIcon Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class DurationIcon : MonoBehaviour, IUIComponent Implements IUIComponent"
+    "keywords": "Class DurationIcon Inheritance Object DurationIcon Implements IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class DurationIcon : MonoBehaviour, IUIComponent Implements IUIComponent"
   },
-  "api/UI.DurationLabel.html": {
-    "href": "api/UI.DurationLabel.html",
+  "api/UIControllers.DurationLabel.html": {
+    "href": "api/UIControllers.DurationLabel.html",
     "title": "Class DurationLabel | Example Unity documentation",
-    "keywords": "Class DurationLabel Inheritance Object DurationLabel Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class DurationLabel : MonoBehaviour, IUIComponent Implements IUIComponent"
+    "keywords": "Class DurationLabel Inheritance Object DurationLabel Implements IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class DurationLabel : MonoBehaviour, IUIComponent Implements IUIComponent"
   },
-  "api/UI.DurationRow.html": {
-    "href": "api/UI.DurationRow.html",
+  "api/UIControllers.DurationRow.html": {
+    "href": "api/UIControllers.DurationRow.html",
     "title": "Class DurationRow | Example Unity documentation",
-    "keywords": "Class DurationRow Inheritance Object DurationRow Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class DurationRow : MonoBehaviour, IUIComponent Implements IUIComponent"
+    "keywords": "Class DurationRow Inheritance Object DurationRow Implements IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class DurationRow : MonoBehaviour, IUIComponent Implements IUIComponent"
   },
-  "api/UI.HorizontalSpacer.html": {
-    "href": "api/UI.HorizontalSpacer.html",
+  "api/UIControllers.HorizontalSpacer.html": {
+    "href": "api/UIControllers.HorizontalSpacer.html",
     "title": "Class HorizontalSpacer | Example Unity documentation",
-    "keywords": "Class HorizontalSpacer Inheritance Object HorizontalSpacer Namespace : UI Assembly : cs.temp.dll.dll Syntax public class HorizontalSpacer : MonoBehaviour"
+    "keywords": "Class HorizontalSpacer Inheritance Object HorizontalSpacer Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class HorizontalSpacer : MonoBehaviour"
   },
-  "api/UI.html": {
-    "href": "api/UI.html",
-    "title": "Namespace UI | Example Unity documentation",
-    "keywords": "Namespace UI Classes AddButton DurationIcon DurationLabel DurationRow HorizontalSpacer NoteCoordinateUI NoteElement NoteElementLabel NoteElementsContainer NoteResultUI NoteStartUI ResultingVectorCoordinateUI Sign SizeBasedOnChildElements UIUtility VectorAdditionUI VerticalSpacer Structs UIComponentsContainer Interfaces IUIComponent Enums ControlDimension Sign.Type"
+  "api/UIControllers.html": {
+    "href": "api/UIControllers.html",
+    "title": "Namespace UIControllers | Example Unity documentation",
+    "keywords": "Namespace UIControllers Classes AddButton DurationIcon DurationLabel DurationRow HorizontalSpacer Note2DCoordinateUI Note2DResultUI Note2DStartUI NoteElement NoteElementLabel NoteElementsContainer Sign SizeBasedOnChildElements UIUtility VectorAdditionUI VerticalSpacer Structs UIComponentsContainer Interfaces IDeletableUI Interface for a UI that can be deleted (from screen) INoteActionUI<TData> INoteResultUI INoteStartUI Interface for UI Controllers IRetrievableUI<TData> ISettableFromCodeUI<TData> IUIComponent IUserEditableUI<TData> Enums ControlDimension Sign.Type Delegates OnUIDelete OnUIEdit<TData>"
   },
-  "api/UI.IUIComponent.html": {
-    "href": "api/UI.IUIComponent.html",
+  "api/UIControllers.IDeletableUI.html": {
+    "href": "api/UIControllers.IDeletableUI.html",
+    "title": "Interface IDeletableUI | Example Unity documentation",
+    "keywords": "Interface IDeletableUI Interface for a UI that can be deleted (from screen) Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public interface IDeletableUI Methods Delete() Declaration void Delete() Events OnUIDelete Declaration event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete"
+  },
+  "api/UIControllers.INoteActionUI-1.html": {
+    "href": "api/UIControllers.INoteActionUI-1.html",
+    "title": "Interface INoteActionUI<TData> | Example Unity documentation",
+    "keywords": "Interface INoteActionUI<TData> Inherited Members IDeletableUI.OnUIDelete IDeletableUI.Delete() IUserEditableUI<TData>.OnUIEdit ISettableFromCodeUI<TData>.Set(Nullable<TData>) IRetrievableUI<TData>.GetData() IRetrievableUI<TData>.GetDuration() Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public interface INoteActionUI<TData> : IUIComponent, IDeletableUI, IUserEditableUI<TData>, ISettableFromCodeUI<TData>, IRetrievableUI<TData> where TData : struct Type Parameters Name Description TData"
+  },
+  "api/UIControllers.INoteResultUI.html": {
+    "href": "api/UIControllers.INoteResultUI.html",
+    "title": "Interface INoteResultUI | Example Unity documentation",
+    "keywords": "Interface INoteResultUI Inherited Members ISettableFromCodeUI<float2>.Set(Nullable<float2>) IRetrievableUI<float2>.GetData() IRetrievableUI<float2>.GetDuration() Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public interface INoteResultUI : IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2>"
+  },
+  "api/UIControllers.INoteStartUI.html": {
+    "href": "api/UIControllers.INoteStartUI.html",
+    "title": "Interface INoteStartUI | Example Unity documentation",
+    "keywords": "Interface INoteStartUI Interface for UI Controllers Inherited Members ISettableFromCodeUI<float2>.Set(Nullable<float2>) IRetrievableUI<float2>.GetData() IRetrievableUI<float2>.GetDuration() IUserEditableUI<float2>.OnUIEdit Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public interface INoteStartUI : IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2>, IUserEditableUI<float2>"
+  },
+  "api/UIControllers.IRetrievableUI-1.html": {
+    "href": "api/UIControllers.IRetrievableUI-1.html",
+    "title": "Interface IRetrievableUI<TData> | Example Unity documentation",
+    "keywords": "Interface IRetrievableUI<TData> Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public interface IRetrievableUI<TData> where TData : struct Type Parameters Name Description TData Methods GetData() Declaration TData? GetData() Returns Type Description Nullable <TData> GetDuration() Declaration float? GetDuration() Returns Type Description Nullable < Single >"
+  },
+  "api/UIControllers.ISettableFromCodeUI-1.html": {
+    "href": "api/UIControllers.ISettableFromCodeUI-1.html",
+    "title": "Interface ISettableFromCodeUI<TData> | Example Unity documentation",
+    "keywords": "Interface ISettableFromCodeUI<TData> Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public interface ISettableFromCodeUI<TData> where TData : struct Type Parameters Name Description TData Methods Set(Nullable<TData>) Declaration void Set(TData? value) Parameters Type Name Description Nullable <TData> value"
+  },
+  "api/UIControllers.IUIComponent.html": {
+    "href": "api/UIControllers.IUIComponent.html",
     "title": "Interface IUIComponent | Example Unity documentation",
-    "keywords": "Interface IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public interface IUIComponent"
+    "keywords": "Interface IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public interface IUIComponent"
   },
-  "api/UI.NoteCoordinateUI.html": {
-    "href": "api/UI.NoteCoordinateUI.html",
-    "title": "Class NoteCoordinateUI | Example Unity documentation",
-    "keywords": "Class NoteCoordinateUI Inheritance Object NoteCoordinateUI NoteResultUI NoteStartUI VectorAdditionUI Namespace : UI Assembly : cs.temp.dll.dll Syntax public abstract class NoteCoordinateUI : MonoBehaviour Methods Delete() Declaration public void Delete() GetData() Declaration public float2? GetData() Returns Type Description Nullable < float2 > GetDuration() Declaration public float? GetDuration() Returns Type Description Nullable < Single > Set(Nullable<float2>) Declaration public virtual void Set(float2? value) Parameters Type Name Description Nullable < float2 > value Events OnUIDelete Declaration public event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete OnUIEdit Declaration public event OnUIEdit<float2> OnUIEdit Event Type Type Description OnUIEdit < float2 >"
+  "api/UIControllers.IUserEditableUI-1.html": {
+    "href": "api/UIControllers.IUserEditableUI-1.html",
+    "title": "Interface IUserEditableUI<TData> | Example Unity documentation",
+    "keywords": "Interface IUserEditableUI<TData> Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public interface IUserEditableUI<TData> where TData : struct Type Parameters Name Description TData Events OnUIEdit Declaration event OnUIEdit<TData> OnUIEdit Event Type Type Description OnUIEdit <TData>"
   },
-  "api/UI.NoteElement.html": {
-    "href": "api/UI.NoteElement.html",
+  "api/UIControllers.Note2DCoordinateUI.html": {
+    "href": "api/UIControllers.Note2DCoordinateUI.html",
+    "title": "Class Note2DCoordinateUI | Example Unity documentation",
+    "keywords": "Class Note2DCoordinateUI Inheritance Object Note2DCoordinateUI Note2DResultUI Note2DStartUI VectorAdditionUI Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public abstract class Note2DCoordinateUI : MonoBehaviour Methods Delete() Declaration public void Delete() GetData() Declaration public float2? GetData() Returns Type Description Nullable < float2 > GetDuration() Declaration public float? GetDuration() Returns Type Description Nullable < Single > Set(Nullable<float2>) Declaration public virtual void Set(float2? value) Parameters Type Name Description Nullable < float2 > value Events OnUIDelete Declaration public event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete OnUIEdit Declaration public event OnUIEdit<float2> OnUIEdit Event Type Type Description OnUIEdit < float2 >"
+  },
+  "api/UIControllers.Note2DResultUI.html": {
+    "href": "api/UIControllers.Note2DResultUI.html",
+    "title": "Class Note2DResultUI | Example Unity documentation",
+    "keywords": "Class Note2DResultUI Inheritance Object Note2DCoordinateUI Note2DResultUI Implements INoteResultUI IUIComponent ISettableFromCodeUI < float2 > IRetrievableUI < float2 > Inherited Members Note2DCoordinateUI.Set(Nullable<float2>) Note2DCoordinateUI.GetData() Note2DCoordinateUI.GetDuration() Note2DCoordinateUI.OnUIEdit Note2DCoordinateUI.OnUIDelete Note2DCoordinateUI.Delete() Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class Note2DResultUI : Note2DCoordinateUI, INoteResultUI, IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2> Implements INoteResultUI IUIComponent ISettableFromCodeUI<TData> IRetrievableUI<TData>"
+  },
+  "api/UIControllers.Note2DStartUI.html": {
+    "href": "api/UIControllers.Note2DStartUI.html",
+    "title": "Class Note2DStartUI | Example Unity documentation",
+    "keywords": "Class Note2DStartUI Inheritance Object Note2DCoordinateUI Note2DStartUI Implements INoteStartUI IUIComponent ISettableFromCodeUI < float2 > IRetrievableUI < float2 > IUserEditableUI < float2 > Inherited Members Note2DCoordinateUI.Set(Nullable<float2>) Note2DCoordinateUI.GetData() Note2DCoordinateUI.GetDuration() Note2DCoordinateUI.OnUIEdit Note2DCoordinateUI.OnUIDelete Note2DCoordinateUI.Delete() Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class Note2DStartUI : Note2DCoordinateUI, INoteStartUI, IUIComponent, ISettableFromCodeUI<float2>, IRetrievableUI<float2>, IUserEditableUI<float2> Implements INoteStartUI IUIComponent ISettableFromCodeUI<TData> IRetrievableUI<TData> IUserEditableUI<TData>"
+  },
+  "api/UIControllers.NoteElement.html": {
+    "href": "api/UIControllers.NoteElement.html",
     "title": "Class NoteElement | Example Unity documentation",
-    "keywords": "Class NoteElement Inheritance Object NoteElement Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteElement : MonoBehaviour, IUIComponent Properties CurrentSize Declaration public Vector2 CurrentSize { get; } Property Value Type Description Vector2 OriginalSize Declaration public Vector2 OriginalSize { get; } Property Value Type Description Vector2 Methods SetHeight(Single) Declaration public void SetHeight(float height) Parameters Type Name Description Single height Implements IUIComponent"
+    "keywords": "Class NoteElement Inheritance Object NoteElement Implements IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class NoteElement : MonoBehaviour, IUIComponent Properties CurrentSize Declaration public Vector2 CurrentSize { get; } Property Value Type Description Vector2 OriginalSize Declaration public Vector2 OriginalSize { get; } Property Value Type Description Vector2 Methods SetHeight(Single) Declaration public void SetHeight(float height) Parameters Type Name Description Single height Implements IUIComponent"
   },
-  "api/UI.NoteElementLabel.html": {
-    "href": "api/UI.NoteElementLabel.html",
+  "api/UIControllers.NoteElementLabel.html": {
+    "href": "api/UIControllers.NoteElementLabel.html",
     "title": "Class NoteElementLabel | Example Unity documentation",
-    "keywords": "Class NoteElementLabel Inheritance Object NoteElementLabel Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteElementLabel : MonoBehaviour, IUIComponent Implements IUIComponent"
+    "keywords": "Class NoteElementLabel Inheritance Object NoteElementLabel Implements IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class NoteElementLabel : MonoBehaviour, IUIComponent Implements IUIComponent"
   },
-  "api/UI.NoteElementsContainer.html": {
-    "href": "api/UI.NoteElementsContainer.html",
+  "api/UIControllers.NoteElementsContainer.html": {
+    "href": "api/UIControllers.NoteElementsContainer.html",
     "title": "Class NoteElementsContainer | Example Unity documentation",
-    "keywords": "Class NoteElementsContainer Inheritance Object NoteElementsContainer Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteElementsContainer : MonoBehaviour, IUIComponent Methods Append(UIComponentsContainer) Declaration public void Append(UIComponentsContainer components) Parameters Type Name Description UIComponentsContainer components Insert(UIComponentsContainer, Int32) Declaration public void Insert(UIComponentsContainer components, int index) Parameters Type Name Description UIComponentsContainer components Int32 index Implements IUIComponent"
+    "keywords": "Class NoteElementsContainer Inheritance Object NoteElementsContainer Implements IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class NoteElementsContainer : MonoBehaviour, IUIComponent Methods Append(UIComponentsContainer) Declaration public void Append(UIComponentsContainer components) Parameters Type Name Description UIComponentsContainer components Insert(UIComponentsContainer, Int32) Declaration public void Insert(UIComponentsContainer components, int index) Parameters Type Name Description UIComponentsContainer components Int32 index Implements IUIComponent"
   },
-  "api/UI.NoteResultUI.html": {
-    "href": "api/UI.NoteResultUI.html",
-    "title": "Class NoteResultUI | Example Unity documentation",
-    "keywords": "Class NoteResultUI Inheritance Object NoteCoordinateUI NoteResultUI Implements INoteResultUI Inherited Members NoteCoordinateUI.Set(Nullable<float2>) NoteCoordinateUI.GetData() NoteCoordinateUI.GetDuration() NoteCoordinateUI.OnUIEdit NoteCoordinateUI.OnUIDelete NoteCoordinateUI.Delete() Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteResultUI : NoteCoordinateUI, INoteResultUI Implements INoteResultUI"
+  "api/UIControllers.OnUIDelete.html": {
+    "href": "api/UIControllers.OnUIDelete.html",
+    "title": "Delegate OnUIDelete | Example Unity documentation",
+    "keywords": "Delegate OnUIDelete Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public delegate void OnUIDelete();"
   },
-  "api/UI.NoteStartUI.html": {
-    "href": "api/UI.NoteStartUI.html",
-    "title": "Class NoteStartUI | Example Unity documentation",
-    "keywords": "Class NoteStartUI Inheritance Object NoteCoordinateUI NoteStartUI Implements INoteStartUI Inherited Members NoteCoordinateUI.Set(Nullable<float2>) NoteCoordinateUI.GetData() NoteCoordinateUI.GetDuration() NoteCoordinateUI.OnUIEdit NoteCoordinateUI.OnUIDelete NoteCoordinateUI.Delete() Namespace : UI Assembly : cs.temp.dll.dll Syntax public class NoteStartUI : NoteCoordinateUI, INoteStartUI Implements INoteStartUI"
+  "api/UIControllers.OnUIEdit-1.html": {
+    "href": "api/UIControllers.OnUIEdit-1.html",
+    "title": "Delegate OnUIEdit<TData> | Example Unity documentation",
+    "keywords": "Delegate OnUIEdit<TData> Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public delegate void OnUIEdit<TData>(TData? previous, TData? current) where TData : struct; Parameters Type Name Description Nullable <TData> previous Nullable <TData> current Type Parameters Name Description TData"
   },
-  "api/UI.ResultingVectorCoordinateUI.html": {
-    "href": "api/UI.ResultingVectorCoordinateUI.html",
-    "title": "Class ResultingVectorCoordinateUI | Example Unity documentation",
-    "keywords": "Class ResultingVectorCoordinateUI Inheritance Object ResultingVectorCoordinateUI Implements INoteResultUI Namespace : UI Assembly : cs.temp.dll.dll Syntax public class ResultingVectorCoordinateUI : Component, INoteResultUI Methods Delete() Declaration public void Delete() GetData() Declaration public float2? GetData() Returns Type Description Nullable < float2 > GetDuration() Declaration public float? GetDuration() Returns Type Description Nullable < Single > Set(Nullable<float2>) Declaration public void Set(float2? value) Parameters Type Name Description Nullable < float2 > value Events OnUIDelete Declaration public event OnUIDelete OnUIDelete Event Type Type Description OnUIDelete Implements INoteResultUI"
-  },
-  "api/UI.Sign.html": {
-    "href": "api/UI.Sign.html",
+  "api/UIControllers.Sign.html": {
+    "href": "api/UIControllers.Sign.html",
     "title": "Class Sign | Example Unity documentation",
-    "keywords": "Class Sign Inheritance Object Sign Implements IUIComponent Namespace : UI Assembly : cs.temp.dll.dll Syntax public class Sign : MonoBehaviour, IUIComponent Properties SignType Declaration public Sign.Type SignType { get; set; } Property Value Type Description Sign.Type Implements IUIComponent"
+    "keywords": "Class Sign Inheritance Object Sign Implements IUIComponent Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class Sign : MonoBehaviour, IUIComponent Properties SignType Declaration public Sign.Type SignType { get; set; } Property Value Type Description Sign.Type Implements IUIComponent"
   },
-  "api/UI.Sign.Type.html": {
-    "href": "api/UI.Sign.Type.html",
+  "api/UIControllers.Sign.Type.html": {
+    "href": "api/UIControllers.Sign.Type.html",
     "title": "Enum Sign.Type | Example Unity documentation",
-    "keywords": "Enum Sign.Type Namespace : UI Assembly : cs.temp.dll.dll Syntax public enum Type Fields Name Description Addition Equals Multiplication"
+    "keywords": "Enum Sign.Type Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public enum Type Fields Name Description Addition Equals Multiplication"
   },
-  "api/UI.SizeBasedOnChildElements.html": {
-    "href": "api/UI.SizeBasedOnChildElements.html",
+  "api/UIControllers.SizeBasedOnChildElements.html": {
+    "href": "api/UIControllers.SizeBasedOnChildElements.html",
     "title": "Class SizeBasedOnChildElements | Example Unity documentation",
-    "keywords": "Class SizeBasedOnChildElements Inheritance Object SizeBasedOnChildElements Namespace : UI Assembly : cs.temp.dll.dll Syntax public class SizeBasedOnChildElements : MonoBehaviour"
+    "keywords": "Class SizeBasedOnChildElements Inheritance Object SizeBasedOnChildElements Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class SizeBasedOnChildElements : MonoBehaviour"
   },
-  "api/UI.UIComponentsContainer.html": {
-    "href": "api/UI.UIComponentsContainer.html",
+  "api/UIControllers.UIComponentsContainer.html": {
+    "href": "api/UIControllers.UIComponentsContainer.html",
     "title": "Struct UIComponentsContainer | Example Unity documentation",
-    "keywords": "Struct UIComponentsContainer Inherited Members ValueType.Equals(Object) ValueType.GetHashCode() ValueType.ToString() Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetType() Namespace : UI Assembly : cs.temp.dll.dll Syntax public readonly struct UIComponentsContainer Constructors UIComponentsContainer(GameObject[]) Declaration public UIComponentsContainer(params GameObject[] gameObjects) Parameters Type Name Description GameObject [] gameObjects Properties GameObjects Declaration public readonly GameObject[] GameObjects { get; } Property Value Type Description GameObject [] Methods Delete() Declaration public readonly void Delete() GetUIComponent<T>() Declaration public readonly T GetUIComponent<T>() where T : class, IUIComponent Returns Type Description T Type Parameters Name Description T GetUIComponents<T>() Declaration public readonly T[] GetUIComponents<T>() where T : class, IUIComponent Returns Type Description T[] Type Parameters Name Description T"
+    "keywords": "Struct UIComponentsContainer Inherited Members ValueType.Equals(Object) ValueType.GetHashCode() ValueType.ToString() Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetType() Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public readonly struct UIComponentsContainer Constructors UIComponentsContainer(GameObject[]) Declaration public UIComponentsContainer(params GameObject[] gameObjects) Parameters Type Name Description GameObject [] gameObjects Properties GameObjects Declaration public readonly GameObject[] GameObjects { get; } Property Value Type Description GameObject [] Methods Delete() Declaration public readonly void Delete() GetUIComponent<T>() Declaration public readonly T GetUIComponent<T>() where T : class, IUIComponent Returns Type Description T Type Parameters Name Description T GetUIComponents<T>() Declaration public readonly T[] GetUIComponents<T>() where T : class, IUIComponent Returns Type Description T[] Type Parameters Name Description T"
   },
-  "api/UI.UIUtility.html": {
-    "href": "api/UI.UIUtility.html",
+  "api/UIControllers.UIUtility.html": {
+    "href": "api/UIControllers.UIUtility.html",
     "title": "Class UIUtility | Example Unity documentation",
-    "keywords": "Class UIUtility Inheritance Object UIUtility Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : UI Assembly : cs.temp.dll.dll Syntax public static class UIUtility Methods GetActiveChildRectTransforms(Transform) Declaration public static RectTransform[] GetActiveChildRectTransforms(Transform transform) Parameters Type Name Description Transform transform Returns Type Description RectTransform [] GetSizeOfActiveChildren(Transform) Declaration public static Vector2 GetSizeOfActiveChildren(Transform transform) Parameters Type Name Description Transform transform Returns Type Description Vector2 GetTallestChildHeight(Transform) Declaration public static float GetTallestChildHeight(Transform transform) Parameters Type Name Description Transform transform Returns Type Description Single GetTallestChildRectTransform(Transform) Declaration public static RectTransform GetTallestChildRectTransform(Transform transform) Parameters Type Name Description Transform transform Returns Type Description RectTransform InvalidateInput(TMP_InputField) Declaration public static void InvalidateInput(TMP_InputField inputField) Parameters Type Name Description TMP_InputField inputField ProcessAndValidateFloatInput(TMP_InputField, out Single) Declaration public static bool ProcessAndValidateFloatInput(TMP_InputField inputField, out float value) Parameters Type Name Description TMP_InputField inputField Single value Returns Type Description Boolean TryGetFloat(TMP_InputField, out Single) Declaration public static bool TryGetFloat(TMP_InputField inputField, out float value) Parameters Type Name Description TMP_InputField inputField Single value Returns Type Description Boolean"
+    "keywords": "Class UIUtility Inheritance Object UIUtility Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public static class UIUtility Methods GetActiveChildRectTransforms(Transform) Declaration public static RectTransform[] GetActiveChildRectTransforms(Transform transform) Parameters Type Name Description Transform transform Returns Type Description RectTransform [] GetSizeOfActiveChildren(Transform) Declaration public static Vector2 GetSizeOfActiveChildren(Transform transform) Parameters Type Name Description Transform transform Returns Type Description Vector2 GetTallestChildHeight(Transform) Declaration public static float GetTallestChildHeight(Transform transform) Parameters Type Name Description Transform transform Returns Type Description Single GetTallestChildRectTransform(Transform) Declaration public static RectTransform GetTallestChildRectTransform(Transform transform) Parameters Type Name Description Transform transform Returns Type Description RectTransform InvalidateInput(TMP_InputField) Declaration public static void InvalidateInput(TMP_InputField inputField) Parameters Type Name Description TMP_InputField inputField ProcessAndValidateFloatInput(TMP_InputField, out Single) Declaration public static bool ProcessAndValidateFloatInput(TMP_InputField inputField, out float value) Parameters Type Name Description TMP_InputField inputField Single value Returns Type Description Boolean TryGetFloat(TMP_InputField, out Single) Declaration public static bool TryGetFloat(TMP_InputField inputField, out float value) Parameters Type Name Description TMP_InputField inputField Single value Returns Type Description Boolean"
   },
-  "api/UI.VectorAdditionUI.html": {
-    "href": "api/UI.VectorAdditionUI.html",
+  "api/UIControllers.VectorAdditionUI.html": {
+    "href": "api/UIControllers.VectorAdditionUI.html",
     "title": "Class VectorAdditionUI | Example Unity documentation",
-    "keywords": "Class VectorAdditionUI Inheritance Object NoteCoordinateUI VectorAdditionUI Implements INoteActionUI < float2 > Inherited Members NoteCoordinateUI.Set(Nullable<float2>) NoteCoordinateUI.GetData() NoteCoordinateUI.GetDuration() NoteCoordinateUI.OnUIEdit NoteCoordinateUI.OnUIDelete NoteCoordinateUI.Delete() Namespace : UI Assembly : cs.temp.dll.dll Syntax public class VectorAdditionUI : NoteCoordinateUI, INoteActionUI<float2> Implements INoteActionUI<>"
+    "keywords": "Class VectorAdditionUI Inheritance Object Note2DCoordinateUI VectorAdditionUI Implements INoteActionUI < float2 > IUIComponent IDeletableUI IUserEditableUI < float2 > ISettableFromCodeUI < float2 > IRetrievableUI < float2 > Inherited Members Note2DCoordinateUI.Set(Nullable<float2>) Note2DCoordinateUI.GetData() Note2DCoordinateUI.GetDuration() Note2DCoordinateUI.OnUIEdit Note2DCoordinateUI.OnUIDelete Note2DCoordinateUI.Delete() Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class VectorAdditionUI : Note2DCoordinateUI, INoteActionUI<float2>, IUIComponent, IDeletableUI, IUserEditableUI<float2>, ISettableFromCodeUI<float2>, IRetrievableUI<float2> Implements INoteActionUI<TData> IUIComponent IDeletableUI IUserEditableUI<TData> ISettableFromCodeUI<TData> IRetrievableUI<TData>"
   },
-  "api/UI.VerticalSpacer.html": {
-    "href": "api/UI.VerticalSpacer.html",
+  "api/UIControllers.VerticalSpacer.html": {
+    "href": "api/UIControllers.VerticalSpacer.html",
     "title": "Class VerticalSpacer | Example Unity documentation",
-    "keywords": "Class VerticalSpacer Inheritance Object VerticalSpacer Namespace : UI Assembly : cs.temp.dll.dll Syntax public class VerticalSpacer : MonoBehaviour"
+    "keywords": "Class VerticalSpacer Inheritance Object VerticalSpacer Namespace : UIControllers Assembly : cs.temp.dll.dll Syntax public class VerticalSpacer : MonoBehaviour"
   },
   "index.html": {
     "href": "index.html",

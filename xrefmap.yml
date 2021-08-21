@@ -1,160 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: DataUIInterface
-  name: DataUIInterface
-  href: api/DataUIInterface.html
-  commentId: N:DataUIInterface
-  fullName: DataUIInterface
-  nameWithType: DataUIInterface
-- uid: DataUIInterface.IDeletableUI
-  name: IDeletableUI
-  href: api/DataUIInterface.IDeletableUI.html
-  commentId: T:DataUIInterface.IDeletableUI
-  fullName: DataUIInterface.IDeletableUI
-  nameWithType: IDeletableUI
-- uid: DataUIInterface.IDeletableUI.Delete
-  name: Delete()
-  href: api/DataUIInterface.IDeletableUI.html#DataUIInterface_IDeletableUI_Delete
-  commentId: M:DataUIInterface.IDeletableUI.Delete
-  fullName: DataUIInterface.IDeletableUI.Delete()
-  nameWithType: IDeletableUI.Delete()
-- uid: DataUIInterface.IDeletableUI.Delete*
-  name: Delete
-  href: api/DataUIInterface.IDeletableUI.html#DataUIInterface_IDeletableUI_Delete_
-  commentId: Overload:DataUIInterface.IDeletableUI.Delete
-  isSpec: "True"
-  fullName: DataUIInterface.IDeletableUI.Delete
-  nameWithType: IDeletableUI.Delete
-- uid: DataUIInterface.IDeletableUI.OnUIDelete
-  name: OnUIDelete
-  href: api/DataUIInterface.IDeletableUI.html#DataUIInterface_IDeletableUI_OnUIDelete
-  commentId: E:DataUIInterface.IDeletableUI.OnUIDelete
-  fullName: DataUIInterface.IDeletableUI.OnUIDelete
-  nameWithType: IDeletableUI.OnUIDelete
-- uid: DataUIInterface.INoteActionUI`1
-  name: INoteActionUI<TData>
-  href: api/DataUIInterface.INoteActionUI-1.html
-  commentId: T:DataUIInterface.INoteActionUI`1
-  name.vb: INoteActionUI(Of TData)
-  fullName: DataUIInterface.INoteActionUI<TData>
-  fullName.vb: DataUIInterface.INoteActionUI(Of TData)
-  nameWithType: INoteActionUI<TData>
-  nameWithType.vb: INoteActionUI(Of TData)
-- uid: DataUIInterface.INoteResultUI
-  name: INoteResultUI
-  href: api/DataUIInterface.INoteResultUI.html
-  commentId: T:DataUIInterface.INoteResultUI
-  fullName: DataUIInterface.INoteResultUI
-  nameWithType: INoteResultUI
-- uid: DataUIInterface.INoteStartUI
-  name: INoteStartUI
-  href: api/DataUIInterface.INoteStartUI.html
-  commentId: T:DataUIInterface.INoteStartUI
-  fullName: DataUIInterface.INoteStartUI
-  nameWithType: INoteStartUI
-- uid: DataUIInterface.IRetrievableUI`1
-  name: IRetrievableUI<TData>
-  href: api/DataUIInterface.IRetrievableUI-1.html
-  commentId: T:DataUIInterface.IRetrievableUI`1
-  name.vb: IRetrievableUI(Of TData)
-  fullName: DataUIInterface.IRetrievableUI<TData>
-  fullName.vb: DataUIInterface.IRetrievableUI(Of TData)
-  nameWithType: IRetrievableUI<TData>
-  nameWithType.vb: IRetrievableUI(Of TData)
-- uid: DataUIInterface.IRetrievableUI`1.GetData
-  name: GetData()
-  href: api/DataUIInterface.IRetrievableUI-1.html#DataUIInterface_IRetrievableUI_1_GetData
-  commentId: M:DataUIInterface.IRetrievableUI`1.GetData
-  fullName: DataUIInterface.IRetrievableUI<TData>.GetData()
-  fullName.vb: DataUIInterface.IRetrievableUI(Of TData).GetData()
-  nameWithType: IRetrievableUI<TData>.GetData()
-  nameWithType.vb: IRetrievableUI(Of TData).GetData()
-- uid: DataUIInterface.IRetrievableUI`1.GetData*
-  name: GetData
-  href: api/DataUIInterface.IRetrievableUI-1.html#DataUIInterface_IRetrievableUI_1_GetData_
-  commentId: Overload:DataUIInterface.IRetrievableUI`1.GetData
-  isSpec: "True"
-  fullName: DataUIInterface.IRetrievableUI<TData>.GetData
-  fullName.vb: DataUIInterface.IRetrievableUI(Of TData).GetData
-  nameWithType: IRetrievableUI<TData>.GetData
-  nameWithType.vb: IRetrievableUI(Of TData).GetData
-- uid: DataUIInterface.IRetrievableUI`1.GetDuration
-  name: GetDuration()
-  href: api/DataUIInterface.IRetrievableUI-1.html#DataUIInterface_IRetrievableUI_1_GetDuration
-  commentId: M:DataUIInterface.IRetrievableUI`1.GetDuration
-  fullName: DataUIInterface.IRetrievableUI<TData>.GetDuration()
-  fullName.vb: DataUIInterface.IRetrievableUI(Of TData).GetDuration()
-  nameWithType: IRetrievableUI<TData>.GetDuration()
-  nameWithType.vb: IRetrievableUI(Of TData).GetDuration()
-- uid: DataUIInterface.IRetrievableUI`1.GetDuration*
-  name: GetDuration
-  href: api/DataUIInterface.IRetrievableUI-1.html#DataUIInterface_IRetrievableUI_1_GetDuration_
-  commentId: Overload:DataUIInterface.IRetrievableUI`1.GetDuration
-  isSpec: "True"
-  fullName: DataUIInterface.IRetrievableUI<TData>.GetDuration
-  fullName.vb: DataUIInterface.IRetrievableUI(Of TData).GetDuration
-  nameWithType: IRetrievableUI<TData>.GetDuration
-  nameWithType.vb: IRetrievableUI(Of TData).GetDuration
-- uid: DataUIInterface.ISettableFromCodeUI`1
-  name: ISettableFromCodeUI<TData>
-  href: api/DataUIInterface.ISettableFromCodeUI-1.html
-  commentId: T:DataUIInterface.ISettableFromCodeUI`1
-  name.vb: ISettableFromCodeUI(Of TData)
-  fullName: DataUIInterface.ISettableFromCodeUI<TData>
-  fullName.vb: DataUIInterface.ISettableFromCodeUI(Of TData)
-  nameWithType: ISettableFromCodeUI<TData>
-  nameWithType.vb: ISettableFromCodeUI(Of TData)
-- uid: DataUIInterface.ISettableFromCodeUI`1.Set(System.Nullable{`0})
-  name: Set(Nullable<TData>)
-  href: api/DataUIInterface.ISettableFromCodeUI-1.html#DataUIInterface_ISettableFromCodeUI_1_Set_System_Nullable__0__
-  commentId: M:DataUIInterface.ISettableFromCodeUI`1.Set(System.Nullable{`0})
-  name.vb: Set(Nullable(Of TData))
-  fullName: DataUIInterface.ISettableFromCodeUI<TData>.Set(System.Nullable<TData>)
-  fullName.vb: DataUIInterface.ISettableFromCodeUI(Of TData).Set(System.Nullable(Of TData))
-  nameWithType: ISettableFromCodeUI<TData>.Set(Nullable<TData>)
-  nameWithType.vb: ISettableFromCodeUI(Of TData).Set(Nullable(Of TData))
-- uid: DataUIInterface.ISettableFromCodeUI`1.Set*
-  name: Set
-  href: api/DataUIInterface.ISettableFromCodeUI-1.html#DataUIInterface_ISettableFromCodeUI_1_Set_
-  commentId: Overload:DataUIInterface.ISettableFromCodeUI`1.Set
-  isSpec: "True"
-  fullName: DataUIInterface.ISettableFromCodeUI<TData>.Set
-  fullName.vb: DataUIInterface.ISettableFromCodeUI(Of TData).Set
-  nameWithType: ISettableFromCodeUI<TData>.Set
-  nameWithType.vb: ISettableFromCodeUI(Of TData).Set
-- uid: DataUIInterface.IUserEditableUI`1
-  name: IUserEditableUI<TData>
-  href: api/DataUIInterface.IUserEditableUI-1.html
-  commentId: T:DataUIInterface.IUserEditableUI`1
-  name.vb: IUserEditableUI(Of TData)
-  fullName: DataUIInterface.IUserEditableUI<TData>
-  fullName.vb: DataUIInterface.IUserEditableUI(Of TData)
-  nameWithType: IUserEditableUI<TData>
-  nameWithType.vb: IUserEditableUI(Of TData)
-- uid: DataUIInterface.IUserEditableUI`1.OnUIEdit
-  name: OnUIEdit
-  href: api/DataUIInterface.IUserEditableUI-1.html#DataUIInterface_IUserEditableUI_1_OnUIEdit
-  commentId: E:DataUIInterface.IUserEditableUI`1.OnUIEdit
-  fullName: DataUIInterface.IUserEditableUI<TData>.OnUIEdit
-  fullName.vb: DataUIInterface.IUserEditableUI(Of TData).OnUIEdit
-  nameWithType: IUserEditableUI<TData>.OnUIEdit
-  nameWithType.vb: IUserEditableUI(Of TData).OnUIEdit
-- uid: DataUIInterface.OnUIDelete
-  name: OnUIDelete
-  href: api/DataUIInterface.OnUIDelete.html
-  commentId: T:DataUIInterface.OnUIDelete
-  fullName: DataUIInterface.OnUIDelete
-  nameWithType: OnUIDelete
-- uid: DataUIInterface.OnUIEdit`1
-  name: OnUIEdit<TData>
-  href: api/DataUIInterface.OnUIEdit-1.html
-  commentId: T:DataUIInterface.OnUIEdit`1
-  name.vb: OnUIEdit(Of TData)
-  fullName: DataUIInterface.OnUIEdit<TData>
-  fullName.vb: DataUIInterface.OnUIEdit(Of TData)
-  nameWithType: OnUIEdit<TData>
-  nameWithType.vb: OnUIEdit(Of TData)
 - uid: DefaultNamespace
   name: DefaultNamespace
   href: api/DefaultNamespace.html
@@ -720,12 +566,6 @@ references:
   commentId: F:Global.EnvMapAnimator.RotationSpeeds
   fullName: EnvMapAnimator.RotationSpeeds
   nameWithType: EnvMapAnimator.RotationSpeeds
-- uid: Global.IToggleableUI
-  name: IToggleableUI
-  href: api/Global.IToggleableUI.html
-  commentId: T:Global.IToggleableUI
-  fullName: IToggleableUI
-  nameWithType: IToggleableUI
 - uid: Global.MatrixMultiplicationUI
   name: MatrixMultiplicationUI
   href: api/Global.MatrixMultiplicationUI.html
@@ -2493,554 +2333,635 @@ references:
   commentId: T:TMPro.TMP_TextEventHandler.WordSelectionEvent
   fullName: TMPro.TMP_TextEventHandler.WordSelectionEvent
   nameWithType: TMP_TextEventHandler.WordSelectionEvent
-- uid: UI
-  name: UI
-  href: api/UI.html
-  commentId: N:UI
-  fullName: UI
-  nameWithType: UI
-- uid: UI.AddButton
+- uid: UIControllers
+  name: UIControllers
+  href: api/UIControllers.html
+  commentId: N:UIControllers
+  fullName: UIControllers
+  nameWithType: UIControllers
+- uid: UIControllers.AddButton
   name: AddButton
-  href: api/UI.AddButton.html
-  commentId: T:UI.AddButton
-  fullName: UI.AddButton
+  href: api/UIControllers.AddButton.html
+  commentId: T:UIControllers.AddButton
+  fullName: UIControllers.AddButton
   nameWithType: AddButton
-- uid: UI.ControlDimension
+- uid: UIControllers.ControlDimension
   name: ControlDimension
-  href: api/UI.ControlDimension.html
-  commentId: T:UI.ControlDimension
-  fullName: UI.ControlDimension
+  href: api/UIControllers.ControlDimension.html
+  commentId: T:UIControllers.ControlDimension
+  fullName: UIControllers.ControlDimension
   nameWithType: ControlDimension
-- uid: UI.ControlDimension.Both
+- uid: UIControllers.ControlDimension.Both
   name: Both
-  href: api/UI.ControlDimension.html#UI_ControlDimension_Both
-  commentId: F:UI.ControlDimension.Both
-  fullName: UI.ControlDimension.Both
+  href: api/UIControllers.ControlDimension.html#UIControllers_ControlDimension_Both
+  commentId: F:UIControllers.ControlDimension.Both
+  fullName: UIControllers.ControlDimension.Both
   nameWithType: ControlDimension.Both
-- uid: UI.ControlDimension.Height
+- uid: UIControllers.ControlDimension.Height
   name: Height
-  href: api/UI.ControlDimension.html#UI_ControlDimension_Height
-  commentId: F:UI.ControlDimension.Height
-  fullName: UI.ControlDimension.Height
+  href: api/UIControllers.ControlDimension.html#UIControllers_ControlDimension_Height
+  commentId: F:UIControllers.ControlDimension.Height
+  fullName: UIControllers.ControlDimension.Height
   nameWithType: ControlDimension.Height
-- uid: UI.ControlDimension.None
+- uid: UIControllers.ControlDimension.None
   name: None
-  href: api/UI.ControlDimension.html#UI_ControlDimension_None
-  commentId: F:UI.ControlDimension.None
-  fullName: UI.ControlDimension.None
+  href: api/UIControllers.ControlDimension.html#UIControllers_ControlDimension_None
+  commentId: F:UIControllers.ControlDimension.None
+  fullName: UIControllers.ControlDimension.None
   nameWithType: ControlDimension.None
-- uid: UI.ControlDimension.Width
+- uid: UIControllers.ControlDimension.Width
   name: Width
-  href: api/UI.ControlDimension.html#UI_ControlDimension_Width
-  commentId: F:UI.ControlDimension.Width
-  fullName: UI.ControlDimension.Width
+  href: api/UIControllers.ControlDimension.html#UIControllers_ControlDimension_Width
+  commentId: F:UIControllers.ControlDimension.Width
+  fullName: UIControllers.ControlDimension.Width
   nameWithType: ControlDimension.Width
-- uid: UI.DurationIcon
+- uid: UIControllers.DurationIcon
   name: DurationIcon
-  href: api/UI.DurationIcon.html
-  commentId: T:UI.DurationIcon
-  fullName: UI.DurationIcon
+  href: api/UIControllers.DurationIcon.html
+  commentId: T:UIControllers.DurationIcon
+  fullName: UIControllers.DurationIcon
   nameWithType: DurationIcon
-- uid: UI.DurationLabel
+- uid: UIControllers.DurationLabel
   name: DurationLabel
-  href: api/UI.DurationLabel.html
-  commentId: T:UI.DurationLabel
-  fullName: UI.DurationLabel
+  href: api/UIControllers.DurationLabel.html
+  commentId: T:UIControllers.DurationLabel
+  fullName: UIControllers.DurationLabel
   nameWithType: DurationLabel
-- uid: UI.DurationRow
+- uid: UIControllers.DurationRow
   name: DurationRow
-  href: api/UI.DurationRow.html
-  commentId: T:UI.DurationRow
-  fullName: UI.DurationRow
+  href: api/UIControllers.DurationRow.html
+  commentId: T:UIControllers.DurationRow
+  fullName: UIControllers.DurationRow
   nameWithType: DurationRow
-- uid: UI.HorizontalSpacer
+- uid: UIControllers.HorizontalSpacer
   name: HorizontalSpacer
-  href: api/UI.HorizontalSpacer.html
-  commentId: T:UI.HorizontalSpacer
-  fullName: UI.HorizontalSpacer
+  href: api/UIControllers.HorizontalSpacer.html
+  commentId: T:UIControllers.HorizontalSpacer
+  fullName: UIControllers.HorizontalSpacer
   nameWithType: HorizontalSpacer
-- uid: UI.IUIComponent
+- uid: UIControllers.IDeletableUI
+  name: IDeletableUI
+  href: api/UIControllers.IDeletableUI.html
+  commentId: T:UIControllers.IDeletableUI
+  fullName: UIControllers.IDeletableUI
+  nameWithType: IDeletableUI
+- uid: UIControllers.IDeletableUI.Delete
+  name: Delete()
+  href: api/UIControllers.IDeletableUI.html#UIControllers_IDeletableUI_Delete
+  commentId: M:UIControllers.IDeletableUI.Delete
+  fullName: UIControllers.IDeletableUI.Delete()
+  nameWithType: IDeletableUI.Delete()
+- uid: UIControllers.IDeletableUI.Delete*
+  name: Delete
+  href: api/UIControllers.IDeletableUI.html#UIControllers_IDeletableUI_Delete_
+  commentId: Overload:UIControllers.IDeletableUI.Delete
+  isSpec: "True"
+  fullName: UIControllers.IDeletableUI.Delete
+  nameWithType: IDeletableUI.Delete
+- uid: UIControllers.IDeletableUI.OnUIDelete
+  name: OnUIDelete
+  href: api/UIControllers.IDeletableUI.html#UIControllers_IDeletableUI_OnUIDelete
+  commentId: E:UIControllers.IDeletableUI.OnUIDelete
+  fullName: UIControllers.IDeletableUI.OnUIDelete
+  nameWithType: IDeletableUI.OnUIDelete
+- uid: UIControllers.INoteActionUI`1
+  name: INoteActionUI<TData>
+  href: api/UIControllers.INoteActionUI-1.html
+  commentId: T:UIControllers.INoteActionUI`1
+  name.vb: INoteActionUI(Of TData)
+  fullName: UIControllers.INoteActionUI<TData>
+  fullName.vb: UIControllers.INoteActionUI(Of TData)
+  nameWithType: INoteActionUI<TData>
+  nameWithType.vb: INoteActionUI(Of TData)
+- uid: UIControllers.INoteResultUI
+  name: INoteResultUI
+  href: api/UIControllers.INoteResultUI.html
+  commentId: T:UIControllers.INoteResultUI
+  fullName: UIControllers.INoteResultUI
+  nameWithType: INoteResultUI
+- uid: UIControllers.INoteStartUI
+  name: INoteStartUI
+  href: api/UIControllers.INoteStartUI.html
+  commentId: T:UIControllers.INoteStartUI
+  fullName: UIControllers.INoteStartUI
+  nameWithType: INoteStartUI
+- uid: UIControllers.IRetrievableUI`1
+  name: IRetrievableUI<TData>
+  href: api/UIControllers.IRetrievableUI-1.html
+  commentId: T:UIControllers.IRetrievableUI`1
+  name.vb: IRetrievableUI(Of TData)
+  fullName: UIControllers.IRetrievableUI<TData>
+  fullName.vb: UIControllers.IRetrievableUI(Of TData)
+  nameWithType: IRetrievableUI<TData>
+  nameWithType.vb: IRetrievableUI(Of TData)
+- uid: UIControllers.IRetrievableUI`1.GetData
+  name: GetData()
+  href: api/UIControllers.IRetrievableUI-1.html#UIControllers_IRetrievableUI_1_GetData
+  commentId: M:UIControllers.IRetrievableUI`1.GetData
+  fullName: UIControllers.IRetrievableUI<TData>.GetData()
+  fullName.vb: UIControllers.IRetrievableUI(Of TData).GetData()
+  nameWithType: IRetrievableUI<TData>.GetData()
+  nameWithType.vb: IRetrievableUI(Of TData).GetData()
+- uid: UIControllers.IRetrievableUI`1.GetData*
+  name: GetData
+  href: api/UIControllers.IRetrievableUI-1.html#UIControllers_IRetrievableUI_1_GetData_
+  commentId: Overload:UIControllers.IRetrievableUI`1.GetData
+  isSpec: "True"
+  fullName: UIControllers.IRetrievableUI<TData>.GetData
+  fullName.vb: UIControllers.IRetrievableUI(Of TData).GetData
+  nameWithType: IRetrievableUI<TData>.GetData
+  nameWithType.vb: IRetrievableUI(Of TData).GetData
+- uid: UIControllers.IRetrievableUI`1.GetDuration
+  name: GetDuration()
+  href: api/UIControllers.IRetrievableUI-1.html#UIControllers_IRetrievableUI_1_GetDuration
+  commentId: M:UIControllers.IRetrievableUI`1.GetDuration
+  fullName: UIControllers.IRetrievableUI<TData>.GetDuration()
+  fullName.vb: UIControllers.IRetrievableUI(Of TData).GetDuration()
+  nameWithType: IRetrievableUI<TData>.GetDuration()
+  nameWithType.vb: IRetrievableUI(Of TData).GetDuration()
+- uid: UIControllers.IRetrievableUI`1.GetDuration*
+  name: GetDuration
+  href: api/UIControllers.IRetrievableUI-1.html#UIControllers_IRetrievableUI_1_GetDuration_
+  commentId: Overload:UIControllers.IRetrievableUI`1.GetDuration
+  isSpec: "True"
+  fullName: UIControllers.IRetrievableUI<TData>.GetDuration
+  fullName.vb: UIControllers.IRetrievableUI(Of TData).GetDuration
+  nameWithType: IRetrievableUI<TData>.GetDuration
+  nameWithType.vb: IRetrievableUI(Of TData).GetDuration
+- uid: UIControllers.ISettableFromCodeUI`1
+  name: ISettableFromCodeUI<TData>
+  href: api/UIControllers.ISettableFromCodeUI-1.html
+  commentId: T:UIControllers.ISettableFromCodeUI`1
+  name.vb: ISettableFromCodeUI(Of TData)
+  fullName: UIControllers.ISettableFromCodeUI<TData>
+  fullName.vb: UIControllers.ISettableFromCodeUI(Of TData)
+  nameWithType: ISettableFromCodeUI<TData>
+  nameWithType.vb: ISettableFromCodeUI(Of TData)
+- uid: UIControllers.ISettableFromCodeUI`1.Set(System.Nullable{`0})
+  name: Set(Nullable<TData>)
+  href: api/UIControllers.ISettableFromCodeUI-1.html#UIControllers_ISettableFromCodeUI_1_Set_System_Nullable__0__
+  commentId: M:UIControllers.ISettableFromCodeUI`1.Set(System.Nullable{`0})
+  name.vb: Set(Nullable(Of TData))
+  fullName: UIControllers.ISettableFromCodeUI<TData>.Set(System.Nullable<TData>)
+  fullName.vb: UIControllers.ISettableFromCodeUI(Of TData).Set(System.Nullable(Of TData))
+  nameWithType: ISettableFromCodeUI<TData>.Set(Nullable<TData>)
+  nameWithType.vb: ISettableFromCodeUI(Of TData).Set(Nullable(Of TData))
+- uid: UIControllers.ISettableFromCodeUI`1.Set*
+  name: Set
+  href: api/UIControllers.ISettableFromCodeUI-1.html#UIControllers_ISettableFromCodeUI_1_Set_
+  commentId: Overload:UIControllers.ISettableFromCodeUI`1.Set
+  isSpec: "True"
+  fullName: UIControllers.ISettableFromCodeUI<TData>.Set
+  fullName.vb: UIControllers.ISettableFromCodeUI(Of TData).Set
+  nameWithType: ISettableFromCodeUI<TData>.Set
+  nameWithType.vb: ISettableFromCodeUI(Of TData).Set
+- uid: UIControllers.IUIComponent
   name: IUIComponent
-  href: api/UI.IUIComponent.html
-  commentId: T:UI.IUIComponent
-  fullName: UI.IUIComponent
+  href: api/UIControllers.IUIComponent.html
+  commentId: T:UIControllers.IUIComponent
+  fullName: UIControllers.IUIComponent
   nameWithType: IUIComponent
-- uid: UI.NoteCoordinateUI
-  name: NoteCoordinateUI
-  href: api/UI.NoteCoordinateUI.html
-  commentId: T:UI.NoteCoordinateUI
-  fullName: UI.NoteCoordinateUI
-  nameWithType: NoteCoordinateUI
-- uid: UI.NoteCoordinateUI.Delete
-  name: Delete()
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_Delete
-  commentId: M:UI.NoteCoordinateUI.Delete
-  fullName: UI.NoteCoordinateUI.Delete()
-  nameWithType: NoteCoordinateUI.Delete()
-- uid: UI.NoteCoordinateUI.Delete*
-  name: Delete
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_Delete_
-  commentId: Overload:UI.NoteCoordinateUI.Delete
-  isSpec: "True"
-  fullName: UI.NoteCoordinateUI.Delete
-  nameWithType: NoteCoordinateUI.Delete
-- uid: UI.NoteCoordinateUI.GetData
-  name: GetData()
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_GetData
-  commentId: M:UI.NoteCoordinateUI.GetData
-  fullName: UI.NoteCoordinateUI.GetData()
-  nameWithType: NoteCoordinateUI.GetData()
-- uid: UI.NoteCoordinateUI.GetData*
-  name: GetData
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_GetData_
-  commentId: Overload:UI.NoteCoordinateUI.GetData
-  isSpec: "True"
-  fullName: UI.NoteCoordinateUI.GetData
-  nameWithType: NoteCoordinateUI.GetData
-- uid: UI.NoteCoordinateUI.GetDuration
-  name: GetDuration()
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_GetDuration
-  commentId: M:UI.NoteCoordinateUI.GetDuration
-  fullName: UI.NoteCoordinateUI.GetDuration()
-  nameWithType: NoteCoordinateUI.GetDuration()
-- uid: UI.NoteCoordinateUI.GetDuration*
-  name: GetDuration
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_GetDuration_
-  commentId: Overload:UI.NoteCoordinateUI.GetDuration
-  isSpec: "True"
-  fullName: UI.NoteCoordinateUI.GetDuration
-  nameWithType: NoteCoordinateUI.GetDuration
-- uid: UI.NoteCoordinateUI.OnUIDelete
-  name: OnUIDelete
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_OnUIDelete
-  commentId: E:UI.NoteCoordinateUI.OnUIDelete
-  fullName: UI.NoteCoordinateUI.OnUIDelete
-  nameWithType: NoteCoordinateUI.OnUIDelete
-- uid: UI.NoteCoordinateUI.OnUIEdit
+- uid: UIControllers.IUserEditableUI`1
+  name: IUserEditableUI<TData>
+  href: api/UIControllers.IUserEditableUI-1.html
+  commentId: T:UIControllers.IUserEditableUI`1
+  name.vb: IUserEditableUI(Of TData)
+  fullName: UIControllers.IUserEditableUI<TData>
+  fullName.vb: UIControllers.IUserEditableUI(Of TData)
+  nameWithType: IUserEditableUI<TData>
+  nameWithType.vb: IUserEditableUI(Of TData)
+- uid: UIControllers.IUserEditableUI`1.OnUIEdit
   name: OnUIEdit
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_OnUIEdit
-  commentId: E:UI.NoteCoordinateUI.OnUIEdit
-  fullName: UI.NoteCoordinateUI.OnUIEdit
-  nameWithType: NoteCoordinateUI.OnUIEdit
-- uid: UI.NoteCoordinateUI.Set(System.Nullable{float2})
-  name: Set(Nullable<float2>)
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_Set_System_Nullable_float2__
-  commentId: M:UI.NoteCoordinateUI.Set(System.Nullable{float2})
-  name.vb: Set(Nullable(Of float2))
-  fullName: UI.NoteCoordinateUI.Set(System.Nullable<float2>)
-  fullName.vb: UI.NoteCoordinateUI.Set(System.Nullable(Of float2))
-  nameWithType: NoteCoordinateUI.Set(Nullable<float2>)
-  nameWithType.vb: NoteCoordinateUI.Set(Nullable(Of float2))
-- uid: UI.NoteCoordinateUI.Set*
-  name: Set
-  href: api/UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_Set_
-  commentId: Overload:UI.NoteCoordinateUI.Set
-  isSpec: "True"
-  fullName: UI.NoteCoordinateUI.Set
-  nameWithType: NoteCoordinateUI.Set
-- uid: UI.NoteElement
-  name: NoteElement
-  href: api/UI.NoteElement.html
-  commentId: T:UI.NoteElement
-  fullName: UI.NoteElement
-  nameWithType: NoteElement
-- uid: UI.NoteElement.CurrentSize
-  name: CurrentSize
-  href: api/UI.NoteElement.html#UI_NoteElement_CurrentSize
-  commentId: P:UI.NoteElement.CurrentSize
-  fullName: UI.NoteElement.CurrentSize
-  nameWithType: NoteElement.CurrentSize
-- uid: UI.NoteElement.CurrentSize*
-  name: CurrentSize
-  href: api/UI.NoteElement.html#UI_NoteElement_CurrentSize_
-  commentId: Overload:UI.NoteElement.CurrentSize
-  isSpec: "True"
-  fullName: UI.NoteElement.CurrentSize
-  nameWithType: NoteElement.CurrentSize
-- uid: UI.NoteElement.OriginalSize
-  name: OriginalSize
-  href: api/UI.NoteElement.html#UI_NoteElement_OriginalSize
-  commentId: P:UI.NoteElement.OriginalSize
-  fullName: UI.NoteElement.OriginalSize
-  nameWithType: NoteElement.OriginalSize
-- uid: UI.NoteElement.OriginalSize*
-  name: OriginalSize
-  href: api/UI.NoteElement.html#UI_NoteElement_OriginalSize_
-  commentId: Overload:UI.NoteElement.OriginalSize
-  isSpec: "True"
-  fullName: UI.NoteElement.OriginalSize
-  nameWithType: NoteElement.OriginalSize
-- uid: UI.NoteElement.SetHeight(System.Single)
-  name: SetHeight(Single)
-  href: api/UI.NoteElement.html#UI_NoteElement_SetHeight_System_Single_
-  commentId: M:UI.NoteElement.SetHeight(System.Single)
-  fullName: UI.NoteElement.SetHeight(System.Single)
-  nameWithType: NoteElement.SetHeight(Single)
-- uid: UI.NoteElement.SetHeight*
-  name: SetHeight
-  href: api/UI.NoteElement.html#UI_NoteElement_SetHeight_
-  commentId: Overload:UI.NoteElement.SetHeight
-  isSpec: "True"
-  fullName: UI.NoteElement.SetHeight
-  nameWithType: NoteElement.SetHeight
-- uid: UI.NoteElementLabel
-  name: NoteElementLabel
-  href: api/UI.NoteElementLabel.html
-  commentId: T:UI.NoteElementLabel
-  fullName: UI.NoteElementLabel
-  nameWithType: NoteElementLabel
-- uid: UI.NoteElementsContainer
-  name: NoteElementsContainer
-  href: api/UI.NoteElementsContainer.html
-  commentId: T:UI.NoteElementsContainer
-  fullName: UI.NoteElementsContainer
-  nameWithType: NoteElementsContainer
-- uid: UI.NoteElementsContainer.Append(UI.UIComponentsContainer)
-  name: Append(UIComponentsContainer)
-  href: api/UI.NoteElementsContainer.html#UI_NoteElementsContainer_Append_UI_UIComponentsContainer_
-  commentId: M:UI.NoteElementsContainer.Append(UI.UIComponentsContainer)
-  fullName: UI.NoteElementsContainer.Append(UI.UIComponentsContainer)
-  nameWithType: NoteElementsContainer.Append(UIComponentsContainer)
-- uid: UI.NoteElementsContainer.Append*
-  name: Append
-  href: api/UI.NoteElementsContainer.html#UI_NoteElementsContainer_Append_
-  commentId: Overload:UI.NoteElementsContainer.Append
-  isSpec: "True"
-  fullName: UI.NoteElementsContainer.Append
-  nameWithType: NoteElementsContainer.Append
-- uid: UI.NoteElementsContainer.Insert(UI.UIComponentsContainer,System.Int32)
-  name: Insert(UIComponentsContainer, Int32)
-  href: api/UI.NoteElementsContainer.html#UI_NoteElementsContainer_Insert_UI_UIComponentsContainer_System_Int32_
-  commentId: M:UI.NoteElementsContainer.Insert(UI.UIComponentsContainer,System.Int32)
-  fullName: UI.NoteElementsContainer.Insert(UI.UIComponentsContainer, System.Int32)
-  nameWithType: NoteElementsContainer.Insert(UIComponentsContainer, Int32)
-- uid: UI.NoteElementsContainer.Insert*
-  name: Insert
-  href: api/UI.NoteElementsContainer.html#UI_NoteElementsContainer_Insert_
-  commentId: Overload:UI.NoteElementsContainer.Insert
-  isSpec: "True"
-  fullName: UI.NoteElementsContainer.Insert
-  nameWithType: NoteElementsContainer.Insert
-- uid: UI.NoteResultUI
-  name: NoteResultUI
-  href: api/UI.NoteResultUI.html
-  commentId: T:UI.NoteResultUI
-  fullName: UI.NoteResultUI
-  nameWithType: NoteResultUI
-- uid: UI.NoteStartUI
-  name: NoteStartUI
-  href: api/UI.NoteStartUI.html
-  commentId: T:UI.NoteStartUI
-  fullName: UI.NoteStartUI
-  nameWithType: NoteStartUI
-- uid: UI.ResultingVectorCoordinateUI
-  name: ResultingVectorCoordinateUI
-  href: api/UI.ResultingVectorCoordinateUI.html
-  commentId: T:UI.ResultingVectorCoordinateUI
-  fullName: UI.ResultingVectorCoordinateUI
-  nameWithType: ResultingVectorCoordinateUI
-- uid: UI.ResultingVectorCoordinateUI.Delete
+  href: api/UIControllers.IUserEditableUI-1.html#UIControllers_IUserEditableUI_1_OnUIEdit
+  commentId: E:UIControllers.IUserEditableUI`1.OnUIEdit
+  fullName: UIControllers.IUserEditableUI<TData>.OnUIEdit
+  fullName.vb: UIControllers.IUserEditableUI(Of TData).OnUIEdit
+  nameWithType: IUserEditableUI<TData>.OnUIEdit
+  nameWithType.vb: IUserEditableUI(Of TData).OnUIEdit
+- uid: UIControllers.Note2DCoordinateUI
+  name: Note2DCoordinateUI
+  href: api/UIControllers.Note2DCoordinateUI.html
+  commentId: T:UIControllers.Note2DCoordinateUI
+  fullName: UIControllers.Note2DCoordinateUI
+  nameWithType: Note2DCoordinateUI
+- uid: UIControllers.Note2DCoordinateUI.Delete
   name: Delete()
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_Delete
-  commentId: M:UI.ResultingVectorCoordinateUI.Delete
-  fullName: UI.ResultingVectorCoordinateUI.Delete()
-  nameWithType: ResultingVectorCoordinateUI.Delete()
-- uid: UI.ResultingVectorCoordinateUI.Delete*
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_Delete
+  commentId: M:UIControllers.Note2DCoordinateUI.Delete
+  fullName: UIControllers.Note2DCoordinateUI.Delete()
+  nameWithType: Note2DCoordinateUI.Delete()
+- uid: UIControllers.Note2DCoordinateUI.Delete*
   name: Delete
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_Delete_
-  commentId: Overload:UI.ResultingVectorCoordinateUI.Delete
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_Delete_
+  commentId: Overload:UIControllers.Note2DCoordinateUI.Delete
   isSpec: "True"
-  fullName: UI.ResultingVectorCoordinateUI.Delete
-  nameWithType: ResultingVectorCoordinateUI.Delete
-- uid: UI.ResultingVectorCoordinateUI.GetData
+  fullName: UIControllers.Note2DCoordinateUI.Delete
+  nameWithType: Note2DCoordinateUI.Delete
+- uid: UIControllers.Note2DCoordinateUI.GetData
   name: GetData()
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_GetData
-  commentId: M:UI.ResultingVectorCoordinateUI.GetData
-  fullName: UI.ResultingVectorCoordinateUI.GetData()
-  nameWithType: ResultingVectorCoordinateUI.GetData()
-- uid: UI.ResultingVectorCoordinateUI.GetData*
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_GetData
+  commentId: M:UIControllers.Note2DCoordinateUI.GetData
+  fullName: UIControllers.Note2DCoordinateUI.GetData()
+  nameWithType: Note2DCoordinateUI.GetData()
+- uid: UIControllers.Note2DCoordinateUI.GetData*
   name: GetData
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_GetData_
-  commentId: Overload:UI.ResultingVectorCoordinateUI.GetData
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_GetData_
+  commentId: Overload:UIControllers.Note2DCoordinateUI.GetData
   isSpec: "True"
-  fullName: UI.ResultingVectorCoordinateUI.GetData
-  nameWithType: ResultingVectorCoordinateUI.GetData
-- uid: UI.ResultingVectorCoordinateUI.GetDuration
+  fullName: UIControllers.Note2DCoordinateUI.GetData
+  nameWithType: Note2DCoordinateUI.GetData
+- uid: UIControllers.Note2DCoordinateUI.GetDuration
   name: GetDuration()
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_GetDuration
-  commentId: M:UI.ResultingVectorCoordinateUI.GetDuration
-  fullName: UI.ResultingVectorCoordinateUI.GetDuration()
-  nameWithType: ResultingVectorCoordinateUI.GetDuration()
-- uid: UI.ResultingVectorCoordinateUI.GetDuration*
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_GetDuration
+  commentId: M:UIControllers.Note2DCoordinateUI.GetDuration
+  fullName: UIControllers.Note2DCoordinateUI.GetDuration()
+  nameWithType: Note2DCoordinateUI.GetDuration()
+- uid: UIControllers.Note2DCoordinateUI.GetDuration*
   name: GetDuration
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_GetDuration_
-  commentId: Overload:UI.ResultingVectorCoordinateUI.GetDuration
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_GetDuration_
+  commentId: Overload:UIControllers.Note2DCoordinateUI.GetDuration
   isSpec: "True"
-  fullName: UI.ResultingVectorCoordinateUI.GetDuration
-  nameWithType: ResultingVectorCoordinateUI.GetDuration
-- uid: UI.ResultingVectorCoordinateUI.OnUIDelete
+  fullName: UIControllers.Note2DCoordinateUI.GetDuration
+  nameWithType: Note2DCoordinateUI.GetDuration
+- uid: UIControllers.Note2DCoordinateUI.OnUIDelete
   name: OnUIDelete
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_OnUIDelete
-  commentId: E:UI.ResultingVectorCoordinateUI.OnUIDelete
-  fullName: UI.ResultingVectorCoordinateUI.OnUIDelete
-  nameWithType: ResultingVectorCoordinateUI.OnUIDelete
-- uid: UI.ResultingVectorCoordinateUI.Set(System.Nullable{float2})
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_OnUIDelete
+  commentId: E:UIControllers.Note2DCoordinateUI.OnUIDelete
+  fullName: UIControllers.Note2DCoordinateUI.OnUIDelete
+  nameWithType: Note2DCoordinateUI.OnUIDelete
+- uid: UIControllers.Note2DCoordinateUI.OnUIEdit
+  name: OnUIEdit
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_OnUIEdit
+  commentId: E:UIControllers.Note2DCoordinateUI.OnUIEdit
+  fullName: UIControllers.Note2DCoordinateUI.OnUIEdit
+  nameWithType: Note2DCoordinateUI.OnUIEdit
+- uid: UIControllers.Note2DCoordinateUI.Set(System.Nullable{float2})
   name: Set(Nullable<float2>)
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_Set_System_Nullable_float2__
-  commentId: M:UI.ResultingVectorCoordinateUI.Set(System.Nullable{float2})
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_Set_System_Nullable_float2__
+  commentId: M:UIControllers.Note2DCoordinateUI.Set(System.Nullable{float2})
   name.vb: Set(Nullable(Of float2))
-  fullName: UI.ResultingVectorCoordinateUI.Set(System.Nullable<float2>)
-  fullName.vb: UI.ResultingVectorCoordinateUI.Set(System.Nullable(Of float2))
-  nameWithType: ResultingVectorCoordinateUI.Set(Nullable<float2>)
-  nameWithType.vb: ResultingVectorCoordinateUI.Set(Nullable(Of float2))
-- uid: UI.ResultingVectorCoordinateUI.Set*
+  fullName: UIControllers.Note2DCoordinateUI.Set(System.Nullable<float2>)
+  fullName.vb: UIControllers.Note2DCoordinateUI.Set(System.Nullable(Of float2))
+  nameWithType: Note2DCoordinateUI.Set(Nullable<float2>)
+  nameWithType.vb: Note2DCoordinateUI.Set(Nullable(Of float2))
+- uid: UIControllers.Note2DCoordinateUI.Set*
   name: Set
-  href: api/UI.ResultingVectorCoordinateUI.html#UI_ResultingVectorCoordinateUI_Set_
-  commentId: Overload:UI.ResultingVectorCoordinateUI.Set
+  href: api/UIControllers.Note2DCoordinateUI.html#UIControllers_Note2DCoordinateUI_Set_
+  commentId: Overload:UIControllers.Note2DCoordinateUI.Set
   isSpec: "True"
-  fullName: UI.ResultingVectorCoordinateUI.Set
-  nameWithType: ResultingVectorCoordinateUI.Set
-- uid: UI.Sign
+  fullName: UIControllers.Note2DCoordinateUI.Set
+  nameWithType: Note2DCoordinateUI.Set
+- uid: UIControllers.Note2DResultUI
+  name: Note2DResultUI
+  href: api/UIControllers.Note2DResultUI.html
+  commentId: T:UIControllers.Note2DResultUI
+  fullName: UIControllers.Note2DResultUI
+  nameWithType: Note2DResultUI
+- uid: UIControllers.Note2DStartUI
+  name: Note2DStartUI
+  href: api/UIControllers.Note2DStartUI.html
+  commentId: T:UIControllers.Note2DStartUI
+  fullName: UIControllers.Note2DStartUI
+  nameWithType: Note2DStartUI
+- uid: UIControllers.NoteElement
+  name: NoteElement
+  href: api/UIControllers.NoteElement.html
+  commentId: T:UIControllers.NoteElement
+  fullName: UIControllers.NoteElement
+  nameWithType: NoteElement
+- uid: UIControllers.NoteElement.CurrentSize
+  name: CurrentSize
+  href: api/UIControllers.NoteElement.html#UIControllers_NoteElement_CurrentSize
+  commentId: P:UIControllers.NoteElement.CurrentSize
+  fullName: UIControllers.NoteElement.CurrentSize
+  nameWithType: NoteElement.CurrentSize
+- uid: UIControllers.NoteElement.CurrentSize*
+  name: CurrentSize
+  href: api/UIControllers.NoteElement.html#UIControllers_NoteElement_CurrentSize_
+  commentId: Overload:UIControllers.NoteElement.CurrentSize
+  isSpec: "True"
+  fullName: UIControllers.NoteElement.CurrentSize
+  nameWithType: NoteElement.CurrentSize
+- uid: UIControllers.NoteElement.OriginalSize
+  name: OriginalSize
+  href: api/UIControllers.NoteElement.html#UIControllers_NoteElement_OriginalSize
+  commentId: P:UIControllers.NoteElement.OriginalSize
+  fullName: UIControllers.NoteElement.OriginalSize
+  nameWithType: NoteElement.OriginalSize
+- uid: UIControllers.NoteElement.OriginalSize*
+  name: OriginalSize
+  href: api/UIControllers.NoteElement.html#UIControllers_NoteElement_OriginalSize_
+  commentId: Overload:UIControllers.NoteElement.OriginalSize
+  isSpec: "True"
+  fullName: UIControllers.NoteElement.OriginalSize
+  nameWithType: NoteElement.OriginalSize
+- uid: UIControllers.NoteElement.SetHeight(System.Single)
+  name: SetHeight(Single)
+  href: api/UIControllers.NoteElement.html#UIControllers_NoteElement_SetHeight_System_Single_
+  commentId: M:UIControllers.NoteElement.SetHeight(System.Single)
+  fullName: UIControllers.NoteElement.SetHeight(System.Single)
+  nameWithType: NoteElement.SetHeight(Single)
+- uid: UIControllers.NoteElement.SetHeight*
+  name: SetHeight
+  href: api/UIControllers.NoteElement.html#UIControllers_NoteElement_SetHeight_
+  commentId: Overload:UIControllers.NoteElement.SetHeight
+  isSpec: "True"
+  fullName: UIControllers.NoteElement.SetHeight
+  nameWithType: NoteElement.SetHeight
+- uid: UIControllers.NoteElementLabel
+  name: NoteElementLabel
+  href: api/UIControllers.NoteElementLabel.html
+  commentId: T:UIControllers.NoteElementLabel
+  fullName: UIControllers.NoteElementLabel
+  nameWithType: NoteElementLabel
+- uid: UIControllers.NoteElementsContainer
+  name: NoteElementsContainer
+  href: api/UIControllers.NoteElementsContainer.html
+  commentId: T:UIControllers.NoteElementsContainer
+  fullName: UIControllers.NoteElementsContainer
+  nameWithType: NoteElementsContainer
+- uid: UIControllers.NoteElementsContainer.Append(UIControllers.UIComponentsContainer)
+  name: Append(UIComponentsContainer)
+  href: api/UIControllers.NoteElementsContainer.html#UIControllers_NoteElementsContainer_Append_UIControllers_UIComponentsContainer_
+  commentId: M:UIControllers.NoteElementsContainer.Append(UIControllers.UIComponentsContainer)
+  fullName: UIControllers.NoteElementsContainer.Append(UIControllers.UIComponentsContainer)
+  nameWithType: NoteElementsContainer.Append(UIComponentsContainer)
+- uid: UIControllers.NoteElementsContainer.Append*
+  name: Append
+  href: api/UIControllers.NoteElementsContainer.html#UIControllers_NoteElementsContainer_Append_
+  commentId: Overload:UIControllers.NoteElementsContainer.Append
+  isSpec: "True"
+  fullName: UIControllers.NoteElementsContainer.Append
+  nameWithType: NoteElementsContainer.Append
+- uid: UIControllers.NoteElementsContainer.Insert(UIControllers.UIComponentsContainer,System.Int32)
+  name: Insert(UIComponentsContainer, Int32)
+  href: api/UIControllers.NoteElementsContainer.html#UIControllers_NoteElementsContainer_Insert_UIControllers_UIComponentsContainer_System_Int32_
+  commentId: M:UIControllers.NoteElementsContainer.Insert(UIControllers.UIComponentsContainer,System.Int32)
+  fullName: UIControllers.NoteElementsContainer.Insert(UIControllers.UIComponentsContainer, System.Int32)
+  nameWithType: NoteElementsContainer.Insert(UIComponentsContainer, Int32)
+- uid: UIControllers.NoteElementsContainer.Insert*
+  name: Insert
+  href: api/UIControllers.NoteElementsContainer.html#UIControllers_NoteElementsContainer_Insert_
+  commentId: Overload:UIControllers.NoteElementsContainer.Insert
+  isSpec: "True"
+  fullName: UIControllers.NoteElementsContainer.Insert
+  nameWithType: NoteElementsContainer.Insert
+- uid: UIControllers.OnUIDelete
+  name: OnUIDelete
+  href: api/UIControllers.OnUIDelete.html
+  commentId: T:UIControllers.OnUIDelete
+  fullName: UIControllers.OnUIDelete
+  nameWithType: OnUIDelete
+- uid: UIControllers.OnUIEdit`1
+  name: OnUIEdit<TData>
+  href: api/UIControllers.OnUIEdit-1.html
+  commentId: T:UIControllers.OnUIEdit`1
+  name.vb: OnUIEdit(Of TData)
+  fullName: UIControllers.OnUIEdit<TData>
+  fullName.vb: UIControllers.OnUIEdit(Of TData)
+  nameWithType: OnUIEdit<TData>
+  nameWithType.vb: OnUIEdit(Of TData)
+- uid: UIControllers.Sign
   name: Sign
-  href: api/UI.Sign.html
-  commentId: T:UI.Sign
-  fullName: UI.Sign
+  href: api/UIControllers.Sign.html
+  commentId: T:UIControllers.Sign
+  fullName: UIControllers.Sign
   nameWithType: Sign
-- uid: UI.Sign.SignType
+- uid: UIControllers.Sign.SignType
   name: SignType
-  href: api/UI.Sign.html#UI_Sign_SignType
-  commentId: P:UI.Sign.SignType
-  fullName: UI.Sign.SignType
+  href: api/UIControllers.Sign.html#UIControllers_Sign_SignType
+  commentId: P:UIControllers.Sign.SignType
+  fullName: UIControllers.Sign.SignType
   nameWithType: Sign.SignType
-- uid: UI.Sign.SignType*
+- uid: UIControllers.Sign.SignType*
   name: SignType
-  href: api/UI.Sign.html#UI_Sign_SignType_
-  commentId: Overload:UI.Sign.SignType
+  href: api/UIControllers.Sign.html#UIControllers_Sign_SignType_
+  commentId: Overload:UIControllers.Sign.SignType
   isSpec: "True"
-  fullName: UI.Sign.SignType
+  fullName: UIControllers.Sign.SignType
   nameWithType: Sign.SignType
-- uid: UI.Sign.Type
+- uid: UIControllers.Sign.Type
   name: Sign.Type
-  href: api/UI.Sign.Type.html
-  commentId: T:UI.Sign.Type
-  fullName: UI.Sign.Type
+  href: api/UIControllers.Sign.Type.html
+  commentId: T:UIControllers.Sign.Type
+  fullName: UIControllers.Sign.Type
   nameWithType: Sign.Type
-- uid: UI.Sign.Type.Addition
+- uid: UIControllers.Sign.Type.Addition
   name: Addition
-  href: api/UI.Sign.Type.html#UI_Sign_Type_Addition
-  commentId: F:UI.Sign.Type.Addition
-  fullName: UI.Sign.Type.Addition
+  href: api/UIControllers.Sign.Type.html#UIControllers_Sign_Type_Addition
+  commentId: F:UIControllers.Sign.Type.Addition
+  fullName: UIControllers.Sign.Type.Addition
   nameWithType: Sign.Type.Addition
-- uid: UI.Sign.Type.Equals
+- uid: UIControllers.Sign.Type.Equals
   name: Equals
-  href: api/UI.Sign.Type.html#UI_Sign_Type_Equals
-  commentId: F:UI.Sign.Type.Equals
-  fullName: UI.Sign.Type.Equals
+  href: api/UIControllers.Sign.Type.html#UIControllers_Sign_Type_Equals
+  commentId: F:UIControllers.Sign.Type.Equals
+  fullName: UIControllers.Sign.Type.Equals
   nameWithType: Sign.Type.Equals
-- uid: UI.Sign.Type.Multiplication
+- uid: UIControllers.Sign.Type.Multiplication
   name: Multiplication
-  href: api/UI.Sign.Type.html#UI_Sign_Type_Multiplication
-  commentId: F:UI.Sign.Type.Multiplication
-  fullName: UI.Sign.Type.Multiplication
+  href: api/UIControllers.Sign.Type.html#UIControllers_Sign_Type_Multiplication
+  commentId: F:UIControllers.Sign.Type.Multiplication
+  fullName: UIControllers.Sign.Type.Multiplication
   nameWithType: Sign.Type.Multiplication
-- uid: UI.SizeBasedOnChildElements
+- uid: UIControllers.SizeBasedOnChildElements
   name: SizeBasedOnChildElements
-  href: api/UI.SizeBasedOnChildElements.html
-  commentId: T:UI.SizeBasedOnChildElements
-  fullName: UI.SizeBasedOnChildElements
+  href: api/UIControllers.SizeBasedOnChildElements.html
+  commentId: T:UIControllers.SizeBasedOnChildElements
+  fullName: UIControllers.SizeBasedOnChildElements
   nameWithType: SizeBasedOnChildElements
-- uid: UI.UIComponentsContainer
+- uid: UIControllers.UIComponentsContainer
   name: UIComponentsContainer
-  href: api/UI.UIComponentsContainer.html
-  commentId: T:UI.UIComponentsContainer
-  fullName: UI.UIComponentsContainer
+  href: api/UIControllers.UIComponentsContainer.html
+  commentId: T:UIControllers.UIComponentsContainer
+  fullName: UIControllers.UIComponentsContainer
   nameWithType: UIComponentsContainer
-- uid: UI.UIComponentsContainer.#ctor(GameObject[])
+- uid: UIControllers.UIComponentsContainer.#ctor(GameObject[])
   name: UIComponentsContainer(GameObject[])
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer__ctor_GameObject___
-  commentId: M:UI.UIComponentsContainer.#ctor(GameObject[])
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer__ctor_GameObject___
+  commentId: M:UIControllers.UIComponentsContainer.#ctor(GameObject[])
   name.vb: UIComponentsContainer(GameObject())
-  fullName: UI.UIComponentsContainer.UIComponentsContainer(GameObject[])
-  fullName.vb: UI.UIComponentsContainer.UIComponentsContainer(GameObject())
+  fullName: UIControllers.UIComponentsContainer.UIComponentsContainer(GameObject[])
+  fullName.vb: UIControllers.UIComponentsContainer.UIComponentsContainer(GameObject())
   nameWithType: UIComponentsContainer.UIComponentsContainer(GameObject[])
   nameWithType.vb: UIComponentsContainer.UIComponentsContainer(GameObject())
-- uid: UI.UIComponentsContainer.#ctor*
+- uid: UIControllers.UIComponentsContainer.#ctor*
   name: UIComponentsContainer
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer__ctor_
-  commentId: Overload:UI.UIComponentsContainer.#ctor
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer__ctor_
+  commentId: Overload:UIControllers.UIComponentsContainer.#ctor
   isSpec: "True"
-  fullName: UI.UIComponentsContainer.UIComponentsContainer
+  fullName: UIControllers.UIComponentsContainer.UIComponentsContainer
   nameWithType: UIComponentsContainer.UIComponentsContainer
-- uid: UI.UIComponentsContainer.Delete
+- uid: UIControllers.UIComponentsContainer.Delete
   name: Delete()
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer_Delete
-  commentId: M:UI.UIComponentsContainer.Delete
-  fullName: UI.UIComponentsContainer.Delete()
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer_Delete
+  commentId: M:UIControllers.UIComponentsContainer.Delete
+  fullName: UIControllers.UIComponentsContainer.Delete()
   nameWithType: UIComponentsContainer.Delete()
-- uid: UI.UIComponentsContainer.Delete*
+- uid: UIControllers.UIComponentsContainer.Delete*
   name: Delete
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer_Delete_
-  commentId: Overload:UI.UIComponentsContainer.Delete
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer_Delete_
+  commentId: Overload:UIControllers.UIComponentsContainer.Delete
   isSpec: "True"
-  fullName: UI.UIComponentsContainer.Delete
+  fullName: UIControllers.UIComponentsContainer.Delete
   nameWithType: UIComponentsContainer.Delete
-- uid: UI.UIComponentsContainer.GameObjects
+- uid: UIControllers.UIComponentsContainer.GameObjects
   name: GameObjects
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer_GameObjects
-  commentId: P:UI.UIComponentsContainer.GameObjects
-  fullName: UI.UIComponentsContainer.GameObjects
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer_GameObjects
+  commentId: P:UIControllers.UIComponentsContainer.GameObjects
+  fullName: UIControllers.UIComponentsContainer.GameObjects
   nameWithType: UIComponentsContainer.GameObjects
-- uid: UI.UIComponentsContainer.GameObjects*
+- uid: UIControllers.UIComponentsContainer.GameObjects*
   name: GameObjects
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer_GameObjects_
-  commentId: Overload:UI.UIComponentsContainer.GameObjects
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer_GameObjects_
+  commentId: Overload:UIControllers.UIComponentsContainer.GameObjects
   isSpec: "True"
-  fullName: UI.UIComponentsContainer.GameObjects
+  fullName: UIControllers.UIComponentsContainer.GameObjects
   nameWithType: UIComponentsContainer.GameObjects
-- uid: UI.UIComponentsContainer.GetUIComponent*
+- uid: UIControllers.UIComponentsContainer.GetUIComponent*
   name: GetUIComponent
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer_GetUIComponent_
-  commentId: Overload:UI.UIComponentsContainer.GetUIComponent
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer_GetUIComponent_
+  commentId: Overload:UIControllers.UIComponentsContainer.GetUIComponent
   isSpec: "True"
-  fullName: UI.UIComponentsContainer.GetUIComponent
+  fullName: UIControllers.UIComponentsContainer.GetUIComponent
   nameWithType: UIComponentsContainer.GetUIComponent
-- uid: UI.UIComponentsContainer.GetUIComponent``1
+- uid: UIControllers.UIComponentsContainer.GetUIComponent``1
   name: GetUIComponent<T>()
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer_GetUIComponent__1
-  commentId: M:UI.UIComponentsContainer.GetUIComponent``1
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer_GetUIComponent__1
+  commentId: M:UIControllers.UIComponentsContainer.GetUIComponent``1
   name.vb: GetUIComponent(Of T)()
-  fullName: UI.UIComponentsContainer.GetUIComponent<T>()
-  fullName.vb: UI.UIComponentsContainer.GetUIComponent(Of T)()
+  fullName: UIControllers.UIComponentsContainer.GetUIComponent<T>()
+  fullName.vb: UIControllers.UIComponentsContainer.GetUIComponent(Of T)()
   nameWithType: UIComponentsContainer.GetUIComponent<T>()
   nameWithType.vb: UIComponentsContainer.GetUIComponent(Of T)()
-- uid: UI.UIComponentsContainer.GetUIComponents*
+- uid: UIControllers.UIComponentsContainer.GetUIComponents*
   name: GetUIComponents
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer_GetUIComponents_
-  commentId: Overload:UI.UIComponentsContainer.GetUIComponents
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer_GetUIComponents_
+  commentId: Overload:UIControllers.UIComponentsContainer.GetUIComponents
   isSpec: "True"
-  fullName: UI.UIComponentsContainer.GetUIComponents
+  fullName: UIControllers.UIComponentsContainer.GetUIComponents
   nameWithType: UIComponentsContainer.GetUIComponents
-- uid: UI.UIComponentsContainer.GetUIComponents``1
+- uid: UIControllers.UIComponentsContainer.GetUIComponents``1
   name: GetUIComponents<T>()
-  href: api/UI.UIComponentsContainer.html#UI_UIComponentsContainer_GetUIComponents__1
-  commentId: M:UI.UIComponentsContainer.GetUIComponents``1
+  href: api/UIControllers.UIComponentsContainer.html#UIControllers_UIComponentsContainer_GetUIComponents__1
+  commentId: M:UIControllers.UIComponentsContainer.GetUIComponents``1
   name.vb: GetUIComponents(Of T)()
-  fullName: UI.UIComponentsContainer.GetUIComponents<T>()
-  fullName.vb: UI.UIComponentsContainer.GetUIComponents(Of T)()
+  fullName: UIControllers.UIComponentsContainer.GetUIComponents<T>()
+  fullName.vb: UIControllers.UIComponentsContainer.GetUIComponents(Of T)()
   nameWithType: UIComponentsContainer.GetUIComponents<T>()
   nameWithType.vb: UIComponentsContainer.GetUIComponents(Of T)()
-- uid: UI.UIUtility
+- uid: UIControllers.UIUtility
   name: UIUtility
-  href: api/UI.UIUtility.html
-  commentId: T:UI.UIUtility
-  fullName: UI.UIUtility
+  href: api/UIControllers.UIUtility.html
+  commentId: T:UIControllers.UIUtility
+  fullName: UIControllers.UIUtility
   nameWithType: UIUtility
-- uid: UI.UIUtility.GetActiveChildRectTransforms(Transform)
+- uid: UIControllers.UIUtility.GetActiveChildRectTransforms(Transform)
   name: GetActiveChildRectTransforms(Transform)
-  href: api/UI.UIUtility.html#UI_UIUtility_GetActiveChildRectTransforms_Transform_
-  commentId: M:UI.UIUtility.GetActiveChildRectTransforms(Transform)
-  fullName: UI.UIUtility.GetActiveChildRectTransforms(Transform)
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_GetActiveChildRectTransforms_Transform_
+  commentId: M:UIControllers.UIUtility.GetActiveChildRectTransforms(Transform)
+  fullName: UIControllers.UIUtility.GetActiveChildRectTransforms(Transform)
   nameWithType: UIUtility.GetActiveChildRectTransforms(Transform)
-- uid: UI.UIUtility.GetActiveChildRectTransforms*
+- uid: UIControllers.UIUtility.GetActiveChildRectTransforms*
   name: GetActiveChildRectTransforms
-  href: api/UI.UIUtility.html#UI_UIUtility_GetActiveChildRectTransforms_
-  commentId: Overload:UI.UIUtility.GetActiveChildRectTransforms
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_GetActiveChildRectTransforms_
+  commentId: Overload:UIControllers.UIUtility.GetActiveChildRectTransforms
   isSpec: "True"
-  fullName: UI.UIUtility.GetActiveChildRectTransforms
+  fullName: UIControllers.UIUtility.GetActiveChildRectTransforms
   nameWithType: UIUtility.GetActiveChildRectTransforms
-- uid: UI.UIUtility.GetSizeOfActiveChildren(Transform)
+- uid: UIControllers.UIUtility.GetSizeOfActiveChildren(Transform)
   name: GetSizeOfActiveChildren(Transform)
-  href: api/UI.UIUtility.html#UI_UIUtility_GetSizeOfActiveChildren_Transform_
-  commentId: M:UI.UIUtility.GetSizeOfActiveChildren(Transform)
-  fullName: UI.UIUtility.GetSizeOfActiveChildren(Transform)
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_GetSizeOfActiveChildren_Transform_
+  commentId: M:UIControllers.UIUtility.GetSizeOfActiveChildren(Transform)
+  fullName: UIControllers.UIUtility.GetSizeOfActiveChildren(Transform)
   nameWithType: UIUtility.GetSizeOfActiveChildren(Transform)
-- uid: UI.UIUtility.GetSizeOfActiveChildren*
+- uid: UIControllers.UIUtility.GetSizeOfActiveChildren*
   name: GetSizeOfActiveChildren
-  href: api/UI.UIUtility.html#UI_UIUtility_GetSizeOfActiveChildren_
-  commentId: Overload:UI.UIUtility.GetSizeOfActiveChildren
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_GetSizeOfActiveChildren_
+  commentId: Overload:UIControllers.UIUtility.GetSizeOfActiveChildren
   isSpec: "True"
-  fullName: UI.UIUtility.GetSizeOfActiveChildren
+  fullName: UIControllers.UIUtility.GetSizeOfActiveChildren
   nameWithType: UIUtility.GetSizeOfActiveChildren
-- uid: UI.UIUtility.GetTallestChildHeight(Transform)
+- uid: UIControllers.UIUtility.GetTallestChildHeight(Transform)
   name: GetTallestChildHeight(Transform)
-  href: api/UI.UIUtility.html#UI_UIUtility_GetTallestChildHeight_Transform_
-  commentId: M:UI.UIUtility.GetTallestChildHeight(Transform)
-  fullName: UI.UIUtility.GetTallestChildHeight(Transform)
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_GetTallestChildHeight_Transform_
+  commentId: M:UIControllers.UIUtility.GetTallestChildHeight(Transform)
+  fullName: UIControllers.UIUtility.GetTallestChildHeight(Transform)
   nameWithType: UIUtility.GetTallestChildHeight(Transform)
-- uid: UI.UIUtility.GetTallestChildHeight*
+- uid: UIControllers.UIUtility.GetTallestChildHeight*
   name: GetTallestChildHeight
-  href: api/UI.UIUtility.html#UI_UIUtility_GetTallestChildHeight_
-  commentId: Overload:UI.UIUtility.GetTallestChildHeight
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_GetTallestChildHeight_
+  commentId: Overload:UIControllers.UIUtility.GetTallestChildHeight
   isSpec: "True"
-  fullName: UI.UIUtility.GetTallestChildHeight
+  fullName: UIControllers.UIUtility.GetTallestChildHeight
   nameWithType: UIUtility.GetTallestChildHeight
-- uid: UI.UIUtility.GetTallestChildRectTransform(Transform)
+- uid: UIControllers.UIUtility.GetTallestChildRectTransform(Transform)
   name: GetTallestChildRectTransform(Transform)
-  href: api/UI.UIUtility.html#UI_UIUtility_GetTallestChildRectTransform_Transform_
-  commentId: M:UI.UIUtility.GetTallestChildRectTransform(Transform)
-  fullName: UI.UIUtility.GetTallestChildRectTransform(Transform)
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_GetTallestChildRectTransform_Transform_
+  commentId: M:UIControllers.UIUtility.GetTallestChildRectTransform(Transform)
+  fullName: UIControllers.UIUtility.GetTallestChildRectTransform(Transform)
   nameWithType: UIUtility.GetTallestChildRectTransform(Transform)
-- uid: UI.UIUtility.GetTallestChildRectTransform*
+- uid: UIControllers.UIUtility.GetTallestChildRectTransform*
   name: GetTallestChildRectTransform
-  href: api/UI.UIUtility.html#UI_UIUtility_GetTallestChildRectTransform_
-  commentId: Overload:UI.UIUtility.GetTallestChildRectTransform
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_GetTallestChildRectTransform_
+  commentId: Overload:UIControllers.UIUtility.GetTallestChildRectTransform
   isSpec: "True"
-  fullName: UI.UIUtility.GetTallestChildRectTransform
+  fullName: UIControllers.UIUtility.GetTallestChildRectTransform
   nameWithType: UIUtility.GetTallestChildRectTransform
-- uid: UI.UIUtility.InvalidateInput(TMP_InputField)
+- uid: UIControllers.UIUtility.InvalidateInput(TMP_InputField)
   name: InvalidateInput(TMP_InputField)
-  href: api/UI.UIUtility.html#UI_UIUtility_InvalidateInput_TMP_InputField_
-  commentId: M:UI.UIUtility.InvalidateInput(TMP_InputField)
-  fullName: UI.UIUtility.InvalidateInput(TMP_InputField)
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_InvalidateInput_TMP_InputField_
+  commentId: M:UIControllers.UIUtility.InvalidateInput(TMP_InputField)
+  fullName: UIControllers.UIUtility.InvalidateInput(TMP_InputField)
   nameWithType: UIUtility.InvalidateInput(TMP_InputField)
-- uid: UI.UIUtility.InvalidateInput*
+- uid: UIControllers.UIUtility.InvalidateInput*
   name: InvalidateInput
-  href: api/UI.UIUtility.html#UI_UIUtility_InvalidateInput_
-  commentId: Overload:UI.UIUtility.InvalidateInput
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_InvalidateInput_
+  commentId: Overload:UIControllers.UIUtility.InvalidateInput
   isSpec: "True"
-  fullName: UI.UIUtility.InvalidateInput
+  fullName: UIControllers.UIUtility.InvalidateInput
   nameWithType: UIUtility.InvalidateInput
-- uid: UI.UIUtility.ProcessAndValidateFloatInput(TMP_InputField,System.Single@)
+- uid: UIControllers.UIUtility.ProcessAndValidateFloatInput(TMP_InputField,System.Single@)
   name: ProcessAndValidateFloatInput(TMP_InputField, out Single)
-  href: api/UI.UIUtility.html#UI_UIUtility_ProcessAndValidateFloatInput_TMP_InputField_System_Single__
-  commentId: M:UI.UIUtility.ProcessAndValidateFloatInput(TMP_InputField,System.Single@)
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_ProcessAndValidateFloatInput_TMP_InputField_System_Single__
+  commentId: M:UIControllers.UIUtility.ProcessAndValidateFloatInput(TMP_InputField,System.Single@)
   name.vb: ProcessAndValidateFloatInput(TMP_InputField, ByRef Single)
-  fullName: UI.UIUtility.ProcessAndValidateFloatInput(TMP_InputField, out System.Single)
-  fullName.vb: UI.UIUtility.ProcessAndValidateFloatInput(TMP_InputField, ByRef System.Single)
+  fullName: UIControllers.UIUtility.ProcessAndValidateFloatInput(TMP_InputField, out System.Single)
+  fullName.vb: UIControllers.UIUtility.ProcessAndValidateFloatInput(TMP_InputField, ByRef System.Single)
   nameWithType: UIUtility.ProcessAndValidateFloatInput(TMP_InputField, out Single)
   nameWithType.vb: UIUtility.ProcessAndValidateFloatInput(TMP_InputField, ByRef Single)
-- uid: UI.UIUtility.ProcessAndValidateFloatInput*
+- uid: UIControllers.UIUtility.ProcessAndValidateFloatInput*
   name: ProcessAndValidateFloatInput
-  href: api/UI.UIUtility.html#UI_UIUtility_ProcessAndValidateFloatInput_
-  commentId: Overload:UI.UIUtility.ProcessAndValidateFloatInput
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_ProcessAndValidateFloatInput_
+  commentId: Overload:UIControllers.UIUtility.ProcessAndValidateFloatInput
   isSpec: "True"
-  fullName: UI.UIUtility.ProcessAndValidateFloatInput
+  fullName: UIControllers.UIUtility.ProcessAndValidateFloatInput
   nameWithType: UIUtility.ProcessAndValidateFloatInput
-- uid: UI.UIUtility.TryGetFloat(TMP_InputField,System.Single@)
+- uid: UIControllers.UIUtility.TryGetFloat(TMP_InputField,System.Single@)
   name: TryGetFloat(TMP_InputField, out Single)
-  href: api/UI.UIUtility.html#UI_UIUtility_TryGetFloat_TMP_InputField_System_Single__
-  commentId: M:UI.UIUtility.TryGetFloat(TMP_InputField,System.Single@)
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_TryGetFloat_TMP_InputField_System_Single__
+  commentId: M:UIControllers.UIUtility.TryGetFloat(TMP_InputField,System.Single@)
   name.vb: TryGetFloat(TMP_InputField, ByRef Single)
-  fullName: UI.UIUtility.TryGetFloat(TMP_InputField, out System.Single)
-  fullName.vb: UI.UIUtility.TryGetFloat(TMP_InputField, ByRef System.Single)
+  fullName: UIControllers.UIUtility.TryGetFloat(TMP_InputField, out System.Single)
+  fullName.vb: UIControllers.UIUtility.TryGetFloat(TMP_InputField, ByRef System.Single)
   nameWithType: UIUtility.TryGetFloat(TMP_InputField, out Single)
   nameWithType.vb: UIUtility.TryGetFloat(TMP_InputField, ByRef Single)
-- uid: UI.UIUtility.TryGetFloat*
+- uid: UIControllers.UIUtility.TryGetFloat*
   name: TryGetFloat
-  href: api/UI.UIUtility.html#UI_UIUtility_TryGetFloat_
-  commentId: Overload:UI.UIUtility.TryGetFloat
+  href: api/UIControllers.UIUtility.html#UIControllers_UIUtility_TryGetFloat_
+  commentId: Overload:UIControllers.UIUtility.TryGetFloat
   isSpec: "True"
-  fullName: UI.UIUtility.TryGetFloat
+  fullName: UIControllers.UIUtility.TryGetFloat
   nameWithType: UIUtility.TryGetFloat
-- uid: UI.VectorAdditionUI
+- uid: UIControllers.VectorAdditionUI
   name: VectorAdditionUI
-  href: api/UI.VectorAdditionUI.html
-  commentId: T:UI.VectorAdditionUI
-  fullName: UI.VectorAdditionUI
+  href: api/UIControllers.VectorAdditionUI.html
+  commentId: T:UIControllers.VectorAdditionUI
+  fullName: UIControllers.VectorAdditionUI
   nameWithType: VectorAdditionUI
-- uid: UI.VerticalSpacer
+- uid: UIControllers.VerticalSpacer
   name: VerticalSpacer
-  href: api/UI.VerticalSpacer.html
-  commentId: T:UI.VerticalSpacer
-  fullName: UI.VerticalSpacer
+  href: api/UIControllers.VerticalSpacer.html
+  commentId: T:UIControllers.VerticalSpacer
+  fullName: UIControllers.VerticalSpacer
   nameWithType: VerticalSpacer

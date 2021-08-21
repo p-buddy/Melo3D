@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class VectorAdditionUI
+    <title>Interface INoteStartUI
    | Example Unity documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class VectorAdditionUI
+    <meta name="title" content="Interface INoteStartUI
    | Example Unity documentation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -78,53 +78,34 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="UI.VectorAdditionUI">
+            <article class="content wrap" id="_content" data-uid="UIControllers.INoteStartUI">
   
   
-  <h1 id="UI_VectorAdditionUI" data-uid="UI.VectorAdditionUI" class="text-break">Class VectorAdditionUI
+  <h1 id="UIControllers_INoteStartUI" data-uid="UIControllers.INoteStartUI" class="text-break">Interface INoteStartUI
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Interface for UI Controllers</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="UI.NoteCoordinateUI.html">NoteCoordinateUI</a></div>
-    <div class="level2"><span class="xref">VectorAdditionUI</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">INoteActionUI</span>&lt;<span class="xref">float2</span>&gt;</div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_Set_System_Nullable_float2__">NoteCoordinateUI.Set(Nullable&lt;float2&gt;)</a>
+      <a class="xref" href="UIControllers.ISettableFromCodeUI-1.html#UIControllers_ISettableFromCodeUI_1_Set_System_Nullable__0__">ISettableFromCodeUI&lt;float2&gt;.Set(Nullable&lt;float2&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_GetData">NoteCoordinateUI.GetData()</a>
+      <a class="xref" href="UIControllers.IRetrievableUI-1.html#UIControllers_IRetrievableUI_1_GetData">IRetrievableUI&lt;float2&gt;.GetData()</a>
     </div>
     <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_GetDuration">NoteCoordinateUI.GetDuration()</a>
+      <a class="xref" href="UIControllers.IRetrievableUI-1.html#UIControllers_IRetrievableUI_1_GetDuration">IRetrievableUI&lt;float2&gt;.GetDuration()</a>
     </div>
     <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_OnUIEdit">NoteCoordinateUI.OnUIEdit</a>
-    </div>
-    <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_OnUIDelete">NoteCoordinateUI.OnUIDelete</a>
-    </div>
-    <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_Delete">NoteCoordinateUI.Delete()</a>
+      <a class="xref" href="UIControllers.IUserEditableUI-1.html#UIControllers_IUserEditableUI_1_OnUIEdit">IUserEditableUI&lt;float2&gt;.OnUIEdit</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="UI.html">UI</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UIControllers.html">UIControllers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="UI_VectorAdditionUI_syntax">Syntax</h5>
+  <h5 id="UIControllers_INoteStartUI_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VectorAdditionUI : NoteCoordinateUI, INoteActionUI&lt;float2&gt;</code></pre>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">INoteActionUI&lt;&gt;</span>
+    <pre><code class="lang-csharp hljs">public interface INoteStartUI : IUIComponent, ISettableFromCodeUI&lt;float2&gt;, IRetrievableUI&lt;float2&gt;, IUserEditableUI&lt;float2&gt;</code></pre>
   </div>
 </article>
           </div>

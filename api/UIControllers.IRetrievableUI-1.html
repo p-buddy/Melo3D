@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class NoteStartUI
+    <title>Interface IRetrievableUI&lt;TData&gt;
    | Example Unity documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class NoteStartUI
+    <meta name="title" content="Interface IRetrievableUI&lt;TData&gt;
    | Example Unity documentation ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -78,54 +78,87 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="UI.NoteStartUI">
+            <article class="content wrap" id="_content" data-uid="UIControllers.IRetrievableUI`1">
   
   
-  <h1 id="UI_NoteStartUI" data-uid="UI.NoteStartUI" class="text-break">Class NoteStartUI
+  <h1 id="UIControllers_IRetrievableUI_1" data-uid="UIControllers.IRetrievableUI`1" class="text-break">Interface IRetrievableUI&lt;TData&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="UI.NoteCoordinateUI.html">NoteCoordinateUI</a></div>
-    <div class="level2"><span class="xref">NoteStartUI</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">INoteStartUI</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_Set_System_Nullable_float2__">NoteCoordinateUI.Set(Nullable&lt;float2&gt;)</a>
-    </div>
-    <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_GetData">NoteCoordinateUI.GetData()</a>
-    </div>
-    <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_GetDuration">NoteCoordinateUI.GetDuration()</a>
-    </div>
-    <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_OnUIEdit">NoteCoordinateUI.OnUIEdit</a>
-    </div>
-    <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_OnUIDelete">NoteCoordinateUI.OnUIDelete</a>
-    </div>
-    <div>
-      <a class="xref" href="UI.NoteCoordinateUI.html#UI_NoteCoordinateUI_Delete">NoteCoordinateUI.Delete()</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="UI.html">UI</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UIControllers.html">UIControllers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="UI_NoteStartUI_syntax">Syntax</h5>
+  <h5 id="UIControllers_IRetrievableUI_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NoteStartUI : NoteCoordinateUI, INoteStartUI</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IRetrievableUI&lt;TData&gt;
+    where TData : struct</code></pre>
   </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">INoteStartUI</span>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UIControllers_IRetrievableUI_1_GetData_" data-uid="UIControllers.IRetrievableUI`1.GetData*"></a>
+  <h4 id="UIControllers_IRetrievableUI_1_GetData" data-uid="UIControllers.IRetrievableUI`1.GetData">GetData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TData? GetData()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;TData&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UIControllers_IRetrievableUI_1_GetDuration_" data-uid="UIControllers.IRetrievableUI`1.GetDuration*"></a>
+  <h4 id="UIControllers_IRetrievableUI_1_GetDuration" data-uid="UIControllers.IRetrievableUI`1.GetDuration">GetDuration()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float? GetDuration()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
