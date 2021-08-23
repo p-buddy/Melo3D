@@ -1,4 +1,4 @@
-namespace MusicObjects
+namespace NoteElements
 {
     public interface IActionAdder
     {

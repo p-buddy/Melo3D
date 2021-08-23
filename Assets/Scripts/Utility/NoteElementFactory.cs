@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UIControllers;
-using MusicObjects;
+using NoteElements;
 using Unity.Mathematics;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -98,7 +98,7 @@ namespace DefaultNamespace
             }
         }
         
-        public static ControllerUIBundle<ITrack> AddTrack(Transform parent)
+        public static NoteUIBundle<ITrack> AddTrack(Transform parent)
         {
             GameObject row = InstantiateUIPrefab<NoteElementsContainer>(parent);
             GameObject rowVector = InstantiateUIPrefab<Note2DStartUI>();
@@ -107,35 +107,28 @@ namespace DefaultNamespace
             var parentContainer = new UIComponentsContainer(row);
             var startNoteContainer = new UIComponentsContainer(rowVector);
             var addButtonContainer = new UIComponentsContainer(addButton);
+            
+            startNoteContainer.GetUIComponent<Note2DStartUI>().Set(new float2(1, 0));
 
             ITrack track = new Track(parentContainer, startNoteContainer, addButtonContainer);
-            return new ControllerUIBundle<ITrack>(track, parentContainer);
+            return new NoteUIBundle<ITrack>(track, parentContainer);
         }
         
-        public static ControllerUIBundle<INoteActionResult> AddMatrixMultiplication(ITrack track, MatrixMultiplicationUI.Type desiredType)
+        public static NoteUIBundle<INoteActionResult> AddMatrixMultiplication<TMultiplicationType>(NoteUIBundle<ITrack> trackBundle) 
+            where TMultiplicationType : MatrixMultiplicationUI
         {
             GameObject multiplication = InstantiateUIPrefab<Sign>(ui => ui.SignType == Sign.Type.Multiplication);
-            GameObject matrix = InstantiateUIPrefab<MatrixMultiplicationUI>(ui => ui.MatrixType == desiredType);
+            GameObject matrix = InstantiateUIPrefab<TMultiplicationType>();
             GameObject equals = InstantiateUIPrefab<Sign>(ui => ui.SignType == Sign.Type.Equals);
             GameObject resultVector = InstantiateUIPrefab<Note2DResultUI>();
 
             var uiContainer = new UIComponentsContainer(multiplication, matrix, equals, resultVector);
-            NoteActionFunctions.NoteAction<float2x2> noteAction;
-            switch (desiredType)
-            {
-                case MatrixMultiplicationUI.Type.None:
-                    noteAction = NoteActionFunctions.MatrixMultiply;
-                    break;
-                case MatrixMultiplicationUI.Type.Rotation:
-                    noteAction = NoteActionFunctions.RotationMatrixMultiply;
-                    break;
-                default:
-                    noteAction = NoteActionFunctions.MatrixMultiply;
-                    break;
-            }
-            INoteActionResult noteActionResult = new NoteActionResult<float2x2>(track, track.ActionsCount, noteAction, uiContainer);
-            var bundle = new ControllerUIBundle<INoteActionResult>(noteActionResult, uiContainer);
-            track.Add(bundle);
+            
+            uiContainer.GetUIComponent<TMultiplicationType>().Set(new float2x2(0));
+            
+            INoteActionResult noteActionResult = new NoteActionResult<float2x2>(trackBundle, NoteActionFunctions.MatrixMultiply, uiContainer);
+            var bundle = new NoteUIBundle<INoteActionResult>(noteActionResult, uiContainer);
+            trackBundle.NoteElement.Add(in bundle);
             return bundle;
         }
     }

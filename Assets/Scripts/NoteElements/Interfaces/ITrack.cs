@@ -1,8 +1,12 @@
 using DefaultNamespace;
+using DefaultNamespace.Audio;
 using Unity.Mathematics;
 
-namespace MusicObjects
+namespace NoteElements
 {
+    /// <summary>
+    /// Something responsible for coordinating the
+    /// </summary>
     public interface ITrack
     {
         float2? GetInput(int myIndex);
@@ -10,10 +14,10 @@ namespace MusicObjects
         void StartingCoordinateChange(float2? value);
         void ActionDataChange<TData>(TData? value, int myIndex) where TData : struct;
         void RemoveAtIndex(int myIndex);
-        void AddAtIndex(ControllerUIBundle<INoteActionResult> actionResultBundle, int index);
+        void AddAtIndex(in NoteUIBundle<INoteActionResult> actionResultBundle, int index);
 
-        void Add(ControllerUIBundle<INoteActionResult> actionResultBundle);
+        void Add(in NoteUIBundle<INoteActionResult> actionResultBundle);
         int ActionsCount { get; }
-        
+        AudioEvent[] GetEvents();
     }
 }

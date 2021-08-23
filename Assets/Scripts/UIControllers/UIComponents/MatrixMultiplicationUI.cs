@@ -1,4 +1,5 @@
-﻿using UIControllers;
+﻿using System.Linq;
+using UIControllers;
 using NUnit.Framework;
 using TMPro;
 using Unity.Mathematics;
@@ -26,25 +27,24 @@ public class MatrixMultiplicationUI : MonoBehaviour, INoteActionUI<float2x2>
 
     private float2x2? current = null;
 
+    #region MonoBehaviour
     void Awake()
     {
-        for (var index = 0; index < column0InputFields.Length; index++)
+        for (var index = 0; index < RowCount; index++)
         {
             TMP_InputField inputField = column0InputFields[index];
             Assert.IsNotNull(inputField, $"{nameof(MatrixMultiplicationUI)} exception: column 0, index {index} is null");
-            inputField.onValueChanged.AddListener(ProcessInputs);
-                
             inputField = column1InputFields[index];
             Assert.IsNotNull(inputField, $"{nameof(MatrixMultiplicationUI)} exception: column 0, index {index} is null");
-            inputField.onValueChanged.AddListener(ProcessInputs);
         }
+        SetupOnChangedListeners();
+
         Assert.IsNotNull(durationInputField);
-        durationInputField.onValueChanged.AddListener(ProcessInputs);
+        durationInputField.onValueChanged.AddListener(ProcessDurationInput);
     }
-    
+    #endregion MonoBehaviour
 
     public event OnUIDelete OnUIDelete;
-    
     public void Delete()
     {
         OnUIDelete?.Invoke();
@@ -55,10 +55,19 @@ public class MatrixMultiplicationUI : MonoBehaviour, INoteActionUI<float2x2>
     
     public void Set(float2x2? value)
     {
-        throw new System.NotImplementedException();
+        if (!value.HasValue)
+        {
+            return;
+        }
+        RemoveOnChangedListeners();
+        column0InputFields[0].text = $"{value.Value.c0.x}";
+        column0InputFields[1].text = $"{value.Value.c0.y}";
+        column1InputFields[0].text = $"{value.Value.c1.x}";
+        column1InputFields[1].text = $"{value.Value.c1.y}";
+        SetupOnChangedListeners();
     }
 
-    public float2x2? GetData()
+    public virtual float2x2? GetData()
     {
         if (UIUtility.ProcessAndValidateFloatInput(column0InputFields[0], out float c0r0) &&
             UIUtility.ProcessAndValidateFloatInput(column0InputFields[1], out float c0r1) &&
@@ -81,7 +90,7 @@ public class MatrixMultiplicationUI : MonoBehaviour, INoteActionUI<float2x2>
         return null;
     }
 
-    private void ProcessInputs(string value)
+    protected virtual void ProcessMatrixInputs(string value)
     {
         float2x2? previous = current;
         current = GetData();
@@ -93,7 +102,27 @@ public class MatrixMultiplicationUI : MonoBehaviour, INoteActionUI<float2x2>
             float2 b = mat.c1;
         }
         
-        GetDuration();
         OnUIEdit?.Invoke(previous, current);
+    }
+
+    private void ProcessDurationInput(string value)
+    {
+        GetDuration();
+    }
+
+    private void SetupOnChangedListeners()
+    {
+        foreach (var field in column0InputFields.Concat(column1InputFields))
+        {
+            field.onValueChanged.AddListener(ProcessMatrixInputs);
+        }
+    }
+
+    private void RemoveOnChangedListeners()
+    {
+        foreach (var field in column0InputFields.Concat(column1InputFields))
+        {
+            field.onValueChanged.RemoveListener(ProcessMatrixInputs);
+        }
     }
 }

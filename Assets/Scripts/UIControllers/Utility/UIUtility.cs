@@ -79,9 +79,8 @@ namespace UIControllers
             return tallestRectTransform.rect.height;
         }
 
-        public static bool TryGetFloat(TMP_InputField inputField, out float value)
+        public static bool TryGetFloat(string text, out float value)
         {
-            string text = inputField.text;
             bool valid = float.TryParse(text, out float result);
             if (valid)
             {
@@ -91,6 +90,11 @@ namespace UIControllers
 
             value = default;
             return false;
+        }
+        
+        public static bool TryGetFloat(TMP_InputField inputField, out float value)
+        {
+            return TryGetFloat(inputField.text, out value);
         }
         
         /// <summary>

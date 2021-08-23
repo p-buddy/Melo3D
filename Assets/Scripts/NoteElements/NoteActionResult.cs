@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UIControllers;
 using DefaultNamespace;
+using DefaultNamespace.Audio;
 using NUnit.Framework;
 using Unity.Mathematics;
 
@@ -12,29 +14,27 @@ using Unity.Mathematics;
  * - This class WILL coordinate actions relating to the "Track" object
  */
 
-namespace MusicObjects
+namespace NoteElements
 {
     public class NoteActionResult<TActionData> : INoteActionResult where TActionData : struct
     {
-        private readonly ITrack track;
+        private readonly NoteUIBundle<ITrack> trackBundle;
         private int trackIndex;
         
         private readonly NoteActionFunctions.NoteAction<TActionData> action;
         private readonly INoteActionUI<TActionData> noteActionUI;
         private readonly INoteResultUI noteResultUI;
-        public float2? CurrentInput => track.GetInput(trackIndex);
+        public float2? CurrentInput => trackBundle.NoteElement.GetInput(trackIndex);
         public TActionData? CurrentActionData => noteActionUI.GetData();
         public float2? CurrentResult => noteResultUI.GetData();
         public float? CurrentActionDuration => noteActionUI.GetDuration();
         public float? CurrentResultDuration => noteResultUI.GetDuration();
         
-        public NoteActionResult(ITrack track,
-                                int index,
-                                NoteActionFunctions.NoteAction<TActionData> action,
+        public NoteActionResult(NoteUIBundle<ITrack> trackBundle,
+                                in NoteActionFunctions.NoteAction<TActionData> action,
                                 in UIComponentsContainer uiContainer)
         {
-            this.track = track;
-            trackIndex = index;
+            this.trackBundle = trackBundle;
             this.action = action;
 
             noteActionUI = uiContainer.GetUIComponent<INoteActionUI<TActionData>>();
@@ -50,7 +50,7 @@ namespace MusicObjects
         private void OnActionEdit(TActionData? previous, TActionData? current)
         {
             RefreshResult();
-            track.ActionDataChange(current, trackIndex);
+            trackBundle.NoteElement.ActionDataChange(current, trackIndex);
         }
 
         public void RefreshResult()
@@ -66,12 +66,32 @@ namespace MusicObjects
 
         private void Delete()
         {
-            track.RemoveAtIndex(trackIndex);
+            trackBundle.NoteElement.RemoveAtIndex(trackIndex);
         }
 
         public void SetIndexWithinTrack(int index)
         {
             trackIndex = index;
+        }
+
+        public bool TryAppendAudioEvents(List<AudioEvent> events, float currentTime)
+        {
+            if (CurrentActionData.HasValue && CurrentActionDuration.HasValue && CurrentInput.HasValue)
+            {
+                float2 input = CurrentInput.Value;
+                TActionData actionData = CurrentActionData.Value;
+                
+                events.Add(new AudioEvent(currentTime,
+                    CurrentActionDuration.Value,
+                    point => action.Invoke(input, actionData, point)));
+
+                float resultDuration = CurrentResultDuration ?? 0f;
+                float2 result = CurrentResult ?? float2.zero;
+                events.Add(new AudioEvent(currentTime + CurrentActionDuration.Value, resultDuration, point => result));
+                return true;
+            }
+
+            return false;
         }
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DefaultNamespace;
 using UIControllers;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -10,7 +11,17 @@ namespace UIControllers
     public readonly struct UIComponentsContainer
     {
         private static Type[] uiComponentTypes;
-        
+        static UIComponentsContainer()
+        {
+            uiComponentTypes = AppDomain.CurrentDomain.GetAssemblies()
+                                        .SelectMany(s => s.GetTypes())
+                                        .Where(p => 
+                                            typeof(IUIComponent).IsAssignableFrom(p) &&
+                                            typeof(Component).IsAssignableFrom(p) &&
+                                            p.IsClass &&
+                                            !p.IsAbstract).ToArray();
+        }
+
         private readonly Dictionary<Type, List<object>> componentsByType;
         private readonly GameObject[] gameObjects;
 
@@ -18,20 +29,6 @@ namespace UIControllers
         
         public UIComponentsContainer(params GameObject[] gameObjects)
         {
-            if (uiComponentTypes is null)
-            {
-                Type uiInterfaceType = typeof(IUIComponent);
-                Type componentType = typeof(Component);
-                componentsByType = new Dictionary<Type, List<object>>();
-                IEnumerable<Type> types = AppDomain.CurrentDomain.GetAssemblies()
-                                                   .SelectMany(s => s.GetTypes())
-                                                   .Where(p => uiInterfaceType.IsAssignableFrom(p) &&
-                                                               componentType.IsAssignableFrom(p) &&
-                                                               p.IsClass &&
-                                                               !p.IsAbstract);
-                uiComponentTypes = types.ToArray();
-            }
-
             componentsByType = new Dictionary<Type, List<object>>();
             foreach (Type uiComponentType in uiComponentTypes)
             {
@@ -60,8 +57,7 @@ namespace UIControllers
 
             if (objs.Count == 0)
             {
-                string context = $"{nameof(UIComponentsContainer)}::{nameof(GetUIComponent)}() --";
-                Debug.LogError($"{context} No objects of type '{typeof(T)}' could be found.");
+                Debug.LogError($"{this.Context(nameof(GetUIComponents))} No objects of type '{typeof(T)}' could be found.");
                 return null;
             }
 
@@ -76,10 +72,11 @@ namespace UIControllers
                 return null;
             }
 
-            if (objs.Length > 1)
+            if (objs.Length > 1 && objs.Distinct().Count() > 1)
             {
-                string context = $"{nameof(UIComponentsContainer)}::{nameof(GetUIComponent)}() --";
-                Debug.LogError($"{context} More than one object of type '{typeof(T)}' found. Returning the first non null element.");
+                string objsPrintOut = String.Join(", ", objs.ToList().Select(ob => ob.GetType()));
+                Debug.LogError($@"{this.Context(nameof(GetUIComponent))} More than one object of type '{typeof(T)}' found. 
+                                Returning the first non null element. [{objsPrintOut}]");
             }
 
             foreach (T obj in objs)

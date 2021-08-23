@@ -57,7 +57,7 @@ public class Drawer : ImmediateModeShapeDrawer
                 float mag = DrawDestination.Value.magnitude;
                 Color color = Color.red;
                 int magInt = (int)mag;
-                if (magInt < 4)
+                if (magInt < 4 * 10)
                 {
                     color = darkColors[magInt];
                 }
@@ -65,7 +65,7 @@ public class Drawer : ImmediateModeShapeDrawer
                 Draw.Line(center, center + DrawDestination.Value * radius, color);
 
                 float angle = Vector3.Angle(DrawDestination.Value, Vector3.right);
-                Player.Play(magInt, angle);
+                //Player.Play(magInt, angle);
             }
         }
     }

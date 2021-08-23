@@ -10,13 +10,15 @@ namespace UIControllers
     public abstract class Note2DCoordinateUI : MonoBehaviour
     {
         [SerializeField] 
-        private TMP_InputField[] coordinateInputFields = new TMP_InputField[2];
+        protected TMP_InputField[] coordinateInputFields = new TMP_InputField[2];
 
         [SerializeField] 
-        private TMP_InputField durationInputField;
+        protected TMP_InputField durationInputField;
 
         private float2? current;
 
+        protected abstract void Initialize();
+        
         private void Awake()
         {
             foreach (TMP_InputField inputField in coordinateInputFields)
@@ -26,6 +28,7 @@ namespace UIControllers
             }
             Assert.IsNotNull(durationInputField);
             durationInputField.onValueChanged.AddListener(ProcessInputs);
+            Initialize();
         }
         
         public virtual void Set(float2? value)
@@ -71,7 +74,7 @@ namespace UIControllers
         public event OnUIDelete OnUIDelete;
         public void Delete()
         {
-            throw new NotImplementedException();
+            OnUIDelete?.Invoke();
         }
     }
 }
